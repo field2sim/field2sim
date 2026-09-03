@@ -9,6 +9,9 @@
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="coordinate-core.js"></script>
   <script src="simulator-adapters.js"></script>
+  <script src="propagation-profiles.js"></script>
+  <script src="propagation-adapters.js"></script>
+  <script src="cooja-csc-pathloss-writer.js"></script>
   <style>
     html, body { margin: 0; height: 100%; overflow: hidden; font-family: Arial, sans-serif; }
     #container { display: flex; height: 100%; }
@@ -29,6 +32,23 @@
     .input-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
     .input-header label { margin: 0; }
     .hint { font-size: 12px; color: #555; line-height: 1.4; }
+    .propagation-profile-panel { padding: 10px; border: 1px solid #b9c8dc; border-radius: 5px; background: #f8fbff; }
+    .propagation-panel-title { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+    .propagation-panel-title span { padding: 2px 6px; border-radius: 999px; background: #dbeafe; color: #1e3a8a; font-size: 10px; font-weight: 700; }
+    .propagation-selector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .propagation-selector-grid label { font-size: 11px; color: #374151; font-weight: 600; }
+    .propagation-selector-grid input { box-sizing: border-box; width: 100%; margin: 6px 0 8px; padding: 5px; }
+    .propagation-profile-panel select { width: 100%; margin: 6px 0 8px; padding: 5px; }
+    .propagation-evidence-card { margin: 4px 0 8px; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; }
+    .propagation-evidence-grid { display: grid; grid-template-columns: auto 1fr; gap: 3px 8px; margin-top: 7px; font-size: 11px; line-height: 1.35; }
+    .propagation-evidence-grid dt { color: #475569; font-weight: 700; }
+    .propagation-evidence-grid dd { margin: 0; color: #1f2937; }
+    .propagation-advanced-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 8px 0; }
+    .propagation-advanced-grid label { font-size: 11px; color: #444; }
+    .propagation-advanced-grid input { box-sizing: border-box; width: 100%; margin-top: 3px; padding: 4px; }
+    .propagation-profile-panel details { margin: 8px 0; }
+    .propagation-profile-panel summary { cursor: pointer; font-size: 12px; font-weight: 600; }
+    #propagationProfileSources a { display: block; margin-top: 3px; overflow-wrap: anywhere; }
     .btnrow { display: flex; gap: 8px; flex-wrap: wrap; }
     button { padding: 6px 10px; }
     #uploadInput { display: none; }
@@ -399,6 +419,77 @@
           <button id="copyOutputBtn" title="Copy all content">Copy</button>
         </div>
       </div>
+      <div class="propagation-profile-panel">
+        <div class="propagation-panel-title">
+          <label for="enablePathLossProfile" style="display:flex; align-items:center; gap:7px; cursor:pointer;">
+            <input id="enablePathLossProfile" type="checkbox">
+            <b>Literature-informed Cooja path-loss profile</b>
+          </label>
+          <span>COOJA ONLY</span>
+        </div>
+        <div id="propagationPanelBody" hidden>
+        <div class="hint" style="margin-bottom:7px;">The environment is not detected automatically. Select the cited deployment analogue that best matches the planned field site.</div>
+        <div class="propagation-selector-grid">
+          <label for="propagationEnvironmentSelect">Environment family
+            <select id="propagationEnvironmentSelect"></select>
+          </label>
+          <label for="propagationProfileSelect">Cited field profile
+            <select id="propagationProfileSelect" aria-describedby="propagationProfileSummary"></select>
+          </label>
+        </div>
+        <div class="propagation-evidence-card">
+          <div id="propagationProfileSummary" class="hint"></div>
+          <dl class="propagation-evidence-grid">
+            <dt>Path-loss exponent</dt><dd id="propagationEvidenceExponent"></dd>
+            <dt>Source variation</dt><dd id="propagationEvidenceSigma"></dd>
+            <dt>Evidence range</dt><dd id="propagationEvidenceRange"></dd>
+            <dt>Source conditions</dt><dd id="propagationEvidenceConditions"></dd>
+          </dl>
+          <div id="propagationProfileSources" class="hint" style="margin-top:7px;"></div>
+        </div>
+        <details>
+          <summary>Cooja LogisticLoss parameters</summary>
+          <div class="propagation-advanced-grid">
+            <label for="propagationRangeInput">Transmitting range (m)
+              <input id="propagationRangeInput" type="number" min="0.001" step="any" value="50">
+            </label>
+            <label for="propagationSuccessRatioInput">TX success ratio
+              <input id="propagationSuccessRatioInput" type="number" min="0" max="1" step="0.01" value="1">
+            </label>
+            <label for="propagationRxSensitivityInput">RX sensitivity (dBm)
+              <input id="propagationRxSensitivityInput" type="number" step="any" value="-100">
+            </label>
+            <label for="propagationRssiInflectionInput">RSSI inflection point (dBm)
+              <input id="propagationRssiInflectionInput" type="number" step="any" value="-92">
+            </label>
+            <label for="propagationPathLossExponentInput">Path-loss exponent
+              <input id="propagationPathLossExponentInput" type="number" min="0.001" step="any" readonly>
+            </label>
+            <label for="propagationShadowingInput">Cooja AWGN sigma (dB)
+              <input id="propagationShadowingInput" type="number" min="0" step="any" value="3">
+            </label>
+            <label for="propagationTimeVariationSelect">Time variation
+              <select id="propagationTimeVariationSelect">
+                <option value="false" selected>false</option>
+                <option value="true">true</option>
+              </select>
+            </label>
+            <label for="propagationSeedInput">Simulation random seed
+              <input id="propagationSeedInput" type="number" step="1" value="123456">
+            </label>
+          </div>
+          <div class="hint">Except for the selected cited path-loss exponent and the requested 50 m range, the radio-medium values start from Cooja LogisticLoss defaults. The cited spatial variation is not copied into <code>awgn_sigma</code>; Cooja's default remains 3 dB. The separate simulation-level <code>randomseed</code> starts at 123456 and belongs outside <code>radiomedium</code>.</div>
+        </details>
+        <div id="propagationProfileStatus" class="hint" role="status" style="margin-top:6px;"></div>
+        <div id="propagationMappingStatus" class="hint" role="status" style="margin-top:6px; padding:6px; border:1px solid #b9c8dc; border-radius:4px;"></div>
+        <label for="coojaCscFileInput" style="display:block; margin-top:9px;"><b>Existing Cooja simulation file</b></label>
+        <input id="coojaCscFileInput" type="file" accept=".csc,application/xml,text/xml" style="box-sizing:border-box; width:100%; margin-top:5px;">
+        <div id="coojaCscFileStatus" class="hint" role="status" style="margin-top:5px;">No .csc file selected.</div>
+        <button id="writeCoojaCscBtn" type="button" style="margin-top:8px; width:100%;" disabled>Write to Cooja Simulation File</button>
+        <div class="hint" style="margin-top:5px;">Node placement remains separate: save <code>positions.dat</code> above and load it through the researcher's existing Cooja Mobility plugin. This writer never adds, removes, or repositions motes.</div>
+        <div class="hint" style="margin-top:5px;">The selected simulation's mote types, firmware, node positions, Mobility configuration, scripts, and other plugins are preserved. Its radio medium is replaced with LogisticLoss and its simulation-level <code>randomseed</code> is updated. Browser security prevents silent overwrite, so the result is downloaded as <code>*-pathloss.csc</code>.</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -435,6 +526,29 @@
     const simExportSelect = document.getElementById('simExportSelect');
     const outputHeaderLabel = document.getElementById('outputHeaderLabel');
     const exportCompatibilityNotice = document.getElementById('exportCompatibilityNotice');
+    const propagationEnvironmentSelect = document.getElementById('propagationEnvironmentSelect');
+    const propagationProfileSelect = document.getElementById('propagationProfileSelect');
+    const propagationRangeInput = document.getElementById('propagationRangeInput');
+    const propagationSuccessRatioInput = document.getElementById('propagationSuccessRatioInput');
+    const propagationRxSensitivityInput = document.getElementById('propagationRxSensitivityInput');
+    const propagationRssiInflectionInput = document.getElementById('propagationRssiInflectionInput');
+    const propagationPathLossExponentInput = document.getElementById('propagationPathLossExponentInput');
+    const propagationShadowingInput = document.getElementById('propagationShadowingInput');
+    const propagationTimeVariationSelect = document.getElementById('propagationTimeVariationSelect');
+    const propagationSeedInput = document.getElementById('propagationSeedInput');
+    const propagationProfileSummary = document.getElementById('propagationProfileSummary');
+    const propagationEvidenceExponent = document.getElementById('propagationEvidenceExponent');
+    const propagationEvidenceSigma = document.getElementById('propagationEvidenceSigma');
+    const propagationEvidenceRange = document.getElementById('propagationEvidenceRange');
+    const propagationEvidenceConditions = document.getElementById('propagationEvidenceConditions');
+    const propagationProfileSources = document.getElementById('propagationProfileSources');
+    const propagationProfileStatus = document.getElementById('propagationProfileStatus');
+    const propagationMappingStatus = document.getElementById('propagationMappingStatus');
+    const enablePathLossProfile = document.getElementById('enablePathLossProfile');
+    const propagationPanelBody = document.getElementById('propagationPanelBody');
+    const coojaCscFileInput = document.getElementById('coojaCscFileInput');
+    const coojaCscFileStatus = document.getElementById('coojaCscFileStatus');
+    const writeCoojaCscBtn = document.getElementById('writeCoojaCscBtn');
     const circleRadiusSelect = document.getElementById('circleRadiusSelect');
     const customRadiusControls = document.getElementById('customRadiusControls');
     const circleRadiusCustomInput = document.getElementById('circleRadiusCustomInput');
@@ -541,10 +655,21 @@
 
     const coordinateCore = window.CoojaPositionerCoordinateCore;
     const simulatorAdapterCore = window.CoojaPositionerSimulatorAdapters;
+    const propagationProfileCore = window.CoojaPositionerPropagationProfiles;
+    const propagationAdapterCore = window.CoojaPositionerPropagationAdapters;
+    const coojaCscPathLossWriterCore = window.CoojaPositionerCscPathLossWriter;
     if (!coordinateCore) throw new Error('coordinate-core.js could not be loaded');
     if (!simulatorAdapterCore) throw new Error('simulator-adapters.js could not be loaded');
+    if (!propagationProfileCore) throw new Error('propagation-profiles.js could not be loaded');
+    if (!propagationAdapterCore) throw new Error('propagation-adapters.js could not be loaded');
+    if (!coojaCscPathLossWriterCore) throw new Error('cooja-csc-pathloss-writer.js could not be loaded');
     const { geodeticToEnu, enuToGeodetic } = coordinateCore;
     const { AdapterValidationError, createArtifact, getAdapter } = simulatorAdapterCore;
+    const { references: propagationReferences } = propagationProfileCore;
+    const {
+      assessPropagationMapping
+    } = propagationAdapterCore;
+    const { CoojaCscWriteError, inspectCoojaCsc, patchCoojaCsc } = coojaCscPathLossWriterCore;
 
     // === Canonical scenario state ===
     let mode = 'maps'; // 'maps' | 'point' | 'polygon'
@@ -557,6 +682,7 @@
       waypoints: []
     };
     let positions = scenarioModel.waypoints; // { nodeId, time, lat, lng, z, timeGenerated }
+    let selectedCoojaCsc = null;
     let selected = new Set();
     let isSelectingRect = false; let selStartS=null, selEndS=null;
     let draggingNodeIndex = -1; let selectedInitial = null; let preDragSnapshot = null; let dragStartPx = null;
@@ -1767,6 +1893,273 @@
       ctx.fillRect(x,y,w,h); ctx.strokeRect(x,y,w,h); ctx.restore(); 
     }
 
+    // The browser does not infer a radio environment from the map. This catalog makes
+    // the user's cited analogue explicit and keeps source variation separate from Cooja AWGN.
+    const PROPAGATION_ENVIRONMENT_STORAGE_KEY = 'cpxPropagationEnvironment';
+    const PROPAGATION_PROFILE_STORAGE_KEY = 'cpxPropagationCitedProfile';
+    const FOREST_SOURCE = Object.freeze({
+      title: 'UHF short-range pathloss measurements in forest & plantation environments for wireless sensor networks',
+      year: 2012,
+      doi: '10.1109/ICCS.2012.6406137',
+      url: 'https://doi.org/10.1109/ICCS.2012.6406137'
+    });
+    const COOJA_CITED_PROFILES = Object.freeze({
+      urban: Object.freeze({
+        label: 'Urban',
+        profiles: Object.freeze([
+          { id: 'urban-los-site-general', label: 'Urban / suburban LoS', baseProfileId: 'urban-open-street-los', n: 2.07, sourceSigma: '4.91 dB, reported by ITU-R', evidenceRange: '0.45–300 GHz; 5–660 m', conditions: 'Site-general below-rooftop LoS street-canyon path.', sourceId: 'itu-r-p1411-13', summary: 'ITU-R site-general LoS coefficients for urban high-rise, urban low-rise, and suburban settings.' },
+          { id: 'urban-high-rise-nlos', label: 'Urban high-rise NLoS', baseProfileId: 'urban-street-canyon-nlos', n: 3.73, sourceSigma: '7.62 dB, reported by ITU-R', evidenceRange: '0.8–159 GHz; 20–715 m', conditions: 'Site-general below-rooftop NLoS path in an urban high-rise setting.', sourceId: 'itu-r-p1411-13', summary: 'ITU-R site-general coefficients for obstructed short-range links in high-rise urban environments.' },
+          { id: 'urban-low-rise-nlos', label: 'Urban low-rise / suburban NLoS', baseProfileId: 'urban-street-canyon-nlos', n: 4.52, sourceSigma: '8.02 dB, reported by ITU-R', evidenceRange: '0.45–255 GHz; 10–250 m', conditions: 'Site-general below-rooftop NLoS path in urban low-rise or suburban settings.', sourceId: 'itu-r-p1411-13', summary: 'ITU-R site-general coefficients for obstructed short-range links in low-rise urban or suburban environments.' },
+          { id: 'residential-nlos', label: 'Residential NLoS', baseProfileId: 'urban-street-canyon-nlos', n: 3.01, sourceSigma: '3.07 dB, reported by ITU-R', evidenceRange: '0.8–73 GHz; 30–170 m', conditions: 'Site-general below-rooftop NLoS residential path.', sourceId: 'itu-r-p1411-13', summary: 'ITU-R site-general coefficients for obstructed short-range residential links.' }
+        ])
+      }),
+      agriculture: Object.freeze({
+        label: 'Agriculture',
+        profiles: Object.freeze([
+          ['corn-growth', 'Corn — growth', 4.90], ['corn-maturity', 'Corn — maturity', 5.77],
+          ['paddy-growth', 'Paddy — growth', 4.85], ['paddy-maturity', 'Paddy — maturity', 5.47],
+          ['groundnut-growth', 'Groundnut — growth', 5.08], ['groundnut-maturity', 'Groundnut — maturity', 5.97],
+          ['coconut-green-grass', 'Coconut garden — green grass', 4.70],
+          ['lawn-dry-grass', 'Open lawn — dry green grass', 4.90],
+          ['lawn-wet-grass', 'Open lawn — wet green grass', 4.80]
+        ].map(([id, label, n]) => Object.freeze({
+          id: `agriculture-${id}`, label, baseProfileId: 'agriculture-crop-vegetation-24ghz', agricultureConditionId: id, n,
+          sourceSigma: 'Not measured; S=0 dB was assumed for the source fit', evidenceRange: '2.4 GHz; source measurement geometry',
+          conditions: `${label}; short-range near-ground agricultural/garden measurement.`, sourceId: 'dhanavanthan-2013-agriculture',
+          summary: 'Measurement-derived path-loss exponent for the selected crop or garden condition; it is not a generic agriculture constant.'
+        })))
+      }),
+      forest: Object.freeze({
+        label: 'Forest / plantation',
+        profiles: Object.freeze([
+          ['forest-mango-24ghz', 'Mango plantation', 4.19],
+          ['forest-guava-24ghz', 'Guava plantation', 4.32],
+          ['forest-position-1-24ghz', 'Tropical scrub forest — position 1', 5.24],
+          ['forest-position-2-24ghz', 'Tropical scrub forest — position 2', 4.15]
+        ].map(([id, label, n]) => Object.freeze({
+          id, label, baseProfileId: 'forest-vegetation', n,
+          sourceSigma: '10 dB was assumed by the source; not treated here as measured variation', evidenceRange: '2.4 GHz; source measurement geometry',
+          conditions: `${label}; near-ground foliage measurement with omnidirectional antennas at 1 m in the cited experiment.`, source: FOREST_SOURCE,
+          summary: 'Measurement-derived 2.4-GHz path-loss exponent for the selected forest or plantation condition.'
+        })))
+      }),
+      reference: Object.freeze({
+        label: 'Reference (not an environment)',
+        profiles: Object.freeze([
+          { id: 'free-space-reference', label: 'Free-space LoS', baseProfileId: 'free-space-los-baseline', n: 2, sourceSigma: 'None in the idealized reference', evidenceRange: 'Far-field validity must be checked', conditions: 'Unobstructed, polarization-aligned free-space reference.', sourceId: 'friis-1946', summary: 'Idealized comparison baseline; not an environment-specific field profile.' }
+        ])
+      })
+    });
+
+    function selectedCitedProfile() {
+      const family = COOJA_CITED_PROFILES[propagationEnvironmentSelect.value];
+      return family.profiles.find(profile => profile.id === propagationProfileSelect.value) || family.profiles[0];
+    }
+
+    function readPropagationInputs() {
+      const citedProfile = selectedCitedProfile();
+      return {
+        frequencyMHz: 2400,
+        txHeightM: 1,
+        rxHeightM: 1,
+        agricultureConditionId: citedProfile.agricultureConditionId || 'corn-growth',
+        approximationPathLossExponent: ['urban', 'forest'].includes(propagationEnvironmentSelect.value) ? citedProfile.n : null,
+        shadowingSigmaDb: Number.parseFloat(propagationShadowingInput.value),
+        referenceDistanceM: 1,
+        maximumRangeM: Number.parseFloat(propagationRangeInput.value),
+        systemLossDb: 0,
+        randomSeed: Number.parseFloat(propagationSeedInput.value),
+        successRatioTx: Number.parseFloat(propagationSuccessRatioInput.value),
+        rxSensitivityDbm: Number.parseFloat(propagationRxSensitivityInput.value),
+        rssiInflectionPointDbm: Number.parseFloat(propagationRssiInflectionInput.value),
+        enableTimeVariation: propagationTimeVariationSelect.value === 'true'
+      };
+    }
+
+    function citedProfileSource(citedProfile) {
+      return citedProfile.source || propagationReferences[citedProfile.sourceId];
+    }
+
+    function renderPropagationProfileUi() {
+      const citedProfile = selectedCitedProfile();
+      const source = citedProfileSource(citedProfile);
+      const inputs = readPropagationInputs();
+      const assessment = assessPropagationMapping('cooja', citedProfile.baseProfileId, inputs);
+      propagationPanelBody.hidden = !enablePathLossProfile.checked;
+      enablePathLossProfile.setAttribute('aria-expanded', String(enablePathLossProfile.checked));
+
+      propagationProfileSummary.textContent = citedProfile.summary;
+      propagationEvidenceExponent.textContent = `n = ${citedProfile.n.toFixed(2)} (cited)`;
+      propagationEvidenceSigma.textContent = `${citedProfile.sourceSigma}; not copied to Cooja AWGN.`;
+      propagationEvidenceRange.textContent = citedProfile.evidenceRange;
+      propagationEvidenceConditions.textContent = citedProfile.conditions;
+      propagationPathLossExponentInput.value = citedProfile.n.toFixed(2);
+
+      propagationProfileSources.replaceChildren();
+      const sourceLabel = document.createElement('b');
+      sourceLabel.textContent = 'Cited source: ';
+      const link = document.createElement('a');
+      link.href = source.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = `${source.designation || source.title} (${source.year})`;
+      propagationProfileSources.append(sourceLabel, link);
+
+      propagationProfileStatus.textContent = 'Only the path-loss exponent is initialized from the cited profile; the remaining radio-medium values are explicit Cooja settings.';
+      propagationProfileStatus.style.color = '#166534';
+
+      if (!enablePathLossProfile.checked) {
+        propagationMappingStatus.textContent = 'Enable the path-loss profile to edit an existing Cooja simulation.';
+        propagationMappingStatus.style.color = '#475569';
+        propagationMappingStatus.style.borderColor = '#b9c8dc';
+        writeCoojaCscBtn.disabled = true;
+      } else if (!assessment.supported || assessment.errors.length) {
+        const reason = assessment.errors.length ? assessment.errors.join(' ') : assessment.requirements.join(' ');
+        propagationMappingStatus.textContent = `Cooja LogisticLoss starter unavailable: ${reason}`;
+        propagationMappingStatus.style.color = '#b91c1c';
+        propagationMappingStatus.style.borderColor = '#dc2626';
+        writeCoojaCscBtn.disabled = true;
+      } else if (!selectedCoojaCsc) {
+        propagationMappingStatus.textContent = 'Select the researcher-created .csc file to receive these LogisticLoss settings.';
+        propagationMappingStatus.style.color = '#92400e';
+        propagationMappingStatus.style.borderColor = '#d97706';
+        writeCoojaCscBtn.disabled = true;
+      } else {
+        const prior = selectedCoojaCsc.inspection.radioMediumClass || 'no existing radio medium';
+        propagationMappingStatus.textContent = `Ready to replace ${prior} in ${selectedCoojaCsc.file.name}: range=${inputs.maximumRangeM} m, n=${citedProfile.n.toFixed(2)}, AWGN σ=${inputs.shadowingSigmaDb} dB.`;
+        propagationMappingStatus.style.color = '#166534';
+        propagationMappingStatus.style.borderColor = '#16a34a';
+        writeCoojaCscBtn.disabled = false;
+      }
+    }
+
+    function populateCitedProfiles(preferredProfileId = null) {
+      const family = COOJA_CITED_PROFILES[propagationEnvironmentSelect.value];
+      propagationProfileSelect.replaceChildren();
+      family.profiles.forEach(profile => {
+        const option = document.createElement('option');
+        option.value = profile.id;
+        option.textContent = `${profile.label} (n=${profile.n.toFixed(2)})`;
+        propagationProfileSelect.append(option);
+      });
+      if (preferredProfileId && family.profiles.some(profile => profile.id === preferredProfileId)) {
+        propagationProfileSelect.value = preferredProfileId;
+      }
+    }
+
+    function initializePropagationProfileUi() {
+      Object.entries(COOJA_CITED_PROFILES).forEach(([id, family]) => {
+        const option = document.createElement('option');
+        option.value = id;
+        option.textContent = family.label;
+        propagationEnvironmentSelect.append(option);
+      });
+      let savedEnvironment = 'urban';
+      let savedProfile = null;
+      try {
+        savedEnvironment = localStorage.getItem(PROPAGATION_ENVIRONMENT_STORAGE_KEY) || savedEnvironment;
+        savedProfile = localStorage.getItem(PROPAGATION_PROFILE_STORAGE_KEY);
+      } catch (e) { /* localStorage unavailable */ }
+      if (COOJA_CITED_PROFILES[savedEnvironment]) propagationEnvironmentSelect.value = savedEnvironment;
+      populateCitedProfiles(savedProfile);
+      renderPropagationProfileUi();
+    }
+
+    propagationEnvironmentSelect.addEventListener('change', () => {
+      populateCitedProfiles();
+      try { localStorage.setItem(PROPAGATION_ENVIRONMENT_STORAGE_KEY, propagationEnvironmentSelect.value); } catch (e) {}
+      renderPropagationProfileUi();
+    });
+    propagationProfileSelect.addEventListener('change', () => {
+      try { localStorage.setItem(PROPAGATION_PROFILE_STORAGE_KEY, propagationProfileSelect.value); } catch (e) {}
+      renderPropagationProfileUi();
+    });
+    [
+      propagationRangeInput,
+      propagationSuccessRatioInput,
+      propagationRxSensitivityInput,
+      propagationRssiInflectionInput,
+      propagationShadowingInput,
+      propagationTimeVariationSelect,
+      propagationSeedInput
+    ].forEach(input => {
+      input.addEventListener('input', renderPropagationProfileUi);
+      input.addEventListener('change', renderPropagationProfileUi);
+    });
+    enablePathLossProfile.addEventListener('change', renderPropagationProfileUi);
+    coojaCscFileInput.addEventListener('change', async () => {
+      selectedCoojaCsc = null;
+      const file = coojaCscFileInput.files && coojaCscFileInput.files[0];
+      if (!file) {
+        coojaCscFileStatus.textContent = 'No .csc file selected.';
+        coojaCscFileStatus.style.color = '#555';
+        renderPropagationProfileUi();
+        return;
+      }
+      try {
+        const text = await file.text();
+        const inspection = inspectCoojaCsc(text, file.name);
+        selectedCoojaCsc = { file, text, inspection };
+        const prior = inspection.radioMediumClass || 'none (a LogisticLoss block will be inserted)';
+        coojaCscFileStatus.textContent = `${file.name} selected — current radio medium: ${prior}; motes preserved: ${inspection.moteCount}.`;
+        coojaCscFileStatus.style.color = '#166534';
+      } catch (error) {
+        const details = error instanceof CoojaCscWriteError && error.errors.length
+          ? error.errors.join(' ')
+          : error.message;
+        coojaCscFileStatus.textContent = `Cannot use ${file.name}: ${details}`;
+        coojaCscFileStatus.style.color = '#b91c1c';
+      }
+      renderPropagationProfileUi();
+    });
+
+    function downloadTextArtifact(artifact) {
+      const blob = new Blob([artifact.text], { type: artifact.mimeType });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = artifact.filename;
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 0);
+    }
+
+    writeCoojaCscBtn.addEventListener('click', () => {
+      try {
+        if (!selectedCoojaCsc) throw new CoojaCscWriteError('Select an existing Cooja .csc file first.');
+        const citedProfile = selectedCitedProfile();
+        const source = citedProfileSource(citedProfile);
+        const inputs = readPropagationInputs();
+        const artifact = patchCoojaCsc({
+          filename: selectedCoojaCsc.file.name,
+          text: selectedCoojaCsc.text,
+          randomSeed: inputs.randomSeed,
+          profileLabel: citedProfile.label,
+          profileUrl: source.url,
+          radio: {
+            transmittingRangeM: inputs.maximumRangeM,
+            successRatioTx: inputs.successRatioTx,
+            rxSensitivityDbm: inputs.rxSensitivityDbm,
+            rssiInflectionPointDbm: inputs.rssiInflectionPointDbm,
+            pathLossExponent: citedProfile.n,
+            awgnSigmaDb: inputs.shadowingSigmaDb,
+            enableTimeVariation: inputs.enableTimeVariation
+          }
+        });
+        downloadTextArtifact(artifact);
+        const skinNotice = artifact.removedUdgmVisualizerSkins
+          ? ` Removed ${artifact.removedUdgmVisualizerSkins} incompatible UDGM visualizer skin entry.`
+          : '';
+        propagationMappingStatus.textContent = `${artifact.filename} created. Existing motes, positions, Mobility, scripts, and other plugins were preserved.${skinNotice}`;
+        propagationMappingStatus.style.color = '#166534';
+        propagationMappingStatus.style.borderColor = '#16a34a';
+      } catch (error) {
+        const details = error instanceof CoojaCscWriteError && error.errors.length
+          ? error.errors.join('\n• ')
+          : error.message;
+        alert(`Cannot write Cooja path-loss settings:\n• ${details}`);
+      }
+    });
+
     // Simulator-specific validation and serialization live in simulator-adapters.js.
 
     function showExportCompatibilityWarnings(warnings = []) {
@@ -1797,6 +2190,7 @@
       delete output.dataset.exportFilename;
       delete output.dataset.exportMimeType;
       persistSessionStateDebounced();
+      if (propagationEnvironmentSelect.options.length) renderPropagationProfileUi();
       if (positions.length === 0) {
         output.textContent = '<node_id> <time> <latitude> <longitude>\n\nEdit map or paste rows above, then choose simulator and Convert.\nExample:\n1 0.000000000 41.286700000 36.330000000\n1 1.000000000 41.287000000 36.331000000';
         output.style.color = '#999';
@@ -2098,6 +2492,7 @@
     // Restore a previous session (if any) before the first render, so a page
     // refresh doesn't lose placed nodes.
     const restoredSession = loadPersistedSessionState();
+    initializePropagationProfileUi();
     refreshSimulatorExportUi();
     if (restoredSession) restore(restoredSession);
     else { draw(); updateOutput(); }

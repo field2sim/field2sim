@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-08-23T16:54:08.719Z",
+  "completedAt": "2026-08-23T16:54:10.240Z",
+  "toolchain": {
+    "omnetppRelease": "6.4.0",
+    "omnetppRevision": null,
+    "inetRelease": "4.7.0",
+    "inetRevision": null,
+    "requiredFeatures": [
+      "PhysicalEnvironment",
+      "PhysicalLayerCommon",
+      "PhysicalLayerWirelessCommon"
+    ],
+    "enabledFeatures": [
+      "PhysicalEnvironment",
+      "PhysicalLayerCommon",
+      "PhysicalLayerWirelessCommon"
+    ],
+    "sourceAudit": {
+      "matches": true,
+      "observed": {
+        "FreeSpacePathLoss.ned": {
+          "path": "src/inet/physicallayer/wireless/common/pathloss/FreeSpacePathLoss.ned",
+          "expectedSha256": "bfad0fd2492d76149631e0e1ba0087353836aa6072a5d7c206810e155f8e6807",
+          "actualSha256": "bfad0fd2492d76149631e0e1ba0087353836aa6072a5d7c206810e155f8e6807"
+        },
+        "FreeSpacePathLoss.cc": {
+          "path": "src/inet/physicallayer/wireless/common/pathloss/FreeSpacePathLoss.cc",
+          "expectedSha256": "9dc2d475038a2b141c0011fdb24b6092969d6cd5e180a6982d06d015db0e31ed",
+          "actualSha256": "9dc2d475038a2b141c0011fdb24b6092969d6cd5e180a6982d06d015db0e31ed"
+        },
+        "LogNormalShadowing.ned": {
+          "path": "src/inet/physicallayer/wireless/common/pathloss/LogNormalShadowing.ned",
+          "expectedSha256": "ec8786becd8661b33776eda4ed2c8c55ac444697d532a136afd00f784e4bd4ab",
+          "actualSha256": "ec8786becd8661b33776eda4ed2c8c55ac444697d532a136afd00f784e4bd4ab"
+        },
+        "LogNormalShadowing.cc": {
+          "path": "src/inet/physicallayer/wireless/common/pathloss/LogNormalShadowing.cc",
+          "expectedSha256": "d3859a1e46369029b00f150ea9af585638ce94cb77202e17fa9782e06e8eaa31",
+          "actualSha256": "d3859a1e46369029b00f150ea9af585638ce94cb77202e17fa9782e06e8eaa31"
+        },
+        "TwoRayGroundReflection.ned": {
+          "path": "src/inet/physicallayer/wireless/common/pathloss/TwoRayGroundReflection.ned",
+          "expectedSha256": "2bf4ecfa1ebd6f847e5aeecb67f4f4bad9fc4acd1fc4048baf8baeb04c0b808e",
+          "actualSha256": "2bf4ecfa1ebd6f847e5aeecb67f4f4bad9fc4acd1fc4048baf8baeb04c0b808e"
+        },
+        "TwoRayGroundReflection.cc": {
+          "path": "src/inet/physicallayer/wireless/common/pathloss/TwoRayGroundReflection.cc",
+          "expectedSha256": "8468f3683d6ff1b1ed1983f60640e3ea8613c7c45c2f58fec0b74343cebb8b98",
+          "actualSha256": "8468f3683d6ff1b1ed1983f60640e3ea8613c7c45c2f58fec0b74343cebb8b98"
+        },
+        "PhysicalEnvironment.ned": {
+          "path": "src/inet/environment/common/PhysicalEnvironment.ned",
+          "expectedSha256": "8acebb330ebf2b467682826e4ef875e53cc9b33112b2695bdf1a40226e1ed6e0",
+          "actualSha256": "8acebb330ebf2b467682826e4ef875e53cc9b33112b2695bdf1a40226e1ed6e0"
+        },
+        "PhysicalEnvironment.cc": {
+          "path": "src/inet/environment/common/PhysicalEnvironment.cc",
+          "expectedSha256": "eae0bce77f967de6e4d6c09bb657db28f5c66ef365588e0aab1c3b26d58375df",
+          "actualSha256": "eae0bce77f967de6e4d6c09bb657db28f5c66ef365588e0aab1c3b26d58375df"
+        },
+        "FlatGround.ned": {
+          "path": "src/inet/environment/ground/FlatGround.ned",
+          "expectedSha256": "a3603585c2e82c533b931fcad8e77157dd7a6788dbadc207ed78ef9ace9dc417",
+          "actualSha256": "a3603585c2e82c533b931fcad8e77157dd7a6788dbadc207ed78ef9ace9dc417"
+        },
+        "FlatGround.cc": {
+          "path": "src/inet/environment/ground/FlatGround.cc",
+          "expectedSha256": "9452540fdd8bb87aab680756d1e4788c841a79a4fc83c32a7d4ec000d99f54f2",
+          "actualSha256": "9452540fdd8bb87aab680756d1e4788c841a79a4fc83c32a7d4ec000d99f54f2"
+        }
+      }
+    }
+  },
+  "verifier": {
+    "sourcePath": "integrations/inet/propagation/PropagationParameterVerifier.cc",
+    "sourceSha256": "192c95f2272b175cb4207da665cffcf8746b1542244a8bf36fa944320e9bd4a6",
+    "nedPath": "integrations/inet/propagation/CpxPropagationVerifier.ned",
+    "nedSha256": "da9bcd3bb09b82b985161435432a4ddc0116f5c0be35e9ea4cd585f49e33c94e"
+  },
+  "build": {
+    "makemake": {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false
+    },
+    "make": {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false
+    }
+  },
+  "executions": [
+    {
+      "id": "free-space",
+      "profileId": "free-space-los-baseline",
+      "status": "PASS",
+      "artifact": {
+        "filename": "propagation-free-space-los-baseline-omnetpp.ini",
+        "sha256": "2b243fe92f69f3b4eb0c20adf1f877481fdd0d8085a1ee65d9bede2ffd20f809",
+        "mapping": {
+          "quality": "native",
+          "modelKind": "friis-free-space",
+          "warnings": [],
+          "requirements": []
+        },
+        "referenceVector": [
+          {
+            "distanceM": 1,
+            "meanPathLossDb": 40.0520080561155
+          },
+          {
+            "distanceM": 10,
+            "meanPathLossDb": 60.0520080561155
+          },
+          {
+            "distanceM": 50,
+            "meanPathLossDb": 74.03140814283587
+          },
+          {
+            "distanceM": 100,
+            "meanPathLossDb": 80.0520080561155
+          }
+        ]
+      },
+      "expected": {
+        "type": "inet.physicallayer.wireless.common.pathloss.FreeSpacePathLoss",
+        "alpha": 2,
+        "sigma": null,
+        "systemLossDb": 0,
+        "ground": "NONE"
+      },
+      "observed": {
+        "line": "INET_PROPAGATION_CHECK type=inet.physicallayer.wireless.common.pathloss.FreeSpacePathLoss alpha=2 sigma=NA system_loss_db=0 ground=NONE",
+        "type": "inet.physicallayer.wireless.common.pathloss.FreeSpacePathLoss",
+        "alpha": 2,
+        "sigma": null,
+        "systemLossDb": 0,
+        "ground": "NONE"
+      },
+      "process": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false
+      }
+    },
+    {
+      "id": "agriculture",
+      "profileId": "agriculture-crop-vegetation-24ghz",
+      "status": "PASS",
+      "artifact": {
+        "filename": "propagation-agriculture-crop-vegetation-24ghz-omnetpp.ini",
+        "sha256": "5946019b081e907b169f9ded8fcccb92ddd442ac370715f5ede343995062d2d9",
+        "mapping": {
+          "quality": "native",
+          "modelKind": "log-distance",
+          "warnings": [],
+          "requirements": []
+        },
+        "referenceVector": [
+          {
+            "distanceM": 1,
+            "meanPathLossDb": 40.0520080561155
+          },
+          {
+            "distanceM": 10,
+            "meanPathLossDb": 89.0520080561155
+          },
+          {
+            "distanceM": 50,
+            "meanPathLossDb": 123.30153826858042
+          },
+          {
+            "distanceM": 100,
+            "meanPathLossDb": 138.05200805611548
+          }
+        ]
+      },
+      "expected": {
+        "type": "inet.physicallayer.wireless.common.pathloss.LogNormalShadowing",
+        "alpha": 4.9,
+        "sigma": 0,
+        "systemLossDb": 0,
+        "ground": "NONE"
+      },
+      "observed": {
+        "line": "INET_PROPAGATION_CHECK type=inet.physicallayer.wireless.common.pathloss.LogNormalShadowing alpha=4.9 sigma=0.000000 system_loss_db=0 ground=NONE",
+        "type": "inet.physicallayer.wireless.common.pathloss.LogNormalShadowing",
+        "alpha": 4.9,
+        "sigma": 0,
+        "systemLossDb": 0,
+        "ground": "NONE"
+      },
+      "process": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false
+      }
+    },
+    {
+      "id": "coastal",
+      "profileId": "coastal-over-water-24ghz",
+      "status": "PASS",
+      "artifact": {
+        "filename": "propagation-coastal-over-water-24ghz-omnetpp.ini",
+        "sha256": "30d675e82beb3f612ef1571d50baa0a536d114efb173f9e3ad86f1b9eb337688",
+        "mapping": {
+          "quality": "native",
+          "modelKind": "two-ray-ground",
+          "warnings": [
+            "TwoRayGroundReflection is a family-level approximation and does not include dynamic water-surface fading."
+          ],
+          "requirements": [
+            "Set the corresponding mobility Z coordinates to the entered antenna heights above the FlatGround elevation."
+          ]
+        },
+        "referenceVector": [
+          {
+            "distanceM": 1,
+            "meanPathLossDb": 40.0520080561155
+          },
+          {
+            "distanceM": 10,
+            "meanPathLossDb": 60.0520080561155
+          },
+          {
+            "distanceM": 50,
+            "meanPathLossDb": 74.03140814283587
+          },
+          {
+            "distanceM": 100,
+            "meanPathLossDb": 80.0520080561155
+          }
+        ]
+      },
+      "expected": {
+        "type": "inet.physicallayer.wireless.common.pathloss.TwoRayGroundReflection",
+        "alpha": 2,
+        "sigma": null,
+        "systemLossDb": 0,
+        "ground": "inet.environment.ground.FlatGround"
+      },
+      "observed": {
+        "line": "INET_PROPAGATION_CHECK type=inet.physicallayer.wireless.common.pathloss.TwoRayGroundReflection alpha=2 sigma=NA system_loss_db=0 ground=inet.environment.ground.FlatGround",
+        "type": "inet.physicallayer.wireless.common.pathloss.TwoRayGroundReflection",
+        "alpha": 2,
+        "sigma": null,
+        "systemLossDb": 0,
+        "ground": "inet.environment.ground.FlatGround"
+      },
+      "process": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false
+      }
+    }
+  ]
+}

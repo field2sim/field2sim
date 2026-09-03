@@ -44,6 +44,18 @@ The tool connects field-oriented deployment planning with simulator setup. A use
 
 The adapter warnings shown by the application are part of the supported behavior. Format-level validation does not imply arbitrary-version simulator compatibility.
 
+### Provenance-aware propagation initialization
+
+The propagation layer is an initialization and documentation aid, not an automatic coverage predictor. Its simulator-neutral catalog represents five deployment-environment families plus a free-space baseline through six cited profile definitions: urban open-street LoS, urban street-canyon NLoS, 2.4-GHz agriculture, forest/vegetation, 2.4-GHz coastal over-water, and Friis free space. Every profile retains its source, frequency applicability, required context, caveats, parameter origins, and BibTeX provenance.
+
+The shared adapters assess Cooja, ns-2, ns-3, and INET mappings before serialization. Every result is labelled `native`, `parameterized-approximation`, or `unsupported`. An unsupported result is deliberate: the tool does not invent a coefficient when a model requires rooftop geometry, foliage depth, calibration data, or other context that was not supplied. Geometry/mobility artifacts and propagation artifacts remain separate so that one geographic scenario can be studied under controlled radio assumptions without implying cross-simulator equivalence.
+
+The current browser's lower propagation workflow specializes this approach for Cooja. It exposes 18 cited condition-level choices across urban, agriculture, forest/plantation, and free-space reference groups, together with the LogisticLoss fields `transmitting_range`, `success_ratio_tx`, `rx_sensitivity`, `rssi_inflection_point`, `path_loss_exponent`, `awgn_sigma`, `enable_time_variation`, and the simulation-level `randomseed`.
+
+The browser does not create a new simulation or reposition motes. It accepts an existing researcher-created `.csc`, replaces its single `<radiomedium>` block with the configured LogisticLoss block, and updates or inserts the simulation-level `randomseed`. Mote types, firmware references, node positions, Mobility and ScriptRunner configurations, and unrelated plugins are preserved; an incompatible `UDGMVisualizerSkin` entry is removed when present. Browser permissions require the result to be downloaded as `*-pathloss.csc` rather than silently overwriting the selected file.
+
+In Cooja LogisticLoss, `transmitting_range` is not a simple antenna range: it is both the strict candidate-receiver cutoff (`distance < transmitting_range`) and the distance at which mean RSSI is anchored to `rx_sensitivity`. Source-reported spatial shadowing is also not automatically equivalent to Cooja's independent per-reception AWGN term. The interface therefore presents these values as inspectable starting assumptions, not as site calibration or guaranteed packet reception.
+
 ## Quick start
 
 1. Open https://cooja-positioner-project.github.io/ or open `index.html` locally in a modern browser.
@@ -58,6 +70,7 @@ The adapter warnings shown by the application are part of the supported behavior
 
 6. Select the target simulator and press **Convert**.
 7. Review compatibility warnings, then use **Copy** or **Save export**.
+8. Optionally enable the lower Cooja propagation panel, select a cited condition, review the mapping and warnings, choose an existing researcher-created `.csc`, and download the preserved simulation with its radio medium rewritten as LogisticLoss.
 
 Polygon drawing is completed with **Enter** or a double-click and cancelled with **Esc**.
 
@@ -89,12 +102,23 @@ Editor node IDs are one-based. The tested Cooja Mobility plugin selects motes by
 
 The deployment contained 100 stationary unknown nodes and one mobile anchor. The experiment observer excluded mote ID 100, so packet-derived summaries use the 99 retained stationary-node traces and are not extrapolated to 100. The packet traces depend on the configured Cooja radio and scenario model; they are reproducibility material, not universal wireless measurements or a localization benchmark.
 
+## Propagation validation and Cooja characterization
+
+Thirteen pinned target configurations were loaded successfully: three Cooja LogisticLoss proxy cases, three ns-2.35 propagation classes, four ns-3.47 propagation classes, and three OMNeT++ 6.4/INET 4.7 path-loss configurations. This verifies configuration loading and model instantiation in those releases; it does not establish field accuracy or numerical equivalence between simulators.
+
+A separate deterministic Zolertia Z1 characterization executed 216 Cooja scenarios: 18 condition-level profiles × two RX anchors (`-95` and `-100` dBm) × six distances (10–60 m). All cases completed with 9,504 transmissions and 3,754 receptions. Of the 108 paired RX-anchor comparisons, 107 produced identical PRR and conditional RSSI. The only difference—Forest Guava at 20 m—was caused by LogisticLoss's strict candidate cutoff. Recomputing `transmitting_range` for each RX anchor cancels the anchor change in the mean-RSSI expression, so that design is not an independent receiver-sensitivity experiment.
+
+The sweep uses one deterministic seed and includes source-domain extrapolations. It is reported as simulator-model characterization, not inferential statistics, hardware-PER calibration, or a universal distance–RSSI law.
+
 ## Validation and tests
 
 The repository separates the coordinate core from simulator adapters:
 
 - `coordinate-core.js` — WGS84/ECEF/ENU transformations.
 - `simulator-adapters.js` — target-specific serialization, parsing, guards, and warnings.
+- `propagation-profiles.js` — cited environment-profile catalog, applicability checks, and deterministic JSON artifacts.
+- `propagation-adapters.js` — numerical intermediate representation, reference equations, mapping assessment, and four target serializers.
+- `cooja-csc-pathloss-writer.js` — structure-preserving Cooja `.csc` inspection and LogisticLoss patching.
 - `tests/` — coordinate, adapter, fixture, and integration runners.
 - `integrations/` — pinned fixtures, verifier sources, toolchain metadata, and machine-readable reports.
 
@@ -103,6 +127,9 @@ Run dependency-free checks with Node.js:
 ```bash
 node tests/coordinate-core.test.js
 node tests/simulator-adapters.test.js
+node tests/propagation-profiles.test.js
+node tests/propagation-adapters.test.js
+node tests/cooja-csc-pathloss-writer.test.js
 node tests/cooja-integration-fixtures.test.js
 node tests/ns2-integration-fixtures.test.js
 node tests/ns3-integration-fixtures.test.js
@@ -112,12 +139,24 @@ node tests/l-shaped-geometry-validation.test.js
 
 The real simulator runners require separately installed, pinned toolchains. See [`tests/SIMULATOR_INTEGRATION.md`](tests/SIMULATOR_INTEGRATION.md) and the target-specific README files under [`integrations/`](integrations/).
 
+The pinned INET propagation runner separately loads generated FreeSpace, Agriculture, and Coastal `.ini` fragments and checks the instantiated classes and parameters. Run it with:
+
+```bash
+OMNETPP_ROOT=/path/to/omnetpp-6.4.0 INET_ROOT=/path/to/inet-4.7.0 \
+  node tests/run-inet-propagation-integration.js --require-toolchain
+```
+
+Its machine-readable evidence is `integrations/results/inet-propagation-report.json`; the equations and cross-simulator evidence boundary are documented in [`docs/PROPAGATION_ADAPTERS.md`](docs/PROPAGATION_ADAPTERS.md).
+
 ## Repository layout
 
 ```text
 index.html                         Browser application
 coordinate-core.js                 Coordinate transformation core
 simulator-adapters.js              Simulator adapter registry
+propagation-profiles.js            Cited propagation-profile catalog
+propagation-adapters.js             Numerical IR and target propagation serializers
+cooja-csc-pathloss-writer.js        Structure-preserving Cooja CSC patcher
 keyboard_shortcuts.html            Standalone shortcut reference
 vendor/leaflet/                    Locally bundled Leaflet (no CDN dependency)
 tests/                             Automated checks and runners
@@ -138,14 +177,14 @@ The currently committed demonstration video and screenshots show an earlier inte
 
 The final author list, article title, venue, DOI, and publication year will be added after peer review. For the anonymous software and reproducibility artifact, use the following interim citation:
 
-> Cooja-Positioner Project, “Cooja-Positioner: A universal web-based topology synthesizer for geo-grounded WSN simulations in Cooja, ns-2, ns-3, and OMNeT++,” software and reproducibility artifact, 2026. [Online]. Available: https://github.com/cooja-positioner-project/cooja-positioner. Live application: https://cooja-positioner-project.github.io/
+> Cooja-Positioner Project, “Cooja-Positioner: A provenance-aware web-based scenario synthesizer for geo-grounded WSN simulations in Cooja, ns-2, ns-3, and OMNeT++,” software and reproducibility artifact, 2026. [Online]. Available: https://github.com/cooja-positioner-project/cooja-positioner. Live application: https://cooja-positioner-project.github.io/
 
 BibTeX:
 
 ```bibtex
 @misc{cooja_positioner_2026,
   author       = {{Cooja-Positioner Project}},
-  title        = {Cooja-Positioner: A Universal Web-Based Topology Synthesizer for Geo-Grounded WSN Simulations in Cooja, ns-2, ns-3, and OMNeT++},
+  title        = {Cooja-Positioner: A Provenance-Aware Web-Based Scenario Synthesizer for Geo-Grounded WSN Simulations in Cooja, ns-2, ns-3, and OMNeT++},
   year         = {2026},
   howpublished = {\url{https://github.com/cooja-positioner-project/cooja-positioner}},
   note         = {Software and reproducibility artifact. Live application: \url{https://cooja-positioner-project.github.io/}}

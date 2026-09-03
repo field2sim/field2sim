@@ -37,3 +37,27 @@ This result supports parser-level interoperability for planar static scenarios
 and planar mobile scenarios in the pinned releases. It does not establish 3-D
 BonnMotion input, compatibility with arbitrary releases, radio/channel
 behavior, or protocol performance.
+
+## Propagation configuration execution
+
+A separate runner validates the propagation serializers rather than mobility:
+
+```bash
+OMNETPP_ROOT=/path/to/omnetpp-6.4.0 \
+INET_ROOT=/path/to/inet-4.7.0 \
+node tests/run-inet-propagation-integration.js --require-toolchain
+```
+
+It exact-hashes the tagged NED and C++ contracts for `FreeSpacePathLoss`,
+`LogNormalShadowing`, `TwoRayGroundReflection`, `PhysicalEnvironment`, and
+`FlatGround`; compiles a temporary parameter verifier; generates the three
+configuration fragments from the current adapter; and loads them through
+OMNeT++ `Cmdenv`. The verifier reads the instantiated NED type and its `alpha`,
+`sigma`, `systemLoss`, and ground type. The machine-readable result is
+`../results/inet-propagation-report.json`.
+
+All three configurations pass in OMNeT++ 6.4.0/INET 4.7.0. This establishes
+configuration loading and parameter transfer for those model families. It
+does not establish agreement with a physical environment, identical random
+processes in other simulators, arbitrary INET versions, or packet-level radio
+performance.
