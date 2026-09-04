@@ -1,5 +1,5 @@
 /*
- * Parser-execution test for Cooja-Positioner's INET adapter.
+ * Parser-execution test for Field2Sim's INET adapter.
  *
  * The test reads positions through INET's IMobility interface after the exact
  * adapter fixture has been loaded by BonnMotionMobility. It does not parse the

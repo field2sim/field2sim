@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Cooja-Positioner — Geo-Scenario Editor and Simulator Exporter</title>
+  <title>Field2Sim — Field Context to Simulator-Ready Scenarios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Field2Sim converts geographic deployment plans and cited propagation context into simulator-ready WSN and IoT scenario artifacts." />
   <!-- Leaflet (vendored locally in vendor/leaflet/ — see vendor/leaflet/README.md) -->
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
   <script src="vendor/leaflet/leaflet.js"></script>
@@ -20,6 +21,9 @@
     canvas#grid { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
 
     #sidebar { width: 340px; padding: 10px; background: #fff; border-left: 1px solid #ccc; display: flex; flex-direction: column; gap: 10px; min-height: 0; overflow-y: scroll; height: 100vh; }
+    .app-brand { padding-bottom: 9px; border-bottom: 1px solid #dbe3ec; }
+    .app-brand strong { display: block; color: #0b1f33; font-size: 20px; letter-spacing: -0.2px; }
+    .app-brand span { display: block; margin-top: 3px; color: #5b677a; font-size: 11px; line-height: 1.35; }
     #controls label { display: inline-block; width: 110px; }
     #customOriginControls { margin-top: 8px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; background: #fafafa; }
     #customOriginControls label { width: 95px; }
@@ -304,6 +308,10 @@
     </div>
 
     <div id="sidebar">
+      <div class="app-brand">
+        <strong>Field2Sim</strong>
+        <span>From field context to reproducible network-simulation scenarios.</span>
+      </div>
       <div id="searchContainer">
         <label for="searchInput"><b>Search Location</b></label>
         <div style="position: relative;">
@@ -653,11 +661,11 @@
       label: '#111'
     };
 
-    const coordinateCore = window.CoojaPositionerCoordinateCore;
-    const simulatorAdapterCore = window.CoojaPositionerSimulatorAdapters;
-    const propagationProfileCore = window.CoojaPositionerPropagationProfiles;
-    const propagationAdapterCore = window.CoojaPositionerPropagationAdapters;
-    const coojaCscPathLossWriterCore = window.CoojaPositionerCscPathLossWriter;
+    const coordinateCore = window.Field2SimCoordinateCore;
+    const simulatorAdapterCore = window.Field2SimSimulatorAdapters;
+    const propagationProfileCore = window.Field2SimPropagationProfiles;
+    const propagationAdapterCore = window.Field2SimPropagationAdapters;
+    const coojaCscPathLossWriterCore = window.Field2SimCscPathLossWriter;
     if (!coordinateCore) throw new Error('coordinate-core.js could not be loaded');
     if (!simulatorAdapterCore) throw new Error('simulator-adapters.js could not be loaded');
     if (!propagationProfileCore) throw new Error('propagation-profiles.js could not be loaded');

@@ -74,7 +74,7 @@ function executeScenario(scenario) {
   const relativeTracePath = path.relative(root, scenario.tracePath);
   const command = [
     'run',
-    `cooja-positioner-ns3 --traceFile=${scenario.tracePath} --scenario=${scenario.id} --tolerance=${tolerance}`
+    `field2sim-ns3 --traceFile=${scenario.tracePath} --scenario=${scenario.id} --tolerance=${tolerance}`
   ];
   const result = execute(command, 120000);
   const output = `${result.stdout || ''}\n${result.stderr || ''}`;
@@ -93,7 +93,7 @@ function executeScenario(scenario) {
   return {
     scenario: scenario.id,
     status: passed ? 'PASS' : 'FAIL',
-    command: `./ns3 run "cooja-positioner-ns3 --traceFile=<repository>/${relativeTracePath} --scenario=${scenario.id} --tolerance=${tolerance}"`,
+    command: `./ns3 run "field2sim-ns3 --traceFile=<repository>/${relativeTracePath} --scenario=${scenario.id} --tolerance=${tolerance}"`,
     trace: {
       path: relativeTracePath,
       sha256: sha256(scenario.tracePath)
@@ -120,7 +120,7 @@ if (!ns3Root) {
   const wrapperPath = path.join(ns3Root, 'ns3');
   const versionPath = path.join(ns3Root, 'VERSION');
   const scratchDir = path.join(ns3Root, 'scratch');
-  const scratchProgramPath = path.join(scratchDir, 'cooja-positioner-ns3.cc');
+  const scratchProgramPath = path.join(scratchDir, 'field2sim-ns3.cc');
 
   if (!fs.existsSync(wrapperPath) || !fs.existsSync(versionPath) || !fs.existsSync(scratchDir)) {
     finish('SKIP', 'NS3_ROOT is not an ns-3 source tree.', requireToolchain ? 2 : 0);
@@ -139,7 +139,7 @@ if (!ns3Root) {
         '--enable-modules=core;network;mobility'
       ]);
       const build = configure.status === 0
-        ? execute(['build', 'cooja-positioner-ns3'])
+        ? execute(['build', 'field2sim-ns3'])
         : { status: null, signal: null, error: null, stdout: '', stderr: '' };
       const executions = build.status === 0 ? scenarios.map(executeScenario) : [];
       const passed =
@@ -169,7 +169,7 @@ if (!ns3Root) {
         build: {
           configureCommand: './ns3 configure --build-profile=optimized --disable-examples --disable-tests --enable-modules="core;network;mobility"',
           configure: processSummary(configure),
-          buildCommand: './ns3 build cooja-positioner-ns3',
+          buildCommand: './ns3 build field2sim-ns3',
           build: processSummary(build),
           diagnosticOutput: passed
             ? undefined

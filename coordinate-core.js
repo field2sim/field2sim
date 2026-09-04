@@ -1,7 +1,7 @@
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api;
-  if (root) root.CoojaPositionerCoordinateCore = api;
+  if (root) root.Field2SimCoordinateCore = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
 

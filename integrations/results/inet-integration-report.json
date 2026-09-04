@@ -21,7 +21,7 @@
     "toleranceMeters": 0.000001
   },
   "build": {
-    "makemakeCommand": "opp_makemake --make-so -f -o cooja_positioner_inet -I<inet>/src -L<inet>/src -lINET",
+    "makemakeCommand": "opp_makemake --make-so -f -o field2sim_inet -I<inet>/src -L<inet>/src -lINET",
     "makemake": {
       "exitCode": 0,
       "signal": null,

@@ -1,5 +1,5 @@
 /*
- * Parser-execution test for Cooja-Positioner's ns-3 adapter.
+ * Parser-execution test for Field2Sim's ns-3 adapter.
  *
  * This program deliberately checks MobilityModel state after loading the
  * adapter artifact through ns3::Ns2MobilityHelper. It does not re-parse the

@@ -206,13 +206,13 @@ if (!omnetppRoot || !inetRoot) {
     if (!toolchainMatches) {
       finish('FAIL', `Toolchain mismatch: ${JSON.stringify(actual)}.`, 1);
     } else {
-      const buildDir = fs.mkdtempSync(path.join(os.tmpdir(), 'cooja-positioner-inet-verifier-'));
+      const buildDir = fs.mkdtempSync(path.join(os.tmpdir(), 'field2sim-inet-verifier-'));
       fs.copyFileSync(verifierSource, path.join(buildDir, 'PositionVerifier.cc'));
       const startedAt = new Date().toISOString();
       const makemake = execute(path.join(omnetppRoot, 'bin', 'opp_makemake'), [
         '--make-so',
         '-f',
-        '-o', 'cooja_positioner_inet',
+        '-o', 'field2sim_inet',
         `-I${path.join(inetRoot, 'src')}`,
         `-L${path.join(inetRoot, 'src')}`,
         '-lINET'
@@ -220,7 +220,7 @@ if (!omnetppRoot || !inetRoot) {
       const build = makemake.status === 0
         ? execute('make', ['-j4', 'MODE=release'], { cwd: buildDir, timeout: 300000 })
         : { status: null, signal: null, error: null, stdout: '', stderr: '' };
-      const verifierLibrary = path.join(buildDir, 'cooja_positioner_inet');
+      const verifierLibrary = path.join(buildDir, 'field2sim_inet');
       const executions = build.status === 0
         ? scenarios.map(scenario => executeScenario(scenario, verifierLibrary, buildDir))
         : [];
@@ -249,7 +249,7 @@ if (!omnetppRoot || !inetRoot) {
           toleranceMeters: tolerance
         },
         build: {
-          makemakeCommand: 'opp_makemake --make-so -f -o cooja_positioner_inet -I<inet>/src -L<inet>/src -lINET',
+          makemakeCommand: 'opp_makemake --make-so -f -o field2sim_inet -I<inet>/src -L<inet>/src -lINET',
           makemake: processSummary(makemake),
           buildCommand: 'make -j4 MODE=release',
           build: processSummary(build),

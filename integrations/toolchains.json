@@ -21,7 +21,7 @@
     "archiveUrl": "https://www.nsnam.org/release/ns-3.47.tar.bz2",
     "archiveSha1": "897c3f2db2c6de6a8291e46b3020dbeb1af75269",
     "requiredParser": "ns3::Ns2MobilityHelper",
-    "executionProgram": "integrations/ns3/cooja-positioner-ns3.cc"
+    "executionProgram": "integrations/ns3/field2sim-ns3.cc"
   },
   "ns2": {
     "release": "2.35+dfsg",

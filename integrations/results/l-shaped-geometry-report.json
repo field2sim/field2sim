@@ -5,7 +5,7 @@
   "fixture": "integrations/scenarios/l-shaped-image-registration.json",
   "sources": {
     "editorImage": {
-      "path": "media/L-shaped-cooja-positioner.png",
+      "path": "media/L-shaped-field2sim.png",
       "sha256": "45c21b940d8caaa02230420557f3cd0de467efa8378ac8a0414dd73f6658f8bc",
       "widthPixels": 848,
       "heightPixels": 601

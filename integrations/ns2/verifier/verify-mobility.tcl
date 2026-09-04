@@ -1,4 +1,4 @@
-# Parser-execution verifier for Cooja-Positioner's ns-2 adapter, run against a
+# Parser-execution verifier for Field2Sim's ns-2 adapter, run against a
 # real /usr/bin/ns (CMU wireless MobileNode model). It does not re-parse the
 # Tcl trace itself: it sources the adapter artifact exactly as any ns-2 user
 # script would, then reads back MobileNode's own X_/Y_/Z_ state.

@@ -47,7 +47,7 @@ assert.deepEqual(
 );
 
 const agricultureIr = buildPropagationIr('agriculture-crop-vegetation-24ghz', base);
-assert.equal(agricultureIr.schema, 'org.cooja-positioner.propagation-ir');
+assert.equal(agricultureIr.schema, 'org.field2sim.propagation-ir');
 assert.equal(agricultureIr.primaryModel.kind, 'log-distance');
 assert.equal(agricultureIr.primaryModel.pathLossExponent, 4.9);
 assert.equal(agricultureIr.primaryModel.parameterOrigin, 'cited-measurement-condition');

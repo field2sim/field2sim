@@ -5,7 +5,7 @@ unavailable evidence before the IEEE Access submission.
 
 ## Setup-time and user-effort claim
 
-The statement that Cooja-Positioner reduces setup time by a factor of 13 is
+The statement that Field2Sim reduces setup time by a factor of 13 is
 not supported by an executed user study in the supplied materials. The only
 source is `softwarex_feedback.txt`, which explicitly introduces a study with
 ten graduate researchers as a study that *could be designed* and labels the

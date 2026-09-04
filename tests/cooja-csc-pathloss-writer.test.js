@@ -90,11 +90,11 @@ assert.match(artifact.text, /<pos x="12\.5" y="-4\.25" \/>/);
 assert.match(artifact.text, /<positions>\[CONFIG_DIR\]\/positions\.dat<\/positions>/);
 assert.match(artifact.text, /IDVisualizerSkin/);
 assert.equal((artifact.text.match(/<radiomedium>/g) || []).length, 1);
-assert.equal((artifact.text.match(/Cooja-Positioner literature-informed profile/g) || []).length, 1);
+assert.equal((artifact.text.match(/Field2Sim literature-informed profile/g) || []).length, 1);
 
 const patchedAgain = patchCoojaCsc({ ...input, text: artifact.text, filename: artifact.filename });
 assert.equal((patchedAgain.text.match(/<radiomedium>/g) || []).length, 1);
-assert.equal((patchedAgain.text.match(/Cooja-Positioner literature-informed profile/g) || []).length, 1);
+assert.equal((patchedAgain.text.match(/Field2Sim literature-informed profile/g) || []).length, 1);
 assert.match(patchedAgain.text, /<pos x="12\.5" y="-4\.25" \/>/);
 
 const withoutSeedOrRadio = `<simconf><simulation>

@@ -10,7 +10,7 @@
     "requiredParser": "ns3::Ns2MobilityHelper"
   },
   "verifier": {
-    "path": "integrations/ns3/cooja-positioner-ns3.cc",
+    "path": "integrations/ns3/field2sim-ns3.cc",
     "sha256": "15fac2cc2b9cba875aedd4cd566160685f79a4105604701b38a3b0e6f41228dd",
     "toleranceMeters": 0.000001
   },
@@ -21,7 +21,7 @@
       "signal": null,
       "timedOut": false
     },
-    "buildCommand": "./ns3 build cooja-positioner-ns3",
+    "buildCommand": "./ns3 build field2sim-ns3",
     "build": {
       "exitCode": 0,
       "signal": null,
@@ -36,7 +36,7 @@
       {
         "scenario": "mobile",
         "status": "PASS",
-        "command": "./ns3 run \"cooja-positioner-ns3 --traceFile=<repository>/integrations/ns3/mobile/mobility-ns3.tcl --scenario=mobile --tolerance=0.000001\"",
+        "command": "./ns3 run \"field2sim-ns3 --traceFile=<repository>/integrations/ns3/mobile/mobility-ns3.tcl --scenario=mobile --tolerance=0.000001\"",
         "trace": {
           "path": "integrations/ns3/mobile/mobility-ns3.tcl",
           "sha256": "5d4274d8da627e357dd4ab80b1e0f6e24c7c284aa517c1c786873052d631b7cd"
@@ -162,7 +162,7 @@
       {
         "scenario": "static",
         "status": "PASS",
-        "command": "./ns3 run \"cooja-positioner-ns3 --traceFile=<repository>/integrations/ns3/static/mobility-ns3.tcl --scenario=static --tolerance=0.000001\"",
+        "command": "./ns3 run \"field2sim-ns3 --traceFile=<repository>/integrations/ns3/static/mobility-ns3.tcl --scenario=static --tolerance=0.000001\"",
         "trace": {
           "path": "integrations/ns3/static/mobility-ns3.tcl",
           "sha256": "266914b645a25411e5949ecbf384d1633e0f35df61659e2ac05c46340c8a75d9"

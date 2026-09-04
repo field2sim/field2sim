@@ -2,7 +2,7 @@
 
 ## Scope and evidence boundary
 
-The environment selector is a cited initialization aid, not an automatic site-survey system. A label such as *Urban* or *Forest* identifies a relevant model family and the context that must be collected; it does not uniquely determine path loss. Cooja-Positioner therefore keeps two artifacts separate:
+The environment selector is a cited initialization aid, not an automatic site-survey system. A label such as *Urban* or *Forest* identifies a relevant model family and the context that must be collected; it does not uniquely determine path loss. Field2Sim therefore keeps two artifacts separate:
 
 1. `propagation-profile-<profile>.json` records the cited source, applicability, user inputs, caveats, and BibTeX.
 2. `propagation-<profile>-<target>.<extension>` records one target-specific configuration and an explicit fidelity label: `native`, `parameterized-approximation`, or `unsupported`.

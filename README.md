@@ -1,8 +1,10 @@
-# Cooja Positioner
+# Field2Sim
 
-Cooja Positioner is a client-side, browser-based editor for authoring geographically grounded WSN and IoT scenarios. It preserves WGS84 positions, node identifiers, waypoint timing, altitude, and the local-origin policy, then exports simulator-specific position or mobility artifacts for Cooja, ns-2, ns-3, and INET/OMNeT++.
+> From field context to reproducible network-simulation scenarios.
 
-**Online application:** https://cooja-positioner-project.github.io/
+Field2Sim is a client-side, browser-based editor that translates field context into simulator-ready WSN and IoT scenario artifacts. Here, *field context* means deployment-relevant geographic information and user-supplied or citation-backed propagation assumptions; it does not imply automated site surveying or channel-model inference. Field2Sim preserves WGS84 positions, node identifiers, waypoint timing, altitude, and the local-origin policy, then exports simulator-specific position, mobility, and propagation artifacts for Cooja, ns-2, ns-3, and INET/OMNeT++.
+
+**Online application:** https://field2sim.github.io/
 
 No application server is required. Leaflet, the map rendering library, is bundled locally and does not require network access. Map tiles and place search currently use external OpenStreetMap and Nominatim services, so those two functions require network access.
 
@@ -58,7 +60,7 @@ In Cooja LogisticLoss, `transmitting_range` is not a simple antenna range: it is
 
 ## Quick start
 
-1. Open https://cooja-positioner-project.github.io/ or open `index.html` locally in a modern browser.
+1. Open https://field2sim.github.io/ or open `index.html` locally in a modern browser.
 2. Search for the target area and choose **Mobile** or **Static**.
 3. Select **Point Mode** for manual placement or **Polygon Mode** for generated deployment/scan paths.
 4. Choose the **XY Origin** policy.
@@ -170,24 +172,24 @@ media/                             Images used by validation/documentation
 
 The currently committed demonstration video and screenshots show an earlier interface revision. They remain available for historical orientation, but do not yet demonstrate polygon deployment, custom-origin selection, or all simulator exports. A new video will replace them.
 
-- [Earlier-version demonstration video](Cooja%20positioner_%20An%20Interactive%20Web-Based%20Tool%20for%20Node%20Positioning%20in%20the%20Cooja%20Simulator.mp4)
+- [Earlier-version demonstration video](field2sim-legacy-cooja-demonstration.mp4)
 - [Earlier main-interface screenshot](preview.png)
 
 ## Citation
 
 The final author list, article title, venue, DOI, and publication year will be added after peer review. For the anonymous software and reproducibility artifact, use the following interim citation:
 
-> Cooja-Positioner Project, “Cooja-Positioner: A provenance-aware web-based scenario synthesizer for geo-grounded WSN simulations in Cooja, ns-2, ns-3, and OMNeT++,” software and reproducibility artifact, 2026. [Online]. Available: https://github.com/cooja-positioner-project/cooja-positioner. Live application: https://cooja-positioner-project.github.io/
+> Field2Sim Project, “Field2Sim: A provenance-aware web-based scenario synthesizer for geo-grounded WSN simulations,” software and reproducibility artifact, 2026. [Online]. Available: https://github.com/field2sim/field2sim. Live application: https://field2sim.github.io/
 
 BibTeX:
 
 ```bibtex
-@misc{cooja_positioner_2026,
-  author       = {{Cooja-Positioner Project}},
-  title        = {Cooja-Positioner: A Provenance-Aware Web-Based Scenario Synthesizer for Geo-Grounded WSN Simulations in Cooja, ns-2, ns-3, and OMNeT++},
+@misc{field2sim_2026,
+  author       = {{Field2Sim Project}},
+  title        = {Field2Sim: A Provenance-Aware Web-Based Scenario Synthesizer for Geo-Grounded WSN Simulations},
   year         = {2026},
-  howpublished = {\url{https://github.com/cooja-positioner-project/cooja-positioner}},
-  note         = {Software and reproducibility artifact. Live application: \url{https://cooja-positioner-project.github.io/}}
+  howpublished = {\url{https://github.com/field2sim/field2sim}},
+  note         = {Software and reproducibility artifact. Live application: \url{https://field2sim.github.io/}}
 }
 ```
 

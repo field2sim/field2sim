@@ -1,7 +1,7 @@
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api;
-  if (root) root.CoojaPositionerPropagationProfiles = api;
+  if (root) root.Field2SimPropagationProfiles = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
 
@@ -226,7 +226,7 @@
       throw new PropagationProfileError('Propagation profile input validation failed.', validation.errors);
     }
     const payload = {
-      schema: 'org.cooja-positioner.propagation-profile',
+      schema: 'org.field2sim.propagation-profile',
       schemaVersion: SCHEMA_VERSION,
       status: 'citation-backed-initialization-profile',
       profile: clone(profile),

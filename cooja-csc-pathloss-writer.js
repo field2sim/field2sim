@@ -1,7 +1,7 @@
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api;
-  if (root) root.CoojaPositionerCscPathLossWriter = api;
+  if (root) root.Field2SimCscPathLossWriter = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
 
@@ -92,7 +92,7 @@
     return [
       `${indent}<radiomedium>`,
       `${child}org.contikios.cooja.radiomediums.LogisticLoss`,
-      `${child}<!-- Cooja-Positioner literature-informed profile: ${provenance}. -->`,
+      `${child}<!-- Field2Sim literature-informed profile: ${provenance}. -->`,
       `${child}<transmitting_range>${formatNumber(radio.transmittingRangeM)}</transmitting_range>`,
       `${child}<success_ratio_tx>${formatNumber(radio.successRatioTx)}</success_ratio_tx>`,
       `${child}<rx_sensitivity>${formatNumber(radio.rxSensitivityDbm)}</rx_sensitivity>`,
