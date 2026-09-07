@@ -1,0 +1,76 @@
+const {chromium}=require('playwright');
+const fs=require('fs');const assert=require('assert/strict');
+(async()=>{const browser=await chromium.launch({headless:true,...(process.env.CHROME_BIN ? {executablePath:process.env.CHROME_BIN} : {})});try{const page=await browser.newPage();await page.route(/^https?:/,r=>r.abort());await page.goto(require('url').pathToFileURL(require('path').join(__dirname,'../index.html')).href);
+const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('dialog',async d=>{errors.push(d.message());console.log('DIALOG',d.message());await d.dismiss()});
+await page.check('#enablePathLossProfile');
+assert.equal(await page.inputValue('#propagationRangeInput'),await page.inputValue('#circleRadiusSelect'));
+await page.selectOption('#circleRadiusSelect','30');assert.equal(await page.inputValue('#propagationRangeInput'),'30');assert.equal(await page.inputValue('#propagationInterferenceRangeInput'),'60');
+await page.fill('#propagationRangeInput','35');assert.equal(await page.inputValue('#propagationInterferenceRangeInput'),'70');
+await page.fill('#propagationInterferenceRangeInput','90');assert.equal(await page.inputValue('#propagationRangeInput'),'35');
+await page.selectOption('#circleRadiusSelect','custom');await page.fill('#circleRadiusCustomInput','12.5');assert.equal(await page.inputValue('#propagationRangeInput'),'12.5');assert.equal(await page.inputValue('#propagationInterferenceRangeInput'),'25');
+await page.uncheck('#enablePathLossProfile');
+console.log('Range defaults: preset/custom Circle Radius, TX edit, independent INT edit PASS');
+const original=`<simconf><simulation><randomseed>7</randomseed><radiomedium>org.contikios.cooja.radiomediums.UDGM</radiomedium><motetype>example.Z1MoteType${[7,2,1].map(id => `<mote><interface_config>org.contikios.cooja.interfaces.Position<pos x='3' y='4'/></interface_config><interface_config>org.contikios.cooja.mspmote.interfaces.MspMoteID<id>${id}</id></interface_config></mote>`).join('')}</motetype></simulation><plugin>org.contikios.cooja.plugins.Mobility<plugin_config><positions>positions.dat</positions></plugin_config></plugin></simconf>`;
+const report=await page.evaluate(original=>{
+ const api=Field2SimCscPositionWriter; const check=(b,m)=>{if(!b)throw Error(m)};
+ const pts=api.createStaticArtifact([{nodeId:7,x:123,y:45,z:6},{nodeId:1,x:50,y:9,z:0},{nodeId:999,x:0,y:0,z:0}]).positions;
+ const r=api.patchPositions(original,pts);check(r.matched.join()==='7,1','actual IDs');check(r.missing.join()==='999','missing');
+ const parse=t=>new DOMParser().parseFromString(t,'application/xml');const before=parse(original),after=parse(r.text);
+ const node=(d,id)=>Array.from(d.querySelectorAll('simulation mote')).find(m=>m.querySelector('id')?.textContent.trim()===String(id));
+ check(node(after,7).querySelector('pos').getAttribute('y')==='-45','Y sign');check(node(after,7).querySelector('pos').getAttribute('z')==='6','Z');
+ check(node(before,2).isEqualNode(node(after,2)),'untouched node');check(before.querySelector('radiomedium').isEqualNode(after.querySelector('radiomedium')),'radio off');
+ check(before.querySelector('plugin').isEqualNode(after.querySelector('plugin')),'plugins');
+ const fails=(text,points)=>{try{api.patchPositions(text,points)}catch{return}throw Error('should reject')};
+ fails(original,[{nodeId:999,x:0,y:0,z:0}]);fails('<broken>',pts);
+ fails(original,[pts[0],pts[0]]);
+ const old='<simconf><simulation><mote><interface_config>org.contikios.cooja.contikimote.interfaces.ContikiMoteID<id>7</id></interface_config><interface_config>org.contikios.cooja.interfaces.Position<x>1</x><y>2</y><z>3</z></interface_config></mote></simulation></simconf>';
+ check(parse(api.patchPositions(old,[pts[0]]).text).querySelector('y').textContent==='-45','old format');
+ const duplicate=old.replace('</simulation>',old.match(/<mote>[\s\S]*<\/mote>/)[0]+'</simulation>');fails(duplicate,[pts[0]]);
+ return {matched:r.matched,missing:r.missing,hasMobility:r.hasMobility};
+},original);console.log('Writer checks',report);
+await page.evaluate(()=>{nodeGroups=[{id:'test',type:'fixed',name:'Test',points:[]}];activeNodeGroupId='test';updateScenario('fixed')});await page.fill('#latlngInput','7 0 41.2867 36.33\n1 0 41.287 36.331');await page.click('#convertBtn');assert.equal(await page.locator('#output').getAttribute('data-static-csc'),'true');
+await page.evaluate(original=>{window.savedText=null;window.showOpenFilePicker=async()=>[{getFile:async()=>new File([original],'test.csc'),createWritable:async()=>({write:async text=>window.savedText=text,close:async()=>{},abort:async()=>{}})}]},original);
+await page.click('#saveBtn');await page.waitForFunction(()=>window.savedText!==null);assert.ok((await page.locator('#exportCompatibilityNotice').textContent()).includes('2 matching'));
+await page.check('#enablePathLossProfile');await page.evaluate(()=>window.savedText=null);await page.click('#saveBtn');await page.waitForFunction(()=>window.savedText!==null);
+assert.ok((await page.evaluate(()=>window.savedText)).includes('radiomediums.LogisticLoss'));
+await page.evaluate(()=>{nodeGroups=[{id:'test',type:'mobile',name:'Test',points:[]}];activeNodeGroupId='test';updateScenario('mobile')});await page.fill('#latlngInput','1 0 41.2867 36.33\n1 1 41.287 36.331');await page.click('#convertBtn');assert.equal(await page.locator('#output').getAttribute('data-static-csc'),'false');assert.ok((await page.locator('#exportCompatibilityNotice').textContent()).includes('cycle'));
+// Mobile CSC wiring and same-directory companion file writes.
+const mobileReport=await page.evaluate(original=>{
+ const api=Field2SimCscPositionWriter, trace='0 0 1 2 0\n0 3 4 5 0';
+ const result=api.patchMobility(original,trace);
+ if(!result.trace.startsWith('2 0 ')||!result.text.includes('[CONFIG_DIR]/positions.dat'))throw Error('Mobile ID mapping/path failed');
+ const without=original.replace(/<plugin>[\s\S]*?<\/plugin>/,'');
+ if(!api.patchMobility(without,trace).text.includes('org.contikios.cooja.plugins.Mobility'))throw Error('Missing plugin not added');
+ let rejected=false;try{api.patchMobility(original,'99 0 1 2 0\n99 3 4 5 0')}catch{rejected=true}if(!rejected)throw Error('Missing mobile ID not rejected');
+ return result.mappings;
+},original);console.log('Mobile mappings',mobileReport);
+await page.evaluate(original=>{
+ window.mobileCsc=original;window.mobilePositions='previous positions';window.mobileWrites=0;window.failCsc=false;
+ const csc={getFile:async()=>new File([window.mobileCsc],'mobile.csc'),isSameEntry:async other=>other===csc,createWritable:async()=>{if(window.failCsc)throw Error('Simulated CSC write failure');return {write:async t=>{window.mobileCsc=t;window.mobileWrites++},close:async()=>{},abort:async()=>{}}}};
+ const positions={getFile:async()=>new File([window.mobilePositions],'positions.dat'),createWritable:async()=>({write:async t=>window.mobilePositions=typeof t==='string'?t:new TextDecoder().decode(t),close:async()=>{},abort:async()=>{}})};
+ window.showOpenFilePicker=async()=>[csc];window.showDirectoryPicker=async()=>({getFileHandle:async name=>name==='mobile.csc'?csc:positions,removeEntry:async()=>{window.mobilePositions=null}});
+},original);
+await page.click('#saveBtn');await page.waitForFunction(()=>window.mobileWrites===1);
+assert.ok((await page.evaluate(()=>window.mobilePositions)).startsWith('2 0 '));
+assert.ok((await page.evaluate(()=>window.mobileCsc)).includes('[CONFIG_DIR]/positions.dat'));
+await page.click('#saveBtn');await page.waitForFunction(()=>window.mobileWrites===2);assert.ok((await page.evaluate(()=>window.mobilePositions)).startsWith('2 0 '));
+const previous=await page.evaluate(()=>window.mobilePositions);await page.evaluate(()=>window.failCsc=true);await page.click('#saveBtn');await page.waitForFunction(()=>document.querySelector('#exportCompatibilityNotice')!==null);await page.waitForTimeout(100);
+assert.ok(errors.pop().includes('Simulated CSC write failure'));assert.equal(await page.evaluate(()=>window.mobilePositions),previous);
+console.log('Mobile save: paired files, repeated saves, rollback on CSC failure PASS');
+// The dedicated path-loss button must overwrite the selected file, reading its latest positions.
+let downloads=0;page.on('download',()=>downloads++);
+await page.evaluate(original=>{window.currentCsc=original;window.savedText=null;window.showOpenFilePicker=async()=>[{getFile:async()=>new File([window.currentCsc],'selected.csc'),createWritable:async()=>({write:async text=>{window.savedText=text;window.currentCsc=text},close:async()=>{},abort:async()=>{}})}]},original);
+await page.click('#chooseCoojaCscBtn');await page.waitForFunction(()=>document.querySelector('#coojaCscFileStatus').textContent.includes('selected.csc'));
+await page.evaluate(()=>{window.currentCsc=window.currentCsc.replace("x='3'", "x='987'")});
+await page.click('#writeCoojaCscBtn');await page.waitForFunction(()=>window.savedText!==null);
+assert.ok((await page.evaluate(()=>window.savedText)).includes("x='987'"));
+assert.ok((await page.evaluate(()=>window.savedText)).includes('radiomediums.LogisticLoss'));
+assert.equal(downloads,0);assert.ok((await page.locator('#propagationMappingStatus').textContent()).includes('selected.csc updated'));
+// Browsers without file handles retain the explicit download fallback.
+await page.evaluate(()=>window.showOpenFilePicker=undefined);
+await page.locator('#coojaCscFileInput').setInputFiles({name:'fallback.csc',mimeType:'application/xml',buffer:Buffer.from(original)});
+await page.waitForFunction(()=>document.querySelector('#coojaCscFileStatus').textContent.includes('fallback.csc'));
+const download=page.waitForEvent('download');await page.click('#writeCoojaCscBtn');assert.equal((await download).suggestedFilename(),'fallback-pathloss.csc');
+console.log('Dedicated path-loss write: same-file update, fresh positions, no native download, fallback PASS');
+assert.deepEqual(errors,[]);console.log('UI checks: static Convert, Save selected CSC, optional path loss, mobile regression PASS');
+}finally{await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});

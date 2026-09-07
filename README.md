@@ -39,6 +39,7 @@ The tool connects field-oriented deployment planning with simulator setup. A use
 
 | Target | Generated file | Current evidence boundary |
 |---|---|---|
+| Cooja static CSC | Selected `.csc` | Updates initial x/y/z by actual mote ID. Unmatched CSC nodes remain unchanged. Optional LogisticLoss settings are applied in the same save. |
 | Cooja Mobility | `positions.dat` | Planar mobile trace; zero-based mote-array index; tested plugin is cyclic. Static and nonzero-Z exports are rejected. |
 | ns-2 | `mobility-ns2.tcl` | Static initialization and planar `setdest` mobility statements; tested with real ns-2 2.35 (`MobileNode` CMU model). |
 | ns-3 | `mobility-ns3.tcl` | Consumed through `Ns2MobilityHelper`; static and planar mobile fixtures tested with ns-3.47. |
@@ -54,9 +55,40 @@ The shared adapters assess Cooja, ns-2, ns-3, and INET mappings before serializa
 
 The current browser's lower propagation workflow specializes this approach for Cooja. It exposes 18 cited condition-level choices across urban, agriculture, forest/plantation, and free-space reference groups, together with the LogisticLoss fields `transmitting_range`, `success_ratio_tx`, `rx_sensitivity`, `rssi_inflection_point`, `path_loss_exponent`, `awgn_sigma`, `enable_time_variation`, and the simulation-level `randomseed`.
 
-The browser does not create a new simulation or reposition motes. It accepts an existing researcher-created `.csc`, replaces its single `<radiomedium>` block with the configured LogisticLoss block, and updates or inserts the simulation-level `randomseed`. Mote types, firmware references, node positions, Mobility and ScriptRunner configurations, and unrelated plugins are preserved; an incompatible `UDGMVisualizerSkin` entry is removed when present. Browser permissions require the result to be downloaded as `*-pathloss.csc` rather than silently overwriting the selected file.
+The dedicated path-loss button does not create a new simulation or reposition motes. It accepts an existing researcher-created `.csc`, replaces its single `<radiomedium>` block with the configured LogisticLoss block, and updates or inserts the simulation-level `randomseed`. Mote types, firmware references, node positions, Mobility and ScriptRunner configurations, and unrelated plugins are preserved; an incompatible `UDGMVisualizerSkin` entry is removed when present. Supported browsers update the selected file after write permission is granted, re-reading it before patching to preserve recent position changes. Browsers without file-handle support download a `*-pathloss.csc` copy.
 
 In Cooja LogisticLoss, `transmitting_range` is not a simple antenna range: it is both the strict candidate-receiver cutoff (`distance < transmitting_range`) and the distance at which mean RSSI is anchored to `rx_sensitivity`. Source-reported spatial shadowing is also not automatically equivalent to Cooja's independent per-reception AWGN term. The interface therefore presents these values as inspectable starting assumptions, not as site calibration or guaranteed packet reception.
+
+## Node Groups
+
+The left panel holds any number of named **Static** or **Mobile** groups. Add a group, edit its name, and select it to edit its nodes or route. Each Mobile group represents one physical node. The right-hand scenario type follows the selected group and cannot be changed to a conflicting type. Inactive groups remain visible on the map; select them in the list to edit them. Polygon Mode creates static placements or a mobile scan path in the active group.
+
+Groups, names and the active group persist across reloads. Group deletion and editing participate in undo/redo. Node IDs must be unique across groups; Cooja conversion rejects conflicts. All groups share the project origin and simulation-wide path-loss settings.
+
+**Cooja Convert includes all groups.** Static positions update matching CSC mote IDs. Mobile routes are merged in timestamp order into one `positions.dat`, resolving each node ID to its index in the selected CSC. The CSC receives a single Mobility plugin path. The tested plugin uses one shared cycle whose duration is the latest timestamp across all routes; shorter routes hold their final position until that cycle restarts. This multi-node scheduling follows the inspected plugin implementation; a new Cooja execution campaign has not been run.
+
+Other simulator exports currently apply to the selected group only. Existing saved sessions migrate into one group with their original scenario type.
+
+## Mobile Cooja workflow
+
+1. Create the desired mote platform and nodes in Cooja and save a `.csc`.
+2. In Field2Sim choose **Mobile**, use the actual Cooja mote ID for the route, and press **Convert**.
+3. Press **Save export**, select the CSC, then grant access to its containing folder. The application verifies that the folder contains the selected file.
+4. Field2Sim adds or updates the Mobility plugin path to `[CONFIG_DIR]/positions.dat`, maps the route's node ID to the CSC mote-array index, and writes `positions.dat` beside the CSC. An existing `positions.dat` is replaced by the new route.
+
+The plugin must be installed in Cooja. Existing unrelated simulation settings are preserved. If path loss is enabled, the same operation also applies the selected LogisticLoss parameters and seed. Both artifacts are validated before writing; if CSC writing fails, the previous positions file is restored. The tested Mobility plugin repeats the route after its final timestamp.
+
+Browsers without directory/file-handle support download the updated CSC and `positions.dat` separately; place them together manually. This browser fallback cannot write directly into the selected CSC's folder.
+
+## Static Cooja workflow
+
+1. Create the mote platform and nodes in Cooja, then save a `.csc` simulation.
+2. In Field2Sim choose **Static**, place nodes, and use matching Cooja mote IDs.
+3. Select **Cooja** and press **Convert** to preview ID/x/y/z in metres. X is east, Y is south (Cooja screen convention), and Z is altitude relative to the chosen origin.
+4. Optionally enable the literature-informed path-loss profile and set its parameters.
+5. Press **Save export** and select the existing `.csc`. Supported browsers request file write access and update the selected file. Other browsers download a `*-field2sim.csc` copy.
+
+Only matching mote IDs are updated. Missing IDs are reported; zero matches or ambiguous IDs prevent writing. The XML writer preserves mote types, firmware and unrelated simulation configuration. With path loss enabled it also uses the existing LogisticLoss writer to update the radio medium and seed. Existing Mobility configuration is retained and may override initial positions later; this is reported after saving. Static CSC export is separate from the deliberately blocked static Mobility trace format.
 
 ## Quick start
 
@@ -72,7 +104,7 @@ In Cooja LogisticLoss, `transmitting_range` is not a simple antenna range: it is
 
 6. Select the target simulator and press **Convert**.
 7. Review compatibility warnings, then use **Copy** or **Save export**.
-8. Optionally enable the lower Cooja propagation panel, select a cited condition, review the mapping and warnings, choose an existing researcher-created `.csc`, and download the preserved simulation with its radio medium rewritten as LogisticLoss.
+8. Optionally enable the lower Cooja propagation panel, select a cited condition, review the mapping and warnings, choose an existing researcher-created `.csc`, and click **Write to Cooja Simulation File** to update the selected file with LogisticLoss settings (or download a copy when direct writing is unavailable).
 
 Polygon drawing is completed with **Enter** or a double-click and cancelled with **Esc**.
 
