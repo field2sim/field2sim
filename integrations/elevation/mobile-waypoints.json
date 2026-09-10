@@ -1,0 +1,39 @@
+{
+  "id": "mobile-unequal-intervals",
+  "description": "Controlled elevated adapter-consumer fixture; not a field elevation measurement.",
+  "scenario": "mobile",
+  "waypoints": [
+    {
+      "nodeId": 1,
+      "time": 0,
+      "x": 0,
+      "y": 0,
+      "z": 33
+    },
+    {
+      "nodeId": 1,
+      "time": 2,
+      "x": 3,
+      "y": 4,
+      "z": 34
+    },
+    {
+      "nodeId": 1,
+      "time": 5,
+      "x": -2,
+      "y": 4,
+      "z": 29
+    },
+    {
+      "nodeId": 1,
+      "time": 9,
+      "x": -2,
+      "y": -6,
+      "z": 31
+    }
+  ],
+  "acceptance": {
+    "positionToleranceMeters": 1e-9,
+    "timeToleranceMilliseconds": 100
+  }
+}

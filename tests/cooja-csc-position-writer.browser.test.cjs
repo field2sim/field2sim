@@ -13,6 +13,8 @@ console.log('Range defaults: preset/custom Circle Radius, TX edit, independent I
 const original=`<simconf><simulation><randomseed>7</randomseed><radiomedium>org.contikios.cooja.radiomediums.UDGM</radiomedium><motetype>example.Z1MoteType${[7,2,1].map(id => `<mote><interface_config>org.contikios.cooja.interfaces.Position<pos x='3' y='4'/></interface_config><interface_config>org.contikios.cooja.mspmote.interfaces.MspMoteID<id>${id}</id></interface_config></mote>`).join('')}</motetype></simulation><plugin>org.contikios.cooja.plugins.Mobility<plugin_config><positions>positions.dat</positions></plugin_config></plugin></simconf>`;
 const report=await page.evaluate(original=>{
  const api=Field2SimCscPositionWriter; const check=(b,m)=>{if(!b)throw Error(m)};
+ const mobile=api.patchMobility(original,'6 0 1 2 33\n6 5 3 4 -2');
+ check(mobile.trace==='0 0 1 2 33\n0 5 3 4 -2\n','mobile Z preserved after mote-index remapping');
  const pts=api.createStaticArtifact([{nodeId:7,x:123,y:45,z:6},{nodeId:1,x:50,y:9,z:0},{nodeId:999,x:0,y:0,z:0}]).positions;
  const r=api.patchPositions(original,pts);check(r.matched.join()==='7,1','actual IDs');check(r.missing.join()==='999','missing');
  const parse=t=>new DOMParser().parseFromString(t,'application/xml');const before=parse(original),after=parse(r.text);

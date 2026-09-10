@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "status": "FAIL",
+  "startedAt": "2026-09-10T09:27:35.529Z",
+  "completedAt": "2026-09-10T09:27:36.628Z",
+  "toolchain": {
+    "release": "3.47",
+    "archiveUrl": "https://www.nsnam.org/release/ns-3.47.tar.bz2",
+    "archiveSha1": "897c3f2db2c6de6a8291e46b3020dbeb1af75269",
+    "requiredParser": "ns3::Ns2MobilityHelper"
+  },
+  "verifier": {
+    "path": "integrations/ns3/field2sim-ns3.cc",
+    "sha256": "ecc039011be75bc155df1f088d91c165fe3a437b44b4070bba88f16b12739db5",
+    "toleranceMeters": 0.000001
+  },
+  "build": {
+    "configureCommand": "./ns3 configure --build-profile=optimized --disable-examples --disable-tests --enable-modules=\"core;network;mobility\"",
+    "configure": {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false
+    },
+    "buildCommand": "./ns3 build field2sim-ns3",
+    "build": {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false
+    },
+    "diagnosticOutput": "Warn about uninitialized values.\n-- Using default output directory /tmp/cooja-positioner-ns3-propagation/build\n-- CCache is enabled.\n-- \u001b[33mProceeding without cmake-format\u001b[0m\n-- \u001b[33mPython: development libraries were not found\u001b[0m\n-- \u001b[33mBoost was not found\u001b[0m\n-- \u001b[33mdocs: doxygen documentation not enabled due to missing dependencies: dot dia\u001b[0m\n-- Failed to locate sphinx-build executable (missing: SPHINX_EXECUTABLE) \n-- \u001b[33mdocs: sphinx documentation not enabled due to missing dependencies: Sphinx epstopdf latexmk convert dia\u001b[0m\n-- Processing src/core\n-- Boost Units are an optional feature of length.cc.  Ubuntu ships it within the libboost-dev package.  You may need to clean up the CMake cache after installing it to pass this check.\n-- Processing src/mobility\n-- Processing src/network\n-- Processing src/antenna\n-- Standard library Bessel function has been found\n-- Processing src/stats\n-- ---- Summary of ns-3 settings:\nBuild profile                 : optimized\nBuild directory               : /tmp/cooja-positioner-ns3-propagation/build\nBuild with runtime asserts    : OFF (not requested)\nBuild with runtime logging    : OFF (not requested)\nBuild version embedding       : OFF (not requested)\nBRITE Integration             : \u001b[31mOFF (missing dependency)\u001b[0m\nDES Metrics event collection  : OFF (not requested)\nDPDK NetDevice                : OFF (not requested)\nEmulation FdNetDevice         : \u001b[31mOFF (missing dependency)\u001b[0m\nExamples                      : OFF (not requested)\nFile descriptor NetDevice     : \u001b[31mOFF (missing dependency)\u001b[0m\nGNU Scientific Library (GSL)  : \u001b[31mOFF (GSL was not found)\u001b[0m\nGtkConfigStore                : \u001b[31mOFF (Harfbuzz is required by GTK3 and was not found)\u001b[0m\nLibXml2 support               : \u001b[31mOFF (LibXML2 was not found)\u001b[0m\nMPI Support                   : OFF (not requested)\nns-3 Click Integration        : \u001b[31mOFF (missing dependency)\u001b[0m\nns-3 OpenFlow Integration     : \u001b[31mOFF (missing dependency)\u001b[0m\nNetmap emulation FdNetDevice  : \u001b[31mOFF (missing dependency)\u001b[0m\nPyViz visualizer              : \u001b[31mOFF (Python Bindings are disabled)\u001b[0m\nPython Bindings               : OFF (not requested)\nSQLite support                : \u001b[31mOFF (missing dependency)\u001b[0m\nEigen3 support                : \u001b[31mOFF (Eigen was not found)\u001b[0m\nTap Bridge                    : \u001b[32mON\u001b[0m\nTap FdNetDevice               : \u001b[31mOFF (missing dependency)\u001b[0m\nTests                         : OFF (not requested)\n\n\nModules configured to be built:\nantenna                   core                      mobility                  \nnetwork                   stats                     \n\n\n-- Configuring done (0.4s)\n-- Generating done (0.0s)\n-- Build files have been written to: /tmp/cooja-positioner-ns3-propagation/cmake-cache\nFinished executing the following commands:\n/usr/bin/cmake -S /tmp/cooja-positioner-ns3-propagation -B /tmp/cooja-positioner-ns3-propagation/cmake-cache -DCMAKE_BUILD_TYPE=release -DNS3_ASSERT=OFF -DNS3_LOG=OFF -DNS3_WARNINGS_AS_ERRORS=OFF -DNS3_NATIVE_OPTIMIZATIONS=ON -DNS3_EXAMPLES=OFF -DNS3_TESTS=OFF -DNS3_ENABLED_MODULES=core;network;mobility --warn-uninitialized\n\n\n[0/2] Re-checking globbed directories...\n[1/2] Building CXX object scratch/CMakeFiles/scratch_field2sim-ns3.dir/field2sim-ns3.cc.o\n[2/2] Linking CXX executable /tmp/cooja-positioner-ns3-propagation/build/scratch/ns3.47-field2sim-ns3-optimized\nFinished executing the following commands:\n/usr/bin/cmake --build /tmp/cooja-positioner-ns3-propagation/cmake-cache -j 11 --target scratch_field2sim-ns3"
+  },
+  "observations": {
+    "scenarioCount": 2,
+    "checkpointCount": 11,
+    "maximumPositionErrorMeters": 6.32455532,
+    "executions": [
+      {
+        "scenario": "mobile",
+        "status": "FAIL",
+        "command": "./ns3 run \"field2sim-ns3 --traceFile=<repository>/integrations/ns3/mobile/mobility-ns3.tcl --scenario=mobile --tolerance=0.000001\"",
+        "trace": {
+          "path": "integrations/ns3/mobile/mobility-ns3.tcl",
+          "sha256": "9647944a205d4bafa83979a62e3a9fdcfc06d1c6941d564b9f346a7e41170a19"
+        },
+        "observations": {
+          "expectedCheckCount": 8,
+          "observedCheckCount": 8,
+          "maximumPositionErrorMeters": 6.32455532,
+          "checks": [
+            {
+              "label": "initial",
+              "node": 0,
+              "time_s": 0,
+              "expected_x": 0,
+              "expected_y": 0,
+              "expected_z": 33,
+              "actual_x": 0,
+              "actual_y": 0,
+              "actual_z": 31,
+              "error_m": 2,
+              "status": "FAIL"
+            },
+            {
+              "label": "segment-1-quarter",
+              "node": 0,
+              "time_s": 0.5,
+              "expected_x": 0.75,
+              "expected_y": -1,
+              "expected_z": 33,
+              "actual_x": 0.75,
+              "actual_y": -1,
+              "actual_z": 31,
+              "error_m": 2,
+              "status": "FAIL"
+            },
+            {
+              "label": "segment-1-midpoint",
+              "node": 0,
+              "time_s": 1,
+              "expected_x": 1.5,
+              "expected_y": -2,
+              "expected_z": 33,
+              "actual_x": 1.5,
+              "actual_y": -2,
+              "actual_z": 31,
+              "error_m": 2,
+              "status": "FAIL"
+            },
+            {
+              "label": "segment-2-early",
+              "node": 0,
+              "time_s": 2.5,
+              "expected_x": 2.166666666,
+              "expected_y": -4,
+              "expected_z": 34,
+              "actual_x": -0.372677996,
+              "actual_y": -0.745355993,
+              "actual_z": 34,
+              "error_m": 4.12807206,
+              "status": "FAIL"
+            },
+            {
+              "label": "segment-2-midpoint",
+              "node": 0,
+              "time_s": 3.5,
+              "expected_x": 0.5,
+              "expected_y": -4,
+              "expected_z": 34,
+              "actual_x": -1.118033989,
+              "actual_y": -2.236067978,
+              "actual_z": 34,
+              "error_m": 2.393635346,
+              "status": "FAIL"
+            },
+            {
+              "label": "segment-3-early",
+              "node": 0,
+              "time_s": 5.5,
+              "expected_x": -2,
+              "expected_y": -2.75,
+              "expected_z": 29,
+              "actual_x": -0.395284708,
+              "actual_y": 1.185854123,
+              "actual_z": 29,
+              "error_m": 4.250418667,
+              "status": "FAIL"
+            },
+            {
+              "label": "segment-3-midpoint",
+              "node": 0,
+              "time_s": 7,
+              "expected_x": -2,
+              "expected_y": 1,
+              "expected_z": 29,
+              "actual_x": -1.58113883,
+              "actual_y": 4.74341649,
+              "actual_z": 29,
+              "error_m": 3.766777363,
+              "status": "FAIL"
+            },
+            {
+              "label": "terminal-hold",
+              "node": 0,
+              "time_s": 9.1,
+              "expected_x": -2,
+              "expected_y": 6,
+              "expected_z": 31,
+              "actual_x": 0,
+              "actual_y": 0,
+              "actual_z": 31,
+              "error_m": 6.32455532,
+              "status": "FAIL"
+            }
+          ],
+          "resultLine": "NS3_RESULT scenario=mobile checks=8 status=FAIL"
+        },
+        "process": {
+          "exitCode": 1,
+          "signal": null,
+          "timedOut": false
+        },
+        "diagnosticOutput": "NS3_CHECK label=initial node=0 time_s=0.000000000 expected_x=0.000000000 expected_y=0.000000000 expected_z=33.000000000 actual_x=0.000000000 actual_y=0.000000000 actual_z=31.000000000 error_m=2.000000000 status=FAIL\nNS3_CHECK label=segment-1-quarter node=0 time_s=0.500000000 expected_x=0.750000000 expected_y=-1.000000000 expected_z=33.000000000 actual_x=0.750000000 actual_y=-1.000000000 actual_z=31.000000000 error_m=2.000000000 status=FAIL\nNS3_CHECK label=segment-1-midpoint node=0 time_s=1.000000000 expected_x=1.500000000 expected_y=-2.000000000 expected_z=33.000000000 actual_x=1.500000000 actual_y=-2.000000000 actual_z=31.000000000 error_m=2.000000000 status=FAIL\nNS3_CHECK label=segment-2-early node=0 time_s=2.500000000 expected_x=2.166666666 expected_y=-4.000000000 expected_z=34.000000000 actual_x=-0.372677996 actual_y=-0.745355993 actual_z=34.000000000 error_m=4.128072060 status=FAIL\nNS3_CHECK label=segment-2-midpoint node=0 time_s=3.500000000 expected_x=0.500000000 expected_y=-4.000000000 expected_z=34.000000000 actual_x=-1.118033989 actual_y=-2.236067978 actual_z=34.000000000 error_m=2.393635346 status=FAIL\nNS3_CHECK label=segment-3-early node=0 time_s=5.500000000 expected_x=-2.000000000 expected_y=-2.750000000 expected_z=29.000000000 actual_x=-0.395284708 actual_y=1.185854123 actual_z=29.000000000 error_m=4.250418667 status=FAIL\nNS3_CHECK label=segment-3-midpoint node=0 time_s=7.000000000 expected_x=-2.000000000 expected_y=1.000000000 expected_z=29.000000000 actual_x=-1.581138830 actual_y=4.743416490 actual_z=29.000000000 error_m=3.766777363 status=FAIL\nNS3_CHECK label=terminal-hold node=0 time_s=9.100000000 expected_x=-2.000000000 expected_y=6.000000000 expected_z=31.000000000 actual_x=0.000000000 actual_y=0.000000000 actual_z=31.000000000 error_m=6.324555320 status=FAIL\nNS3_RESULT scenario=mobile checks=8 status=FAIL\nCommand 'build/scratch/ns3.47-field2sim-ns3-optimized --traceFile=/tmp/field2sim-elevation-oid3xz/integrations/ns3/mobile/mobility-ns3.tcl --scenario=mobile --tolerance=0.000001' returned non-zero exit status 1."
+      },
+      {
+        "scenario": "static",
+        "status": "PASS",
+        "command": "./ns3 run \"field2sim-ns3 --traceFile=<repository>/integrations/ns3/static/mobility-ns3.tcl --scenario=static --tolerance=0.000001\"",
+        "trace": {
+          "path": "integrations/ns3/static/mobility-ns3.tcl",
+          "sha256": "7dcd1b6544637df3808e9a5f6595e5703dd8c0c7f0100178b894cbe115871d22"
+        },
+        "observations": {
+          "expectedCheckCount": 3,
+          "observedCheckCount": 3,
+          "maximumPositionErrorMeters": 0,
+          "checks": [
+            {
+              "label": "static-node-0",
+              "node": 0,
+              "time_s": 0.1,
+              "expected_x": 0,
+              "expected_y": 0,
+              "expected_z": 33,
+              "actual_x": 0,
+              "actual_y": 0,
+              "actual_z": 33,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "static-node-1",
+              "node": 1,
+              "time_s": 0.1,
+              "expected_x": 12.5,
+              "expected_y": -8,
+              "expected_z": 34,
+              "actual_x": 12.5,
+              "actual_y": -8,
+              "actual_z": 34,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "static-node-2",
+              "node": 2,
+              "time_s": 0.1,
+              "expected_x": -4,
+              "expected_y": -15.25,
+              "expected_z": 29,
+              "actual_x": -4,
+              "actual_y": -15.25,
+              "actual_z": 29,
+              "error_m": 0,
+              "status": "PASS"
+            }
+          ],
+          "resultLine": "NS3_RESULT scenario=static checks=3 status=PASS"
+        },
+        "process": {
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false
+        }
+      }
+    ]
+  }
+}

@@ -54,15 +54,13 @@ assert.throws(
   }),
   error => error instanceof AdapterValidationError && /contiguous editor nodeIds/i.test(error.message)
 );
-assert.throws(
-  () => createArtifact('omnetpp', {
-    scenario: 'mobile',
-    waypoints: [
-      { nodeId: 1, time: 0, x: 0, y: 0, z: 0 },
-      { nodeId: 1, time: 1, x: 1, y: 1, z: 1 }
-    ]
-  }),
-  error => error instanceof AdapterValidationError && /two-dimensional/i.test(error.message)
-);
+assert.equal(createArtifact('omnetpp', {
+  scenario: 'mobile',
+  waypoints: [
+    { nodeId: 1, time: 0, x: 0, y: 0, z: 0 },
+    { nodeId: 1, time: 1, x: 1, y: 1, z: 1 }
+  ]
+}).text.trim(), '0.000000000 0.000000000 0.000000000 0.000000000 1.000000000 1.000000000 -1.000000000 1.000000000');
+
 
 console.log('inet-integration-fixtures: mobile/static chains and negative guards passed');

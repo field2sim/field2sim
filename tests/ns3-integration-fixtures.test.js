@@ -53,15 +53,13 @@ assert.equal(
   false,
   'A trace with an unsupported axis and missing Z initialization must fail closed.'
 );
-assert.throws(
-  () => createArtifact('ns3', {
-    scenario: 'mobile',
-    waypoints: [
-      { nodeId: 1, time: 0, x: 0, y: 0, z: 0 },
-      { nodeId: 1, time: 1, x: 1, y: 1, z: 1 }
-    ]
-  }),
-  error => error instanceof AdapterValidationError && /changing Z/i.test(error.message)
-);
+assert.match(createArtifact('ns3', {
+  scenario: 'mobile',
+  waypoints: [
+    { nodeId: 1, time: 0, x: 0, y: 0, z: 0 },
+    { nodeId: 1, time: 1, x: 1, y: 1, z: 1 }
+  ]
+}).text, /set Z_ 1\.000000000"/); // Format retention, not a consumer-execution claim.
+
 
 console.log('ns3-integration-fixtures: mobile/static chains and negative guards passed');

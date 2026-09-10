@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-09-10T10:09:00.610Z",
+  "completedAt": "2026-09-10T10:09:03.281Z",
+  "toolchain": {
+    "omnetppRelease": "6.4.0",
+    "omnetppRevision": null,
+    "inetRevision": null,
+    "moduleSourceSha256": "3225dfca00792f11361de0eb3597cfdcdef17cba1c43a50da209a01cac72f620",
+    "moduleNedSha256": "b9010fc0b15cc9e0190654ab654a4097714f7241ddb43f5bda032db35b5968a3",
+    "inetRelease": "4.7.0",
+    "requiredModule": "inet.mobility.single.BonnMotionMobility",
+    "enabledInetFeatures": [
+      "Mobility",
+      "PhysicalEnvironment",
+      "PhysicalLayerCommon",
+      "PhysicalLayerWirelessCommon"
+    ]
+  },
+  "verifier": {
+    "path": "integrations/inet/verifier/PositionVerifier.cc",
+    "sha256": "5adba0c43b32a740c23c3158436afee8e80e2129a2ff011c08a529edd03a02d2",
+    "toleranceMeters": 0.000001
+  },
+  "build": {
+    "makemakeCommand": "opp_makemake --make-so -f -o field2sim_inet -I<inet>/src -L<inet>/src -lINET",
+    "makemake": {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false
+    },
+    "buildCommand": "make -j4 MODE=release",
+    "build": {
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false
+    }
+  },
+  "observations": {
+    "scenarioCount": 2,
+    "checkpointCount": 11,
+    "maximumPositionErrorMeters": 0,
+    "executions": [
+      {
+        "scenario": "mobile",
+        "status": "PASS",
+        "command": "opp_run_release -u Cmdenv -l <inet>/src/INET -l <verifier> -c Mobile --*.host[*].traceFile=<repository>/integrations/inet/mobile/mobility-bonnmotion.movements",
+        "trace": {
+          "path": "integrations/inet/mobile/mobility-bonnmotion.movements",
+          "sha256": "8c87a1c5e45830228263b33047fb03653cac4eb5a4864e3e9794d2612aeb3fd5"
+        },
+        "observations": {
+          "expectedCheckCount": 8,
+          "observedCheckCount": 8,
+          "maximumPositionErrorMeters": 0,
+          "checks": [
+            {
+              "label": "initial",
+              "node": 0,
+              "time_s": 0,
+              "expected_x": 0,
+              "expected_y": 0,
+              "expected_z": 33,
+              "actual_x": 0,
+              "actual_y": 0,
+              "actual_z": 33,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-1-quarter",
+              "node": 0,
+              "time_s": 0.5,
+              "expected_x": 0.75,
+              "expected_y": -1,
+              "expected_z": 33.25,
+              "actual_x": 0.75,
+              "actual_y": -1,
+              "actual_z": 33.25,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-1-midpoint",
+              "node": 0,
+              "time_s": 1,
+              "expected_x": 1.5,
+              "expected_y": -2,
+              "expected_z": 33.5,
+              "actual_x": 1.5,
+              "actual_y": -2,
+              "actual_z": 33.5,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-2-early",
+              "node": 0,
+              "time_s": 2.5,
+              "expected_x": 2.166666667,
+              "expected_y": -4,
+              "expected_z": 33.166666667,
+              "actual_x": 2.166666667,
+              "actual_y": -4,
+              "actual_z": 33.166666667,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-2-midpoint",
+              "node": 0,
+              "time_s": 3.5,
+              "expected_x": 0.5,
+              "expected_y": -4,
+              "expected_z": 31.5,
+              "actual_x": 0.5,
+              "actual_y": -4,
+              "actual_z": 31.5,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-3-early",
+              "node": 0,
+              "time_s": 5.5,
+              "expected_x": -2,
+              "expected_y": -2.75,
+              "expected_z": 29.25,
+              "actual_x": -2,
+              "actual_y": -2.75,
+              "actual_z": 29.25,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-3-midpoint",
+              "node": 0,
+              "time_s": 7,
+              "expected_x": -2,
+              "expected_y": 1,
+              "expected_z": 30,
+              "actual_x": -2,
+              "actual_y": 1,
+              "actual_z": 30,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "terminal-hold",
+              "node": 0,
+              "time_s": 9.1,
+              "expected_x": -2,
+              "expected_y": 6,
+              "expected_z": 31,
+              "actual_x": -2,
+              "actual_y": 6,
+              "actual_z": 31,
+              "error_m": 0,
+              "status": "PASS"
+            }
+          ],
+          "resultLine": "INET_RESULT scenario=mobile checks=8 status=PASS"
+        },
+        "process": {
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false
+        }
+      },
+      {
+        "scenario": "static",
+        "status": "PASS",
+        "command": "opp_run_release -u Cmdenv -l <inet>/src/INET -l <verifier> -c Static --*.host[*].traceFile=<repository>/integrations/inet/static/mobility-bonnmotion.movements",
+        "trace": {
+          "path": "integrations/inet/static/mobility-bonnmotion.movements",
+          "sha256": "1c221887b72a4df16c3970709d36b683ce1585b0444bdd894a255fce452f4363"
+        },
+        "observations": {
+          "expectedCheckCount": 3,
+          "observedCheckCount": 3,
+          "maximumPositionErrorMeters": 0,
+          "checks": [
+            {
+              "label": "static-node-0",
+              "node": 0,
+              "time_s": 0.1,
+              "expected_x": 0,
+              "expected_y": 0,
+              "expected_z": 33,
+              "actual_x": 0,
+              "actual_y": 0,
+              "actual_z": 33,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "static-node-1",
+              "node": 1,
+              "time_s": 0.1,
+              "expected_x": 12.5,
+              "expected_y": -8,
+              "expected_z": 34,
+              "actual_x": 12.5,
+              "actual_y": -8,
+              "actual_z": 34,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "static-node-2",
+              "node": 2,
+              "time_s": 0.1,
+              "expected_x": -4,
+              "expected_y": -15.25,
+              "expected_z": 29,
+              "actual_x": -4,
+              "actual_y": -15.25,
+              "actual_z": 29,
+              "error_m": 0,
+              "status": "PASS"
+            }
+          ],
+          "resultLine": "INET_RESULT scenario=static checks=3 status=PASS"
+        },
+        "process": {
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false
+        }
+      }
+    ]
+  }
+}

@@ -6,7 +6,7 @@ Field2Sim is a client-side, browser-based editor that translates field context i
 
 **Online application:** https://field2sim.github.io/
 
-No application server is required. Leaflet, the map rendering library, is bundled locally and does not require network access. Map tiles and place search currently use external OpenStreetMap and Nominatim services, so those two functions require network access.
+No application server is required. Leaflet, the map rendering library, is bundled locally and does not require network access. Map tiles and place search currently use external OpenStreetMap and Nominatim services, so those functions require network access. Optional experimental 3D elevation lookup uses the IoTlab proxy and OpenTopoData/Mapzen; it is disabled by default.
 
 ## What it is for
 
@@ -40,10 +40,10 @@ The tool connects field-oriented deployment planning with simulator setup. A use
 | Target | Generated file | Current evidence boundary |
 |---|---|---|
 | Cooja static CSC | Selected `.csc` | Updates initial x/y/z by actual mote ID. Unmatched CSC nodes remain unchanged. Optional LogisticLoss settings are applied in the same save. |
-| Cooja Mobility | `positions.dat` | Planar mobile trace; zero-based mote-array index; tested plugin is cyclic. Static and nonzero-Z exports are rejected. |
-| ns-2 | `mobility-ns2.tcl` | Static initialization and planar `setdest` mobility statements; tested with real ns-2 2.35 (`MobileNode` CMU model). |
-| ns-3 | `mobility-ns3.tcl` | Consumed through `Ns2MobilityHelper`; static and planar mobile fixtures tested with ns-3.47. |
-| INET/OMNeT++ | `mobility-bonnmotion.movements` | Planar BonnMotion `t x y` triplets; tested with OMNeT++ 6.4.0 and INET 4.7.0. |
+| Cooja Mobility | `positions.dat` | Five-column mobile trace; zero-based mote-array index; tested plugin is cyclic and ignores Z. Experimental Z is retained in the file; using it requires a modified plugin. Static groups update the CSC directly. |
+| ns-2 | `mobility-ns2.tcl` | XYZ initialization, planar `setdest` and timed Z updates; static and elevated mobile checks passed with ns-2 2.35. |
+| ns-3 | `mobility-ns3.tcl` | Consumed through `Ns2MobilityHelper`; static XYZ and planar mobile checks passed with ns-3.47. Changing-Z traces did not reproduce the expected route; 3D support depends on the chosen model/consumer. |
+| INET/OMNeT++ | `mobility-bonnmotion.movements` | 2D `t x y` triplets or 3D `t x y z` quadruples with `is3D=true`; elevated static/mobile checks passed with INET 4.7.0 / OMNeT++ 6.4.0. |
 
 The adapter warnings shown by the application are part of the supported behavior. Format-level validation does not imply arbitrary-version simulator compatibility.
 
@@ -92,7 +92,7 @@ Only matching mote IDs are updated. Missing IDs are reported; zero matches or am
 
 ## Quick start
 
-1. Open https://field2sim.github.io/ or open `index.html` locally in a modern browser.
+1. Open https://field2sim.github.io/ or start the local server described below.
 2. Search for the target area and choose **Mobile** or **Static**.
 3. Select **Point Mode** for manual placement or **Polygon Mode** for generated deployment/scan paths.
 4. Choose the **XY Origin** policy.
@@ -107,6 +107,18 @@ Only matching mote IDs are updated. Missing IDs are reported; zero matches or am
 8. Optionally enable the lower Cooja propagation panel, select a cited condition, review the mapping and warnings, choose an existing researcher-created `.csc`, and click **Write to Cooja Simulation File** to update the selected file with LogisticLoss settings (or download a copy when direct writing is unavailable).
 
 Polygon drawing is completed with **Enter** or a double-click and cancelled with **Esc**.
+
+## Run locally with Python
+
+From the repository root (the directory containing `index.html`), run:
+
+```bash
+python3 -m http.server 8766 --bind 127.0.0.1
+```
+
+Open **http://127.0.0.1:8766/** in a modern browser. Keep the terminal open; press **Ctrl+C** to stop the server. No build or Python package installation is needed. If the port is occupied, choose another port in both the command and URL.
+
+**Enable 3D export (experimental)** above the geographic input is off by default: no elevation requests are sent and exports use Z=0. Enable it to retrieve surface elevations and export origin-relative Z. Simulator compatibility is explained beside the checkbox. Map tiles, place search, and enabled elevation lookup require internet access.
 
 ## Important identifier convention
 

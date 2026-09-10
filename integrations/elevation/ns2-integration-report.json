@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-09-10T09:27:35.341Z",
+  "completedAt": "2026-09-10T09:27:35.442Z",
+  "toolchain": {
+    "release": "2.35+dfsg",
+    "archiveUrl": "http://archive.ubuntu.com/ubuntu/pool/universe/n/ns2/ns2_2.35+dfsg.orig.tar.xz",
+    "archiveSha1": "8f41b022adc5a7087ca54da473d30c007515d1b1",
+    "requiredParser": "MobileNode::setdest / MobileNode::update_position (common/mobilenode.cc, real /usr/bin/ns execution)",
+    "binaryUsed": "ns"
+  },
+  "verifier": {
+    "path": "integrations/ns2/verifier/verify-mobility.tcl",
+    "sha256": "9097eb625215f15138288d29e37b08a62ecc9ff7088513b46c6a24f0e476bb1a",
+    "toleranceMeters": 0.000001,
+    "gridOffset": 20000
+  },
+  "observations": {
+    "scenarioCount": 2,
+    "checkpointCount": 11,
+    "maximumPositionErrorMeters": 0,
+    "executions": [
+      {
+        "scenario": "mobile",
+        "status": "PASS",
+        "command": "ns integrations/ns2/verifier/verify-mobility.tcl <scratch>/mobility-ns2-offset-mobile.tcl mobile 20000 0.000001",
+        "trace": {
+          "path": "integrations/ns2/mobile/mobility-ns2.tcl",
+          "sha256": "e747d7a75e7676e1c020d5b1a4b000b8639a58a2ca6fccc85e81b0fd2ff2db9c"
+        },
+        "observations": {
+          "expectedCheckCount": 8,
+          "observedCheckCount": 8,
+          "maximumPositionErrorMeters": 0,
+          "checks": [
+            {
+              "label": "initial",
+              "node": 0,
+              "time_s": 0,
+              "expected_x": 0,
+              "expected_y": 0,
+              "expected_z": 33,
+              "actual_x": 0,
+              "actual_y": 0,
+              "actual_z": 33,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-1-quarter",
+              "node": 0,
+              "time_s": 0.5,
+              "expected_x": 0.75,
+              "expected_y": -1,
+              "expected_z": 33,
+              "actual_x": 0.75,
+              "actual_y": -1,
+              "actual_z": 33,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-1-midpoint",
+              "node": 0,
+              "time_s": 1,
+              "expected_x": 1.5,
+              "expected_y": -2,
+              "expected_z": 33,
+              "actual_x": 1.5,
+              "actual_y": -2,
+              "actual_z": 33,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-2-early",
+              "node": 0,
+              "time_s": 2.5,
+              "expected_x": 2.166666666,
+              "expected_y": -4,
+              "expected_z": 34,
+              "actual_x": 2.166666667,
+              "actual_y": -4,
+              "actual_z": 34,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-2-midpoint",
+              "node": 0,
+              "time_s": 3.5,
+              "expected_x": 0.5,
+              "expected_y": -4,
+              "expected_z": 34,
+              "actual_x": 0.5,
+              "actual_y": -4,
+              "actual_z": 34,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-3-early",
+              "node": 0,
+              "time_s": 5.5,
+              "expected_x": -2,
+              "expected_y": -2.75,
+              "expected_z": 29,
+              "actual_x": -2,
+              "actual_y": -2.75,
+              "actual_z": 29,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "segment-3-midpoint",
+              "node": 0,
+              "time_s": 7,
+              "expected_x": -2,
+              "expected_y": 1,
+              "expected_z": 29,
+              "actual_x": -2,
+              "actual_y": 1,
+              "actual_z": 29,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "terminal-hold",
+              "node": 0,
+              "time_s": 9.1,
+              "expected_x": -2,
+              "expected_y": 6,
+              "expected_z": 31,
+              "actual_x": -2,
+              "actual_y": 6,
+              "actual_z": 31,
+              "error_m": 0,
+              "status": "PASS"
+            }
+          ],
+          "resultLine": "NS2_RESULT scenario=mobile checks=8 status=PASS"
+        },
+        "process": {
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false
+        }
+      },
+      {
+        "scenario": "static",
+        "status": "PASS",
+        "command": "ns integrations/ns2/verifier/verify-mobility.tcl <scratch>/mobility-ns2-offset-static.tcl static 20000 0.000001",
+        "trace": {
+          "path": "integrations/ns2/static/mobility-ns2.tcl",
+          "sha256": "0bfad36c68ced91ecba00081bd4a6c319ae492ca5a27a6da756b3b626e970f19"
+        },
+        "observations": {
+          "expectedCheckCount": 3,
+          "observedCheckCount": 3,
+          "maximumPositionErrorMeters": 0,
+          "checks": [
+            {
+              "label": "static-node-0",
+              "node": 0,
+              "time_s": 0.1,
+              "expected_x": 0,
+              "expected_y": 0,
+              "expected_z": 33,
+              "actual_x": 0,
+              "actual_y": 0,
+              "actual_z": 33,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "static-node-1",
+              "node": 1,
+              "time_s": 0.1,
+              "expected_x": 12.5,
+              "expected_y": -8,
+              "expected_z": 34,
+              "actual_x": 12.5,
+              "actual_y": -8,
+              "actual_z": 34,
+              "error_m": 0,
+              "status": "PASS"
+            },
+            {
+              "label": "static-node-2",
+              "node": 2,
+              "time_s": 0.1,
+              "expected_x": -4,
+              "expected_y": -15.25,
+              "expected_z": 29,
+              "actual_x": -4,
+              "actual_y": -15.25,
+              "actual_z": 29,
+              "error_m": 0,
+              "status": "PASS"
+            }
+          ],
+          "resultLine": "NS2_RESULT scenario=static checks=3 status=PASS"
+        },
+        "process": {
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false
+        }
+      }
+    ]
+  }
+}

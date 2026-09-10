@@ -104,13 +104,7 @@ function testInetBonnMotionGoldenOutput() {
 function testSemanticRejections() {
   expectAdapterError(() => adapters.cooja.serialize(staticScenario), /static Cooja export is disabled/i);
 
-  expectAdapterError(() => adapters.cooja.serialize({
-    scenario: 'mobile',
-    waypoints: [
-      { nodeId: 1, time: 0, x: 0, y: 0, z: 0 },
-      { nodeId: 1, time: 1, x: 1, y: 1, z: 2 }
-    ]
-  }), /three-dimensional Cooja export is disabled/i);
+
 
   expectAdapterError(() => adapters.cooja.serialize({
     scenario: 'mobile',
@@ -120,23 +114,14 @@ function testSemanticRejections() {
     ]
   }), /strictly increasing/i);
 
-  expectAdapterError(() => adapters.ns3.serialize({
-    scenario: 'mobile',
-    waypoints: [
-      { nodeId: 1, time: 0, x: 0, y: 0, z: 0 },
-      { nodeId: 1, time: 1, x: 1, y: 1, z: 2 }
-    ]
-  }), /changing Z/i);
+
 
   expectAdapterError(() => adapters.omnetpp.serialize({
     scenario: 'fixed',
     waypoints: [{ nodeId: 2, time: 0, x: 0, y: 0, z: 0 }]
   }), /contiguous editor nodeIds/i);
 
-  expectAdapterError(() => adapters.omnetpp.serialize({
-    scenario: 'fixed',
-    waypoints: [{ nodeId: 1, time: 0, x: 0, y: 0, z: 1 }]
-  }), /two-dimensional/i);
+
 
   expectAdapterError(() => adapters.cooja.serialize({
     scenario: 'fixed',
@@ -155,3 +140,14 @@ testInetBonnMotionGoldenOutput();
 testSemanticRejections();
 
 console.log('simulator-adapters: all format and semantic tests passed');
+
+const elevated = {scenario:'mobile',waypoints:[{nodeId:1,time:0,x:0,y:0,z:33},{nodeId:1,time:5,x:5,y:5,z:34},{nodeId:1,time:10,x:10,y:10,z:-2}]};
+assert.deepEqual(adapters.cooja.serialize(elevated).split('\n').at(-1).split(/\s+/).map(Number),[0,10,10,-10,-2]);
+for(const id of ['ns2','ns3']) {
+ const report=validateNs2FamilyOutput(adapters[id].serialize(elevated));
+ assert.equal(report.valid,true);
+ assert.deepEqual(report.altitudeUpdates,[{time:5,nodeIndex:0,z:34},{time:10,nodeIndex:0,z:-2}]);
+}
+const inetText=adapters.omnetpp.serialize(elevated);
+assert.deepEqual(inetText.split(/\s+/).map(Number),[0,0,0,33,5,5,-5,34,10,10,-10,-2]);
+assert.deepEqual(validateInetBonnMotionOutput(inetText,elevated).paths[0].map(p=>p.z),[33,34,-2]);

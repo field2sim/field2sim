@@ -1,0 +1,28 @@
+[
+  {
+    "scenario": "mobile",
+    "command": [
+      "/tmp/field2sim-ns3-planar-control",
+      "--traceFile=/home/ismylhakki/cooja-positioner/cooja-positioner-github/integrations/elevation/planar-control-mobile.tcl",
+      "--scenario=mobile",
+      "--tolerance=1e-6"
+    ],
+    "exitCode": 0,
+    "traceSha256": "5d4274d8da627e357dd4ab80b1e0f6e24c7c284aa517c1c786873052d631b7cd",
+    "output": "NS3_CHECK label=initial node=0 time_s=0.000000000 expected_x=0.000000000 expected_y=0.000000000 expected_z=0.000000000 actual_x=0.000000000 actual_y=0.000000000 actual_z=0.000000000 error_m=0.000000000 status=PASS\nNS3_CHECK label=segment-1-quarter node=0 time_s=0.500000000 expected_x=0.750000000 expected_y=-1.000000000 expected_z=0.000000000 actual_x=0.750000000 actual_y=-1.000000000 actual_z=0.000000000 error_m=0.000000000 status=PASS\nNS3_CHECK label=segment-1-midpoint node=0 time_s=1.000000000 expected_x=1.500000000 expected_y=-2.000000000 expected_z=0.000000000 actual_x=1.500000000 actual_y=-2.000000000 actual_z=0.000000000 error_m=0.000000000 status=PASS\nNS3_CHECK label=segment-2-early node=0 time_s=2.500000000 expected_x=2.166666666 expected_y=-4.000000000 expected_z=0.000000000 actual_x=2.166666666 actual_y=-4.000000000 actual_z=0.000000000 error_m=0.000000000 status=PASS\nNS3_CHECK label=segment-2-midpoint node=0 time_s=3.500000000 expected_x=0.500000000 expected_y=-4.000000000 expected_z=0.000000000 actual_x=0.499999999 actual_y=-4.000000000 actual_z=0.000000000 error_m=0.000000001 status=PASS\nNS3_CHECK label=segment-3-early node=0 time_s=5.500000000 expected_x=-2.000000000 expected_y=-2.750000000 expected_z=0.000000000 actual_x=-1.999999999 actual_y=-2.750000000 actual_z=0.000000000 error_m=0.000000001 status=PASS\nNS3_CHECK label=segment-3-midpoint node=0 time_s=7.000000000 expected_x=-2.000000000 expected_y=1.000000000 expected_z=0.000000000 actual_x=-1.999999999 actual_y=1.000000000 actual_z=0.000000000 error_m=0.000000001 status=PASS\nNS3_CHECK label=terminal-hold node=0 time_s=9.100000000 expected_x=-2.000000000 expected_y=6.000000000 expected_z=0.000000000 actual_x=-1.999999999 actual_y=6.000000000 actual_z=0.000000000 error_m=0.000000001 status=PASS\nNS3_RESULT scenario=mobile checks=8 status=PASS\n",
+    "stderr": ""
+  },
+  {
+    "scenario": "static",
+    "command": [
+      "/tmp/field2sim-ns3-planar-control",
+      "--traceFile=/home/ismylhakki/cooja-positioner/cooja-positioner-github/integrations/elevation/planar-control-static.tcl",
+      "--scenario=static",
+      "--tolerance=1e-6"
+    ],
+    "exitCode": 0,
+    "traceSha256": "266914b645a25411e5949ecbf384d1633e0f35df61659e2ac05c46340c8a75d9",
+    "output": "NS3_CHECK label=static-node-0 node=0 time_s=0.100000000 expected_x=0.000000000 expected_y=0.000000000 expected_z=0.000000000 actual_x=0.000000000 actual_y=0.000000000 actual_z=0.000000000 error_m=0.000000000 status=PASS\nNS3_CHECK label=static-node-1 node=1 time_s=0.100000000 expected_x=12.500000000 expected_y=-8.000000000 expected_z=0.000000000 actual_x=12.500000000 actual_y=-8.000000000 actual_z=0.000000000 error_m=0.000000000 status=PASS\nNS3_CHECK label=static-node-2 node=2 time_s=0.100000000 expected_x=-4.000000000 expected_y=-15.250000000 expected_z=0.000000000 actual_x=-4.000000000 actual_y=-15.250000000 actual_z=0.000000000 error_m=0.000000000 status=PASS\nNS3_RESULT scenario=static checks=3 status=PASS\n",
+    "stderr": ""
+  }
+]

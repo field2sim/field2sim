@@ -68,9 +68,7 @@ version-independent Cooja interoperability.
 
 Following this result, the Cooja adapter applies fail-closed compatibility
 guards before serialization. A fixed scenario is rejected because the tested
-consumer cannot safely execute an all-zero-time trace. A mobile scenario with
-any nonzero local Z coordinate is also rejected because the consumer would
-silently retain its previous Z coordinate. Successful planar mobile artifacts
+consumer cannot safely execute an all-zero-time trace. The current experimental 3D workflow retains nonzero Z in mobile artifacts with a notice that the tested plugin ignores it. Static groups instead update CSC Position entries directly. Successful planar mobile artifacts
 carry explicit warnings that mobility is cyclic and that exported node numbers
 select zero-based mote-array indices rather than mote IDs. These warnings are
 displayed in the application output panel and are also returned in the
@@ -154,3 +152,7 @@ This evidence supports syntax, class selection, and parameter transfer for the
 three INET model families in the pinned releases. It does not show that a
 family-level two-ray or log-normal model reproduces a specific deployment, nor
 does it imply cross-simulator packet or fading equivalence.
+
+## Experimental elevation extension
+
+See [elevation results](../integrations/elevation/README.md) for the separate prescribed-height checks: ns-2 and INET passed 11/11 each; ns-3.47 passed static XYZ checks but the changing-Z mobile trace did not reproduce the expected route. These results do not replace the historical planar reports above.

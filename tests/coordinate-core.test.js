@@ -102,3 +102,18 @@ testExplicitOriginChangesCoordinatesDeterministically();
 testInputValidation();
 
 console.log('coordinate-core: all tests passed');
+
+// Inverse of the application's XY-at-zero / separate-altitude export convention.
+const {localToGeographic} = require('../coordinate-core.js');
+for(const origin of [{lat:41.3,lng:36.3,alt:400},{lat:-33,lng:151,alt:-20},{lat:80,lng:-170,alt:1500},{lat:0,lng:179.99,alt:0}]) {
+  for(const offset of [0,0.001,0.1]) {
+    const point={lat:origin.lat+offset,lng:((origin.lng+offset+540)%360)-180,alt:origin.alt-31};
+    const xy=geodeticToEnu({...point,alt:0},{...origin,alt:0});
+    const restored=localToGeographic({x:xy.east,y:xy.north,z:point.alt-origin.alt},origin);
+    close(restored.lat,point.lat,1e-9,'export/import latitude');
+    close(restored.lng,point.lng,1e-9,'export/import longitude');
+    close(restored.alt,point.alt,1e-9,'export/import altitude');
+  }
+}
+assert.throws(()=>localToGeographic({x:1e8,y:0,z:0},{lat:0,lng:0,alt:0}),/outside/);
+console.log('PASS horizontal inverse and separate altitude: 12 round trips');
