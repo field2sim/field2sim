@@ -1,0 +1,14 @@
+{
+  "id": "static-three-nodes",
+  "description": "Three non-collinear planar nodes used as a shared simulator-integration fixture.",
+  "scenario": "fixed",
+  "waypoints": [
+    { "nodeId": 1, "time": 0, "x": 0, "y": 0, "z": 0 },
+    { "nodeId": 2, "time": 0, "x": 12.5, "y": 8, "z": 0 },
+    { "nodeId": 3, "time": 0, "x": -4, "y": 15.25, "z": 0 }
+  ],
+  "acceptance": {
+    "positionToleranceMeters": 1e-9,
+    "timeToleranceMilliseconds": 100
+  }
+}

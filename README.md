@@ -240,3 +240,7 @@ BibTeX:
 ## License
 
 See [`LICENSE`](LICENSE).
+
+## Console simulation examples
+
+[examples/README.md](examples/README.md) provides static and mobile scenarios for Cooja, ns-2, ns-3 and OMNeT++/INET, with installation instructions, console commands and expected position checks.

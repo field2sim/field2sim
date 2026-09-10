@@ -1,0 +1,15 @@
+{
+  "id": "mobile-unequal-intervals",
+  "description": "A non-uniformly timed planar trajectory used as a shared simulator-integration fixture.",
+  "scenario": "mobile",
+  "waypoints": [
+    { "nodeId": 1, "time": 0, "x": 0, "y": 0, "z": 0 },
+    { "nodeId": 1, "time": 2, "x": 3, "y": 4, "z": 0 },
+    { "nodeId": 1, "time": 5, "x": -2, "y": 4, "z": 0 },
+    { "nodeId": 1, "time": 9, "x": -2, "y": -6, "z": 0 }
+  ],
+  "acceptance": {
+    "positionToleranceMeters": 1e-9,
+    "timeToleranceMilliseconds": 100
+  }
+}

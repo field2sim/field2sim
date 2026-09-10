@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "cooja": {
+    "contikiNgRevision": "6ac4608cdd8e007ae328905687db9a326dd09304",
+    "coojaRevision": "0a518f80c4a6c79a0cfda332f3d6bc6d7684bc7a",
+    "javaLanguageVersion": 21,
+    "mobilityPlugin": {
+      "class": "org.contikios.cooja.plugins.Mobility",
+      "sourcePath": "java/org/contikios/cooja/plugins/Mobility.java",
+      "sourceSha256": "634bfd55e79a067ce6a3614a1dda6b5b57da00747e30da6710cbf7dcdb50ccef",
+      "observedContract": {
+        "nodeSelector": "zero-based simulation mote-array index",
+        "inputFieldsConsumed": ["moteIndex", "timeSeconds", "x", "y"],
+        "fifthZField": "ignored; the mote's existing Z coordinate is retained",
+        "wrapMoves": true
+      }
+    }
+  },
+  "ns3": {
+    "release": "3.47",
+    "archiveUrl": "https://www.nsnam.org/release/ns-3.47.tar.bz2",
+    "archiveSha1": "897c3f2db2c6de6a8291e46b3020dbeb1af75269",
+    "requiredParser": "ns3::Ns2MobilityHelper",
+    "executionProgram": "integrations/ns3/field2sim-ns3.cc"
+  },
+  "ns2": {
+    "release": "2.35+dfsg",
+    "packageRevision": "2.35+dfsg-5build2",
+    "archiveUrl": "http://archive.ubuntu.com/ubuntu/pool/universe/n/ns2/ns2_2.35+dfsg.orig.tar.xz",
+    "archiveSha1": "8f41b022adc5a7087ca54da473d30c007515d1b1",
+    "requiredParser": "MobileNode::setdest / MobileNode::update_position (common/mobilenode.cc, real /usr/bin/ns execution)",
+    "executionProgram": "integrations/ns2/verifier/verify-mobility.tcl"
+  },
+  "inet": {
+    "omnetppRelease": "6.4.0",
+    "omnetppRevision": "2cf25223fee7c2386f4c610f6fcb12d9585497ab",
+    "inetRelease": "4.7.0",
+    "inetRevision": "dfe270b21f38856874e3ba50ef964bd557e4bb99",
+    "requiredModule": "inet.mobility.single.BonnMotionMobility",
+    "moduleSourcePath": "src/inet/mobility/single/BonnMotionMobility.cc",
+    "moduleSourceSha256": "3225dfca00792f11361de0eb3597cfdcdef17cba1c43a50da209a01cac72f620",
+    "moduleNedPath": "src/inet/mobility/single/BonnMotionMobility.ned",
+    "moduleNedSha256": "b9010fc0b15cc9e0190654ab654a4097714f7241ddb43f5bda032db35b5968a3",
+    "executionProgram": "integrations/inet/verifier/PositionVerifier.cc",
+    "propagationContracts": {
+      "FreeSpacePathLoss.ned": "bfad0fd2492d76149631e0e1ba0087353836aa6072a5d7c206810e155f8e6807",
+      "FreeSpacePathLoss.cc": "9dc2d475038a2b141c0011fdb24b6092969d6cd5e180a6982d06d015db0e31ed",
+      "LogNormalShadowing.ned": "ec8786becd8661b33776eda4ed2c8c55ac444697d532a136afd00f784e4bd4ab",
+      "LogNormalShadowing.cc": "d3859a1e46369029b00f150ea9af585638ce94cb77202e17fa9782e06e8eaa31",
+      "TwoRayGroundReflection.ned": "2bf4ecfa1ebd6f847e5aeecb67f4f4bad9fc4acd1fc4048baf8baeb04c0b808e",
+      "TwoRayGroundReflection.cc": "8468f3683d6ff1b1ed1983f60640e3ea8613c7c45c2f58fec0b74343cebb8b98",
+      "PhysicalEnvironment.ned": "8acebb330ebf2b467682826e4ef875e53cc9b33112b2695bdf1a40226e1ed6e0",
+      "PhysicalEnvironment.cc": "eae0bce77f967de6e4d6c09bb657db28f5c66ef365588e0aab1c3b26d58375df",
+      "FlatGround.ned": "a3603585c2e82c533b931fcad8e77157dd7a6788dbadc207ed78ef9ace9dc417",
+      "FlatGround.cc": "9452540fdd8bb87aab680756d1e4788c841a79a4fc83c32a7d4ec000d99f54f2"
+    },
+    "propagationVerifier": "integrations/inet/propagation/PropagationParameterVerifier.cc"
+  }
+}

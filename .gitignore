@@ -31,3 +31,9 @@ cooja-example-folder/
 build/
 *.csc
 *.z1
+
+# Runnable example inputs and local simulation output
+!examples/cooja/**/*.csc
+examples/results/
+examples/__pycache__/
+examples/toolchains.env
