@@ -37,3 +37,9 @@ build/
 examples/results/
 examples/__pycache__/
 examples/toolchains.env
+
+examples/localization/__pycache__/
+
+.venv/
+examples/ns3/agriculture/results/
+examples/ns3/agriculture/__pycache__/

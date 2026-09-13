@@ -75,3 +75,7 @@ resolved relative to the script, not your working directory. Missing or invalid
 installation paths produce an explanatory error. Full output is saved in
 `examples/results/ns3/<scenario>/console.txt`, with a `result.json` summary.
 See the [shared launcher documentation](../README.md) for all options.
+
+## Agricultural UAV data collection
+
+See [120-sensor geographic scenario and Field2Sim UI exports](agriculture/README.md) for a console-run ns-3 experiment with a mobile UAV collector and a stationary control.

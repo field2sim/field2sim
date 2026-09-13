@@ -6,6 +6,13 @@ simulator. Python 3 launches the native simulator and collects its results.
 
 ## Start here
 
+Clone the public repository; no author-specific account or directory is needed:
+
+```bash
+git clone https://github.com/field2sim/field2sim.git
+cd field2sim
+```
+
 1. Install/build the simulator using the linked instructions below.
 2. From the repository root, create your local configuration:
 
@@ -89,3 +96,17 @@ Cooja Mobility applies discrete cyclic waypoints; the other three examples
 sample interpolated positions, including between waypoints. Their expected
 outputs therefore differ. See each README for Z behavior and native entry points.
 Tested versions and source revisions are in `toolchains.json`.
+
+## RSSI-weighted localization examples
+
+For a packet-based experiment with one mobile anchor and three static unknown
+nodes, see [mobile-anchor WCL](localization/README.md). Each simulator has a
+`localization/run.sh` that builds native code, runs in the console and independently
+checks estimates against reception logs. Additional build requirements apply.
+
+## Agricultural UAV collection experiment
+
+See [the ns-3 agricultural example](ns3/agriculture/README.md) for the archived
+Field2Sim geographic inputs, real Wi-Fi packet experiment, five-speed sweep,
+recorded results and Matplotlib commands. Its launchers are described separately;
+the static/mobile `--check` option above does not apply to this experiment.
