@@ -18,6 +18,10 @@ Satellite attribution: **EOxCloudless https://cloudless.eox.at by EOX IT Service
 
 The tool connects field-oriented deployment planning with simulator setup. A user can mark exact map positions, retain stable node IDs that may later be associated with firmware or protocol roles, generate regularly spaced nodes inside a polygon, or create a mobile scan route over a selected area. The tool does not assign network roles, predict coverage, or replace the target simulator's radio, protocol, energy, or firmware models.
 
+## Portable projects and route preview
+
+Use **Save Project / Open Project** to carry the entire workspace in a `.field2sim` file, including all node groups, 2D/3D and origin settings, propagation controls, stored elevations and an optional CSC copy. Provider keys and local file permissions are excluded. **Examples** includes a two-group Central Park scenario. **Route playback · prototype** provides a shared timeline with play/pause, scrubbing and playback-speed controls; it does not change exported timestamps or simulate network behavior. See [project examples and file contents](examples/projects/README.md).
+
 ## Features
 
 ### Scenario authoring
