@@ -13,6 +13,7 @@ const {lookup}=require('../elevation-client.js');
  await assert.rejects(lookup([{lat:NaN,lng:0}],{fetchImpl}),/Invalid geographic/);
  await assert.rejects(lookup([points[0]],{fetchImpl:async()=>({ok:false,status:429,headers:new Headers({'Retry-After':'60'}),json:async()=>({})})}),/60 seconds/);
  await assert.rejects(lookup([points[0]],{fetchImpl:async()=>({ok:true,json:async()=>({results:[],metadata:{dataset:'mapzen',units:'metres'}})})}),/Invalid elevation/);
+ await assert.rejects(lookup([points[0]],{fetchImpl:async()=>({ok:false,status:502,headers:new Headers(),json:async()=>({error:{code:'upstream_unavailable'}})})}),/could not obtain data from its provider.*Coordinates are unchanged/);
  const controller=new AbortController();controller.abort();
  await assert.rejects(lookup(points,{fetchImpl,signal:controller.signal}),{name:'AbortError'});
  console.log('PASS elevation batching, deduplication, negative/NoData, validation, rate-limit, cancellation');
