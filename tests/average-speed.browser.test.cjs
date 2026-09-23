@@ -1,0 +1,10 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict');
+(async()=>{const b=await chromium.launch({headless:true,executablePath:process.env.CHROME_BIN||'/usr/bin/google-chrome',args:['--no-sandbox']});try{const p=await b.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.route(/^https:/,r=>r.abort());await p.goto(process.env.FIELD2SIM_URL||'http://127.0.0.1:8772/');
+assert.equal(await p.locator('#speedVariantsPanel').count(),0);assert.equal(await p.locator('#averageSpeed').isVisible(),false);
+await p.fill('#latlngInput','1 5 0 0\n1 15 0 0\n1 25 0 0.001');await p.waitForTimeout(450);assert.equal(await p.locator('#averageSpeed').textContent(),'Average Speed: 5.56 m/s (20.02 km/h)');
+await p.fill('#latlngInput','1 5 0 0\n1 5 0 0.001');assert.equal(await p.locator('#averageSpeed').textContent(),'Average Speed: —');
+await p.fill('#latlngInput','');assert.equal(await p.locator('#averageSpeed').isVisible(),false);
+await p.locator('#projectMenu').evaluate(e=>e.open=true);await p.selectOption('#projectExample','central-park');await p.waitForFunction(()=>nodeGroups.length===2);assert.equal(await p.locator('#averageSpeed').textContent(),'Average Speed: 1.50 m/s (5.40 km/h)');
+await p.locator('[data-group-id="park-sensors"]').click();assert.equal(await p.locator('#averageSpeed').isVisible(),false);await p.locator('[data-group-id="park-collector"]').click();assert.equal(await p.locator('#averageSpeed').textContent(),'Average Speed: 1.50 m/s (5.40 km/h)');
+const before=await p.evaluate(()=>JSON.stringify(nodeGroups));await p.evaluate(()=>updateAverageSpeed());assert.equal(await p.evaluate(()=>JSON.stringify(nodeGroups)),before);
+assert.deepEqual(errors,[]);console.log('PASS average speed: pauses, invalid timestamps, empty/static visibility, group switching, read-only');}finally{await b.close();}})().catch(e=>{console.error(e);process.exit(1)});
