@@ -62,7 +62,7 @@ def execute(speed):
  return result
 results=[]
 with ThreadPoolExecutor(max_workers=2) as pool:
- for f in as_completed([pool.submit(execute,v) for v in [2,5,10,15,20]]):results.append(f.result())
+ for f in as_completed([pool.submit(execute,v) for v in [2,5,10,15,20,25,30]]):results.append(f.result())
 results.sort(key=lambda r:r['speedMps'])
 report={'seed':123456,'run':1,'simulator':'ns-3.47','baseline':'Archived Field2Sim UI exports; only time and speed scaled; no new geometry','radio':json.loads((BASE/'results-ui/report.json').read_text())['radio'],'results':results,'sourceSha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [BASE/'ui-export/mobility.tcl',BASE/'field2sim-agriculture.cc',Path(__file__)]}}
 (OUT/'report.json').write_text(json.dumps(report,indent=2)+'\n')
@@ -73,4 +73,4 @@ lines=['# UAV speed sweep','', '| Speed (m/s) | Flight time (s) | Sent | Receive
 for r in results:lines.append(f"| {r['speedMps']} | {r['flightTimeS']:.2f} | {r['sent']} | {r['received']} | {r['sensorsReached']}/120 | {100*r['deliveryRatio']:.3f} |")
 lines+=['','The geometry, altitude (30 m), radio parameters, 2 s per-sensor transmission interval, seed and run are fixed. Only route timing changes. Each run ends after one traversal; slower runs therefore contain more transmitted packets. Sensors broadcast continuously without buffering or an acknowledged bulk-transfer protocol. Distinct sensors heard and per-sensor packet counts are the main contact-coverage measures. These are single-seed descriptive runs, not an optimal-speed or statistical-significance claim.','', 'All 238 simulator-observed position checks passed per run; the 5 m/s run reproduced the previous UI-export execution counts. Individual geographic input files can be loaded into the same mobile Field2Sim group.']
 (OUT/'RESULTS.md').write_text('\n'.join(lines)+'\n')
-print('PASS: five speed cases verified; speed-results/RESULTS.md',flush=True)
+print('PASS: seven speed cases verified; speed-results/RESULTS.md',flush=True)

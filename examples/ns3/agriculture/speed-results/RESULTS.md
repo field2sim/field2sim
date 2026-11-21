@@ -7,6 +7,8 @@
 | 10 | 378.71 | 22723 | 281 | 120/120 | 1.237 |
 | 15 | 252.47 | 15149 | 191 | 119/120 | 1.261 |
 | 20 | 189.35 | 11362 | 131 | 109/120 | 1.153 |
+| 25 | 151.48 | 9090 | 104 | 92/120 | 1.144 |
+| 30 | 126.24 | 7575 | 81 | 76/120 | 1.069 |
 
 The geometry, altitude (30 m), radio parameters, 2 s per-sensor transmission interval, seed and run are fixed. Only route timing changes. Each run ends after one traversal; slower runs therefore contain more transmitted packets. Sensors broadcast continuously without buffering or an acknowledged bulk-transfer protocol. Distinct sensors heard and per-sensor packet counts are the main contact-coverage measures. These are single-seed descriptive runs, not an optimal-speed or statistical-significance claim.
 

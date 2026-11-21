@@ -119,7 +119,7 @@ substitutes, are what ns-3 consumes. `ui-export/field2sim-screen.png` records th
 application view. The initial pilot used another location; its outputs are not
 the evaluated agricultural scenario and are excluded from `results-ui/`.
 
-## Five-speed experiment and plots
+## Seven-speed experiment and plots
 
 No author account, laboratory server, or author-specific directory is required.
 Clone the public repository and configure your own ns-3 installation:
@@ -137,13 +137,13 @@ above. Then run from the repository root:
 ```bash
 # One mobile traversal at 5 m/s and the stationary comparison:
 bash examples/ns3/agriculture/run.sh
-# Same route at 2, 5, 10, 15 and 20 m/s:
+# Same route at 2, 5, 10, 15, 20, 25 and 30 m/s:
 bash examples/ns3/agriculture/run-speed-sweep.sh
 ```
 
 The sweep writes `speed-results/summary.csv`, `report.json` and `RESULTS.md`,
 plus per-speed traces, geographic input rows and reception records. It ends with
-`PASS` after checking the five runs. The bundled results can be inspected without
+`PASS` after checking the seven runs. The bundled results can be inspected without
 installing ns-3. Running again replaces the results in this example directory.
 
 Plotting is optional and requires Matplotlib. From the repository root:

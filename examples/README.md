@@ -107,6 +107,6 @@ checks estimates against reception logs. Additional build requirements apply.
 ## Agricultural UAV collection experiment
 
 See [the ns-3 agricultural example](ns3/agriculture/README.md) for the archived
-Field2Sim geographic inputs, real Wi-Fi packet experiment, five-speed sweep,
+Field2Sim geographic inputs, real Wi-Fi packet experiment, seven-speed sweep,
 recorded results and Matplotlib commands. Its launchers are described separately;
 the static/mobile `--check` option above does not apply to this experiment.

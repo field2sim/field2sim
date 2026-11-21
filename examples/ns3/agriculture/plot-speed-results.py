@@ -27,11 +27,13 @@ def draw(ax, item, index):
     ax.set_xlabel('UAV Speed (m/s)', fontsize=23)
     ax.set_ylabel(ylabel, fontsize=23)
     ax.set_xticks(speed)
-    ax.set_xlim(0, 22)
+    ax.set_xlim(0, 32)
     ax.set_ylim(0, max(values)*1.20)
     for x, y in zip(speed, values):
-        label = f'{y:.2f}' if index == 0 else (f'{y:.1f}%' if index == 1 else str(int(y)))
-        ax.annotate(label, (x, y), xytext=(0, 12), textcoords='offset points', ha='center', fontsize=21)
+        label = f'{y:.2f}' if index == 0 else ((f'{y:.0f}%' if y == 100 else f'{y:.1f}%') if index == 1 else str(int(y)))
+        # The 2 and 5 m/s points are close on the axis; anchor their labels apart.
+        ha = {2.0: 'right', 5.0: 'left'}.get(x, 'center')
+        ax.annotate(label, (x, y), xytext=(0, 12), textcoords='offset points', ha=ha, fontsize=21)
     if index == 1:
         ax.set_ylim(0, 118)
         ax.set_yticks([0, 25, 50, 75, 100])
