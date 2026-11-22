@@ -128,6 +128,14 @@ python3 -m http.server 8766 --bind 127.0.0.1
 
 Open **http://127.0.0.1:8766/** in a modern browser. Keep the terminal open; press **Ctrl+C** to stop the server. No build or Python package installation is needed. If the port is occupied, choose another port in both the command and URL.
 
+**Map layers in a local copy:** Street (OSM) and Satellite (EOX) work without a key. Satellite (Esri) and Satellite (MapTiler) need your own provider key: either enter it in the map control (kept only for the open page), or edit `map-provider-config.js` in the repository root:
+
+```js
+window.FIELD2SIM_MAP_CONFIG = { esriApiKey: "YOUR_ESRI_KEY", maptilerApiKey: "YOUR_MAPTILER_KEY" };
+```
+
+Leave a field empty (`""`) for a provider you do not use. Do not commit this file with real keys; the hosted site generates it during deployment (see *Shared provider keys on GitHub Pages*).
+
 **Enable 3D export (experimental)** above the geographic input is off by default: no elevation requests are sent and exports use Z=0. Enable it to retrieve surface elevations and export origin-relative Z. Simulator compatibility is explained beside the checkbox. Map tiles, place search, and enabled elevation lookup require internet access.
 
 ## Important identifier convention
@@ -162,9 +170,9 @@ The deployment contained 100 stationary unknown nodes and one mobile anchor. The
 
 Thirteen pinned target configurations were loaded successfully: three Cooja LogisticLoss proxy cases, three ns-2.35 propagation classes, four ns-3.47 propagation classes, and three OMNeT++ 6.4/INET 4.7 path-loss configurations. This verifies configuration loading and model instantiation in those releases; it does not establish field accuracy or numerical equivalence between simulators.
 
-A separate deterministic Zolertia Z1 characterization executed 216 Cooja scenarios: 18 condition-level profiles × two RX anchors (`-95` and `-100` dBm) × six distances (10–60 m). All cases completed with 9,504 transmissions and 3,754 receptions. Of the 108 paired RX-anchor comparisons, 107 produced identical PRR and conditional RSSI. The only difference—Forest Guava at 20 m—was caused by LogisticLoss's strict candidate cutoff. Recomputing `transmitting_range` for each RX anchor cancels the anchor change in the mean-RSSI expression, so that design is not an independent receiver-sensitivity experiment.
+A separate deterministic Zolertia Z1 characterization executed 216 Cooja scenarios: 18 condition-level profiles × two RX anchors (`-95` and `-100` dBm) × six distances (10–60 m). All cases completed with 9,504 transmissions and 3,754 receptions. Of the 108 paired RX-anchor comparisons, 107 produced identical PRR and conditional RSSI. The only difference—Guava plantation at 20 m—was caused by LogisticLoss's strict candidate cutoff. Recomputing `transmitting_range` for each RX anchor cancels the anchor change in the mean-RSSI expression, so that design is not an independent receiver-sensitivity experiment.
 
-The sweep uses one deterministic seed and includes source-domain extrapolations. It is reported as simulator-model characterization, not inferential statistics, hardware-PER calibration, or a universal distance–RSSI law.
+The sweep uses one deterministic seed and includes source-domain extrapolations. It is reported as simulator-model characterization, not inferential statistics, hardware-PER calibration, or a universal distance–RSSI law. The complete package—216 CSC files with SHA-256 inspection report, raw CSVs, logs, analysis scripts, plots, and the per-condition coefficient sources—is in [experiments/cooja-z1-distance-rssi](experiments/cooja-z1-distance-rssi/README.md).
 
 ## Validation and tests
 

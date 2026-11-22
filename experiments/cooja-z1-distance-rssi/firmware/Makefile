@@ -1,0 +1,9 @@
+CONTIKI_PROJECT = udp-rssi
+all: $(CONTIKI_PROJECT)
+
+MAKE_MAC = MAKE_MAC_CSMA
+MAKE_NET = MAKE_NET_IPV6
+MAKE_ROUTING = MAKE_ROUTING_RPL_LITE
+
+CONTIKI ?= /home/ismylhakki/contiki-ng
+include $(CONTIKI)/Makefile.include

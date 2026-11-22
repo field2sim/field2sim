@@ -43,3 +43,8 @@ examples/localization/__pycache__/
 .venv/
 examples/ns3/agriculture/results/
 examples/ns3/agriculture/__pycache__/
+
+# Published Z1 range-characterization package (CSC inputs and Cooja logs are part of the evidence)
+!experiments/cooja-z1-distance-rssi/**/*.csc
+!experiments/cooja-z1-distance-rssi/**/*.log
+experiments/**/__pycache__/

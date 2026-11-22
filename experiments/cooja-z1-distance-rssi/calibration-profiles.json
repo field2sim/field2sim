@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "frequencyMHz": 2400,
+  "txPowerDbm": 0,
+  "profiles": {
+    "urban-los-site-general": {
+      "model": "itu-r-p1411-alpha-beta-gamma",
+      "alpha": 2.07, "beta": 31.23, "gamma": 2.06,
+      "sourceSigmaDb": 4.91,
+      "validDistanceM": { "min": 5, "max": 660 }
+    },
+    "urban-high-rise-nlos": {
+      "model": "itu-r-p1411-alpha-beta-gamma",
+      "alpha": 3.73, "beta": 16.02, "gamma": 2.26,
+      "sourceSigmaDb": 7.62,
+      "validDistanceM": { "min": 20, "max": 715 }
+    },
+    "urban-low-rise-nlos": {
+      "model": "itu-r-p1411-alpha-beta-gamma",
+      "alpha": 4.52, "beta": 6.04, "gamma": 2.14,
+      "sourceSigmaDb": 8.02,
+      "validDistanceM": { "min": 10, "max": 250 }
+    },
+    "residential-nlos": {
+      "model": "itu-r-p1411-alpha-beta-gamma",
+      "alpha": 3.01, "beta": 18.8, "gamma": 2.07,
+      "sourceSigmaDb": 3.07,
+      "validDistanceM": { "min": 30, "max": 170 }
+    },
+    "agriculture-corn-growth": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "agriculture-corn-maturity": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "agriculture-paddy-growth": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "agriculture-paddy-maturity": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "agriculture-groundnut-growth": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "agriculture-groundnut-maturity": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "agriculture-coconut-green-grass": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "agriculture-lawn-dry-grass": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "agriculture-lawn-wet-grass": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "measuredDistancesM": [5, 10, 15, 20]
+    },
+    "forest-mango-24ghz": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 10,
+      "measuredDistancesM": [20]
+    },
+    "forest-guava-24ghz": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 10,
+      "measuredDistancesM": [16]
+    },
+    "forest-position-1-24ghz": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 10,
+      "measuredDistancesM": [15]
+    },
+    "forest-position-2-24ghz": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 10,
+      "measuredDistancesM": [23]
+    },
+    "free-space-reference": {
+      "model": "log-distance-fspl-reference", "sourceSigmaDb": 0,
+      "validDistanceM": { "min": 1, "max": null }
+    }
+  },
+  "modelDocumentation": {
+    "itu-r-p1411-alpha-beta-gamma": {
+      "equation": "PL(d,f)=10*alpha*log10(d)+beta+10*gamma*log10(f_GHz)",
+      "rangeCalculation": "TR=10^((txPowerDbm-rxSensitivityDbm-beta-10*gamma*log10(f_GHz))/(10*alpha))"
+    },
+    "log-distance-fspl-reference": {
+      "referenceDistanceM": 1,
+      "referenceLoss": "free-space path loss at 1 m and 2.4 GHz",
+      "equation": "PL(d)=FSPL(1m,2.4GHz)+10*n*log10(d/1m)",
+      "rangeCalculation": "TR=10^((txPowerDbm-rxSensitivityDbm-FSPL_1m)/(10*n))"
+    }
+  },
+  "mappingCaveats": [
+    "Cooja LogisticLoss transmitting_range is both a strict candidate-receiver cutoff and the distance where mean RSSI equals rx_sensitivity.",
+    "Cooja awgn_sigma is sampled independently per reception; source sigma values may represent spatial shadowing and are therefore only a parameterized approximation.",
+    "The CC2420 -95 dBm figure is specified at 1% PER; placing -95 in LogisticLoss rx_sensitivity is a sensitivity-analysis substitution, not a PER-equivalent hardware calibration."
+  ]
+}

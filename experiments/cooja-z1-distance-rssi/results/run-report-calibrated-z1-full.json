@@ -1,0 +1,1587 @@
+{
+  "schemaVersion": 2,
+  "suite": "calibrated-z1",
+  "caseCount": 216,
+  "startedAt": "2026-08-25T20:31:43.016Z",
+  "finishedAt": "2026-08-25T20:48:47.199Z",
+  "toolchain": {
+    "contikiNgRevision": "6ac4608cdd8e007ae328905687db9a326dd09304",
+    "coojaRevision": "0a518f80c4a6c79a0cfda332f3d6bc6d7684bc7a",
+    "compiler": "msp430-gcc (GCC) 4.7.2 20120920 (mspgcc dev 20120911)"
+  },
+  "allCompleted": true,
+  "totalSent": 9504,
+  "totalReceived": 3754,
+  "zeroReceptionCases": 129,
+  "partialReceptionCases": 8,
+  "fullReceptionCases": 79,
+  "candidateCases": 89,
+  "nonCandidateCases": 127,
+  "familyRxAggregates": {
+    "agriculture|rx-100": {
+      "cases": 54,
+      "sent": 2376,
+      "received": 274,
+      "prr": 0.11531986531986532
+    },
+    "agriculture|rx-95": {
+      "cases": 54,
+      "sent": 2376,
+      "received": 274,
+      "prr": 0.11531986531986532
+    },
+    "forest|rx-100": {
+      "cases": 24,
+      "sent": 1056,
+      "received": 306,
+      "prr": 0.2897727272727273
+    },
+    "forest|rx-95": {
+      "cases": 24,
+      "sent": 1056,
+      "received": 262,
+      "prr": 0.2481060606060606
+    },
+    "reference|rx-100": {
+      "cases": 6,
+      "sent": 264,
+      "received": 264,
+      "prr": 1.0
+    },
+    "reference|rx-95": {
+      "cases": 6,
+      "sent": 264,
+      "received": 264,
+      "prr": 1.0
+    },
+    "urban|rx-100": {
+      "cases": 24,
+      "sent": 1056,
+      "received": 1055,
+      "prr": 0.9990530303030303
+    },
+    "urban|rx-95": {
+      "cases": 24,
+      "sent": 1056,
+      "received": 1055,
+      "prr": 0.9990530303030303
+    }
+  },
+  "cases": [
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 10,
+      "receptionRatio": 0.22727272727272727
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 10,
+      "receptionRatio": 0.22727272727272727
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 0,
+      "receptionRatio": 0
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d10",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d20",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d30",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d40",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d50",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d60",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    }
+  ],
+  "summaryCsv": "results/summary-calibrated-z1.csv",
+  "pilotReport": "results/run-report-calibrated-z1-pilot.json",
+  "remainderReport": "results/run-report-calibrated-z1.json"
+}

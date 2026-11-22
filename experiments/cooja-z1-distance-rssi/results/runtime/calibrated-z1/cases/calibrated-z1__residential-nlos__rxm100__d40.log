@@ -1,0 +1,89 @@
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-69 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-73 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-76 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-77 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-75 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-72 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-73 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-76 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-74 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-75 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-80 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-68 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-70 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-74 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-75 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-69 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-73 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-72 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-71 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-73 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-78 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-77 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-73 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-77 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-74 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-76 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-71 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-81 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-75 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-77 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-72 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-73 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-75 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-79 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-71 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-78 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-77 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-76 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-74 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-74 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-73 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-75 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-78 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__residential-nlos__rxm100__d40 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-79 dBm; from fe80::c30c:0:0:1
+CASE_DONE case=calibrated-z1__residential-nlos__rxm100__d40

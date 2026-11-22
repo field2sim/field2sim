@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "platform": "Zolertia Z1",
+  "senderMoteId": 1,
+  "receiverMoteId": 2,
+  "transport": "IPv6 link-local one-hop unicast UDP to Z1 mote 2 (fe80::c30c:0:0:2)",
+  "mac": "CSMA",
+  "routing": "RPL Lite compiled but no root/DODAG; link-local one-hop multicast only",
+  "warmupSeconds": 40,
+  "sendIntervalMilliseconds": 1000,
+  "simulationDurationSeconds": 85,
+  "simulationRandomSeed": 123456,
+  "distancesMeters": [10, 20, 30, 40, 50, 60],
+  "main": {
+    "transmittingRangeMeters": 100,
+    "profileScope": "all profiles exposed by the web page"
+  },
+  "sensitivity": {
+    "profileId": "urban-los-site-general",
+    "transmittingRangeMeters": [10, 20, 30, 40, 50, 60],
+    "interpretation": "separate parameter sensitivity; distance >= transmitting range is outside the LogisticLoss candidate set"
+  },
+  "calibratedZ1": {
+    "rxSensitivityDbm": [-95, -100],
+    "profileScope": "all profiles",
+    "transmittingRangeMapping": "source-model mean RSSI equals the selected Cooja rx_sensitivity anchor at transmitting_range",
+    "hardwareCaveat": "The -95 dBm CC2420 data-sheet figure is specified at 1% PER; substituting it into Cooja LogisticLoss is a sensitivity-analysis assumption, not a PER-equivalent hardware calibration."
+  },
+  "logisticLossDefaults": {
+    "successRatioTx": 1,
+    "rxSensitivityDbm": -100,
+    "rssiInflectionPointDbm": -92,
+    "awgnSigmaDb": 3,
+    "enableTimeVariation": false
+  }
+}

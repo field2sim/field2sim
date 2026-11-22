@@ -1,0 +1,1097 @@
+{
+  "schemaVersion": 1,
+  "suite": "calibrated-z1",
+  "inspectedAt": "2026-08-25T20:31:20.655Z",
+  "caseCount": 216,
+  "checks": [
+    "unique case IDs and confined CSC paths",
+    "complete simconf envelope",
+    "single non-placeholder Notes and radiomedium blocks",
+    "case identity in Notes and ScriptRunner",
+    "manifest-equal transmitting range, RX sensitivity, exponent, and AWGN sigma",
+    "two mote positions at the declared distance",
+    "SHA-256 freeze before execution"
+  ],
+  "files": [
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm95__d10-pathloss.csc",
+      "sha256": "ff2b52a9ebe86f37bdf81bc85bce401ac473c1e3a96c03e5ddbfe96df52d3b7a"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm95__d20-pathloss.csc",
+      "sha256": "002355246fcc97db4f66ea88dba37af63ea5d2289b1758c045cbdb5ff9fbcc36"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm95__d30-pathloss.csc",
+      "sha256": "13c3447319f39c63404769c8529ebe62c5a566b655a9f54c1ad2fb8e7cb69c42"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm95__d40-pathloss.csc",
+      "sha256": "204000393c873ee7994332d3373a83b1907822073f1fff12c8e404c182a10395"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm95__d50-pathloss.csc",
+      "sha256": "93d6da0e177e724dfd788604a395350fc8bdaa5cb26d46bf3b0f51db35f96e7e"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm95__d60-pathloss.csc",
+      "sha256": "4135c0a98940df1da0439807f54b290f3c30f7df361fb8d46e62969b9b77230c"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm100__d10-pathloss.csc",
+      "sha256": "66407e2bad0c3765435c1dda072796716aabfd26f094992db0066a5476c11895"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm100__d20-pathloss.csc",
+      "sha256": "b7b32b4f5802d5dc428a42784636a5c32a7659232f0a136d1760afbbbcf18845"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm100__d30-pathloss.csc",
+      "sha256": "c5133d80e97580c60ae6934b1742f1f0ef5c56efb9a21946e759bad3330f8489"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm100__d40-pathloss.csc",
+      "sha256": "f7a41714d4c698102aa62397b886f9a10203d78258537f5f97e5afba7f0d87fc"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm100__d50-pathloss.csc",
+      "sha256": "c912938cefc0bdefcadebcd2965ef3115a6b1ee4e7a8b578838f6c1ccd53a446"
+    },
+    {
+      "caseId": "calibrated-z1__urban-los-site-general__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-los-site-general__rxm100__d60-pathloss.csc",
+      "sha256": "1054298a4f60a4b59743ef93084402f779aa106760062dd2dbf74d0425e92616"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm95__d10-pathloss.csc",
+      "sha256": "35f4106945c0c658c7c457c538f11eaa38bce83b9d3bf939c81a5c406869559f"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm95__d20-pathloss.csc",
+      "sha256": "4f3de1f03b58b1163d7ceb166903616c166002648c83db8479c72d951243fbc4"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm95__d30-pathloss.csc",
+      "sha256": "805cce9777d39ccd4fb0fdbed25e3ad7b604f69ac8049bdccfc8aa58b56479f7"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm95__d40-pathloss.csc",
+      "sha256": "3c0163f2dbaf83a1f9ad409940d2337cedee1540f4194fc393d4a561f3b982da"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm95__d50-pathloss.csc",
+      "sha256": "1d6b80f659a136ead6b6fd0f20011a8194ee44f91d15164496fca91cecba1f92"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm95__d60-pathloss.csc",
+      "sha256": "f76e74f2771b98be1a661670c3d49f07cc1ca3966d63979c5fad247096435559"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm100__d10-pathloss.csc",
+      "sha256": "1cf08bb6af292b2b4fa83f5c371f035344efadd28e43ccd81ff5aa9202c234ea"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm100__d20-pathloss.csc",
+      "sha256": "8fcba24a7024d91798f8c7b894b4cbddd362869499379d50f36e51b7272c150e"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm100__d30-pathloss.csc",
+      "sha256": "7b00ab8b7f976db31fe888f07e1bbb9734ebfe27a24977bd22f0d5581bb43ba4"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm100__d40-pathloss.csc",
+      "sha256": "dd477611e49407b0df1a8450b490cad32e429c7f88a8b3417f261841e06f9012"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm100__d50-pathloss.csc",
+      "sha256": "f0ee5d191cb8e33173f1070eda56d05c7ec6d56f6480ef0ad202ffa8500d2d80"
+    },
+    {
+      "caseId": "calibrated-z1__urban-high-rise-nlos__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-high-rise-nlos__rxm100__d60-pathloss.csc",
+      "sha256": "1ed96ce47ddf0601a19de29d2b2b1c156c98632067a67c056a6058f96c8ef3f8"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm95__d10-pathloss.csc",
+      "sha256": "a2da5b87f4c06b5f0b8bdd80f4562845a444d4f59f2315c276f1d9c357438d95"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm95__d20-pathloss.csc",
+      "sha256": "a89465dab3c63ec58c500ac6f0945ae4c75eb206eb13aa79597b945bc1d7e70a"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm95__d30-pathloss.csc",
+      "sha256": "bb2d12439869369535c440176924b2ab03cea3075987309236e66be535b72ac8"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm95__d40-pathloss.csc",
+      "sha256": "3996323e8253e240cf2373d5e92f5ab734c2e7cb141360fd3c835c1da845f7a0"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm95__d50-pathloss.csc",
+      "sha256": "6fb12fe14258287738bb3747dbd6eb2781303bfac3572b2ca3cf87e8d4caa6ec"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm95__d60-pathloss.csc",
+      "sha256": "76ffd24767702e748840f39418748acbe85492675219a632a402628686cc3ed6"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm100__d10-pathloss.csc",
+      "sha256": "ecaf90f8cfdc6eceb64adcafe28ea552cd659ddee6d50a1c8b6c82778ca982f8"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm100__d20-pathloss.csc",
+      "sha256": "def703238d61e1ad7e930ebf8b428438d5c1170ef34c2f7e9a6e1b354bf04734"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm100__d30-pathloss.csc",
+      "sha256": "cd3a6f73f7bf56bd2fa1da8fb09510ae04053e07d7ff6798492e0939c556f10d"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm100__d40-pathloss.csc",
+      "sha256": "f0db8ba57b3ca25f4111f728f9ebccb315e94801c58a1e9c095bebffc8b9b888"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm100__d50-pathloss.csc",
+      "sha256": "be955b9bbb8bd4e7d9fdc103ff443df4e811f20da7a33fe4c0a29378147bd547"
+    },
+    {
+      "caseId": "calibrated-z1__urban-low-rise-nlos__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__urban-low-rise-nlos__rxm100__d60-pathloss.csc",
+      "sha256": "9e7eb2eac05fa136fc2ed1a0149aa894f46084b1c7f6493ada806f8be3f5b900"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm95__d10-pathloss.csc",
+      "sha256": "56083636f5c42b0febac3f53d642ec47016a79f3d2128afee1ce71fba4e75247"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm95__d20-pathloss.csc",
+      "sha256": "431e431ad1c9aa0d82b1276fff4daba199bc26a50eb8b4f8f0474b8190357456"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm95__d30-pathloss.csc",
+      "sha256": "343a17ad6c8be55b9486f53df3ccfd0f11c5a1be00f5e02f05968fbd652772fe"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm95__d40-pathloss.csc",
+      "sha256": "d0bdbb449ed6f1af677d79c575072b14e5287c16497bb28381bf80912e0810e8"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm95__d50-pathloss.csc",
+      "sha256": "adfdca9067efaa90fd70ddbd3da2ca0621e805cb544b81888ec8e6e921bb7a3d"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm95__d60-pathloss.csc",
+      "sha256": "7f8b196e278e45437dd0d8803d551c1ad308e213dd0577e52bbb995f375c0203"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm100__d10-pathloss.csc",
+      "sha256": "bc7e7f16648eda3585fad17e60dcdcb93682f74d73df1a7695301cfe33563af5"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm100__d20-pathloss.csc",
+      "sha256": "614cd7132f772a94c9313deabf951913657d680d696bc350b6617949cf4ca088"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm100__d30-pathloss.csc",
+      "sha256": "efc2732a590857ebfaff5e190bfed063b804f63f718962c3f95a5d28fe71f254"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm100__d40-pathloss.csc",
+      "sha256": "b3a8f2f20a9ea20316b3e6c006c31285ac0d83910d8d0323c367785da788167e"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm100__d50-pathloss.csc",
+      "sha256": "ff5501c46fedbba885318d60d3149aeae30d5db380a822022474a61ede138760"
+    },
+    {
+      "caseId": "calibrated-z1__residential-nlos__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__residential-nlos__rxm100__d60-pathloss.csc",
+      "sha256": "762e6f67d81db8f75431670b5352427eb81f81a03aa273c464a1033b61677f3e"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm95__d10-pathloss.csc",
+      "sha256": "9548943738160b8851f93ea6bacf29b661db7592397698e9ffd84d7d2dd9b22c"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm95__d20-pathloss.csc",
+      "sha256": "10afae213b1d6089e016af1c989eab170ac034fdce696e7ba7ce106ca0cda815"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm95__d30-pathloss.csc",
+      "sha256": "7dfffae8eef41f4ea9682d110c742338bbd4c8a0ca61a6bc1ff44abc59a6fa9e"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm95__d40-pathloss.csc",
+      "sha256": "890782e21341ac6d4c1ee64d0d45c0417795fdb5fce3b99e1632ffb897d21d33"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm95__d50-pathloss.csc",
+      "sha256": "4e95c13472148aaf9b12b8a476d209e473bcd1310ef1d86521ad5d5e0c7955b0"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm95__d60-pathloss.csc",
+      "sha256": "7bf19b31233ae9975ce366097253ff97e4c02b12e3e4e1d95a243846fbecc8a4"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm100__d10-pathloss.csc",
+      "sha256": "6697a5d9cfdecbd6c48dc07fa6e506d45b8c7bd880ba6ed1f750a4650b929ed8"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm100__d20-pathloss.csc",
+      "sha256": "94d60202631ee58853c4fe5995d656c14511565ba69c46e71b0363a34856179c"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm100__d30-pathloss.csc",
+      "sha256": "c3c4a5c1c9aedc7cacfe0cd69b0199b6897edfca5c5e2aefd773c65af5e3f5b8"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm100__d40-pathloss.csc",
+      "sha256": "8bbfa75981cd8d9554c129e56d605a7673873887c0c213d19d16e9a038f3f90c"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm100__d50-pathloss.csc",
+      "sha256": "6c5fcd6e01ac69530310dc585350679d8a73749bc63f664efa952c5eadde8dae"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-growth__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-growth__rxm100__d60-pathloss.csc",
+      "sha256": "7c216e0bc57d44dfd1bb42dbb0953078337c553fc652cae71ff36338c6bd07ef"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm95__d10-pathloss.csc",
+      "sha256": "4f8f9ad565cd271cb7b4f0306a47652fa298fba7c23be685b86b5138c959743d"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm95__d20-pathloss.csc",
+      "sha256": "4d3afdc2745a397171fc2c3bba0cff75852566e94ab3c60e2f204008b06210e3"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm95__d30-pathloss.csc",
+      "sha256": "9438e8e01bb124fef46a323eeb80439bd696401700933beaf05ae55534c7d99e"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm95__d40-pathloss.csc",
+      "sha256": "4b6c3aa44d6b63ccb5da7b6ae37de398fed2ba4f9213bf1d16eb004da319f6cd"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm95__d50-pathloss.csc",
+      "sha256": "d1dfc569f8eec84ee2926b435bf2d4456542729f960dad9009e4e46689b2eeb8"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm95__d60-pathloss.csc",
+      "sha256": "57264fa9b06c18424d28d1557a652065f0404ce76d34cdab60e1b70c38e5f70e"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm100__d10-pathloss.csc",
+      "sha256": "e8d9adda8763b3c833155ed2096a908b99624a7261def19852b2b490eea4918e"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm100__d20-pathloss.csc",
+      "sha256": "5da070c2947e7e807099ad9baef8baa1c500943aa4a9fbaef87da7d92bd45ae4"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm100__d30-pathloss.csc",
+      "sha256": "bcc1bb43787b678135e33fc4f231f4f4627fcaf571b0b7dd46106f760041f6cc"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm100__d40-pathloss.csc",
+      "sha256": "967eb6c627e4f45e6d2bfdf86471eefa47ab88c78b4618e0b4a7d41fedfd3b9b"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm100__d50-pathloss.csc",
+      "sha256": "f98229325b5bccf4ff89df2f56704f36607bd07b28e9b16d5755ae5eca110fc8"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-corn-maturity__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-corn-maturity__rxm100__d60-pathloss.csc",
+      "sha256": "e5d6676478ef85ee4e63888139b33999937cb153cf558eb77c4eabea27b94ff2"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm95__d10-pathloss.csc",
+      "sha256": "a24e554938f9fca5fc2d1bca2f2d14a44fed94c84ee6718650bb6d010f69218d"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm95__d20-pathloss.csc",
+      "sha256": "59471781eb6322883ec981ea502945ffba08ef0ca9bf8e1312950f45e35c283f"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm95__d30-pathloss.csc",
+      "sha256": "9365d5ab03bef3e40f33bf6d2af640c7ccb698700b2dc6c877726645b37e6d5e"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm95__d40-pathloss.csc",
+      "sha256": "cbbb4966d835dc30e7fd86d3357df8a3e1097a5f684ba0a75eaa368567b79347"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm95__d50-pathloss.csc",
+      "sha256": "2ff7bfe34f8bebccda4a5a1822b1e73da6a7833b1f72c5ff58c84bac2ce2c535"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm95__d60-pathloss.csc",
+      "sha256": "792fd3e14814a7b7c885e0c4a710ddb0b080ef7e71e328c7e1ab878a5d8bb1a1"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm100__d10-pathloss.csc",
+      "sha256": "7e1c9086c25b816eb1be0895806bcf9b654605de002f6b31bd891db427861840"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm100__d20-pathloss.csc",
+      "sha256": "4762eefc2a3434fe1d5d2d8d5acf002004cbf165eb7323d111e2fe8ea80ba12a"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm100__d30-pathloss.csc",
+      "sha256": "119f8458c0a17d3906e8030dfd774f01efcb7d1f12fe5e79c8cd7e69efca9506"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm100__d40-pathloss.csc",
+      "sha256": "b989e5c375d15982ceddf74a4698491852c88b7502625c0aff35d6c9bba661e7"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm100__d50-pathloss.csc",
+      "sha256": "7369268d5e0436794650bdcd7e15cae10bc3c75acfe263e837df781554236e74"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-growth__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-growth__rxm100__d60-pathloss.csc",
+      "sha256": "2fadb565f885d4cfb8324e90918cd22f6c179fe8a8dbe309d2d9cca4d09e2df3"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm95__d10-pathloss.csc",
+      "sha256": "1720561d110519e8d0f83dcf4543dfec8e94eaa85b03bbfb1fdbf0d31adab278"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm95__d20-pathloss.csc",
+      "sha256": "100c03dd77cb9b1208cba75dee1f81fa75274875353db4383053e517cd2fa466"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm95__d30-pathloss.csc",
+      "sha256": "532c1414673697f6a17014955402324a00cc56933433fbe1c43992129449ac66"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm95__d40-pathloss.csc",
+      "sha256": "299f199d2a00f1435007b3c414aaa4f4a5118335391e74cf362c9cb0c82d36fe"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm95__d50-pathloss.csc",
+      "sha256": "ab51c6230d4f98d4f6ddad31ced18affbcc25e90ea9af156f97b6c66094c696f"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm95__d60-pathloss.csc",
+      "sha256": "cdcc73f0e6145f4d3641bf0241a7da536b667b6bd8843b6ef6030798827f9ace"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm100__d10-pathloss.csc",
+      "sha256": "3e61086125da9192109da6291319fd6494bd171b2ab0c992e0bd99597ec0c60e"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm100__d20-pathloss.csc",
+      "sha256": "6b056e18ec8a0509d9fe55c0bc3287b1b7ff3e9a7c409942ec15985468a72930"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm100__d30-pathloss.csc",
+      "sha256": "5b82fe94001ab501f70e81cbf51d772e7d96a14ba323a232d90f081d3f856462"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm100__d40-pathloss.csc",
+      "sha256": "780cf2f0b65fe5b692793b307b9b5367d87137250e7046f654e5ae1a74b25f27"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm100__d50-pathloss.csc",
+      "sha256": "697293812dd1f0d6eea387008e212855351a1cc73630b1a48e1a932921899787"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-paddy-maturity__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-paddy-maturity__rxm100__d60-pathloss.csc",
+      "sha256": "68b760074e6863514834a2fa1189e77484b48eec6c47ea54fc765a151576d696"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm95__d10-pathloss.csc",
+      "sha256": "923bb6042630e6cf20c44300874916ab6b9d42334c3001c1302869b288e78454"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm95__d20-pathloss.csc",
+      "sha256": "6f2372d25561934cc41d75bf342c1548643633dc13c17beaf284562422f89196"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm95__d30-pathloss.csc",
+      "sha256": "593578a386d2096de7cf6627acaaa811beb552f8daf6bc3cd828fe6f4203e18b"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm95__d40-pathloss.csc",
+      "sha256": "e9e191c4e56b4722ce0c114d1d517537aa668aabf27f3de6d882e137db1e7046"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm95__d50-pathloss.csc",
+      "sha256": "f7861dd142d909e4a8a631fadb7d6826f376e5133a57eaebf0b8e9b96319125b"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm95__d60-pathloss.csc",
+      "sha256": "f50ed5fd7078e2af2a4316dc2264ceb18bf9ab16be1c6c44d2336f74f2700ead"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm100__d10-pathloss.csc",
+      "sha256": "d3bfa4f8f5263011dfc467b502b6abc9c136cab8468e98173bcca0b1a7d4ea76"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm100__d20-pathloss.csc",
+      "sha256": "37ecf6ca98e8577647e45df85bf3f634011ad16b2cfac899683dbf4ef78b5220"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm100__d30-pathloss.csc",
+      "sha256": "e0b88ee599586c937524c6a06cea2e09307486171f5c67bb19adfb657ac90e00"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm100__d40-pathloss.csc",
+      "sha256": "03b5241f09dd3525370e3b9742af116f086b071193841306e0822ef08a07dba9"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm100__d50-pathloss.csc",
+      "sha256": "c58123615a3ef0adc3f77b2ecdb4ee92141b33956e14822d691b13604dd83ce5"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-growth__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-growth__rxm100__d60-pathloss.csc",
+      "sha256": "4ff37abfbf9b86fd0a2b91417b60cd84341fb11063b5805361922ac0168dc3c0"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm95__d10-pathloss.csc",
+      "sha256": "6ddfc4d102cd6eb8b3ea6708d4dc7eff41ad6fdd57dbbcb62a35ed43ca0ff253"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm95__d20-pathloss.csc",
+      "sha256": "bc232569c3ff042c7b1346cfe5855324c9c4f6760a2fbe4eb80b965eb6a6fb32"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm95__d30-pathloss.csc",
+      "sha256": "f3fb6b9489b69de67bce7bd2ada72a24bf75f25f1e59af649011f04f15da7b63"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm95__d40-pathloss.csc",
+      "sha256": "4f427b84e051e8d24ff4b1f85e43c20fc2e7cd1aa433ffb981cd8da23eee5dae"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm95__d50-pathloss.csc",
+      "sha256": "ac4adcc6874932bca0d73a3f7a708a17e1ed545a09e8bdf62140e72e99f761f2"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm95__d60-pathloss.csc",
+      "sha256": "3cf90abc7a2d61bafb195ce45f8c1da38c6cc844eb4f330359e2c2dfde75867b"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm100__d10-pathloss.csc",
+      "sha256": "d262dda0c80adf9f712842c947f7600adb5fe29d896a4c7ad9728b26910eba34"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm100__d20-pathloss.csc",
+      "sha256": "7822655d86ada4d610ec369a077b71ee37575b469526226e32cef18e516c5e2a"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm100__d30-pathloss.csc",
+      "sha256": "1e6c312e0d5203c1566be13175ce379a12d801efc093fb441948a0cc0c0671e3"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm100__d40-pathloss.csc",
+      "sha256": "b33c58b11e11b3c7a376c75a8b2c5840f53087296d42615f6ee426aa6be93ec5"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm100__d50-pathloss.csc",
+      "sha256": "43de6c206d894fc5af45dd2e57549d6bee2dae13bc8574613685de5560da8a43"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-groundnut-maturity__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-groundnut-maturity__rxm100__d60-pathloss.csc",
+      "sha256": "d8c57c0b699db0af304b226c542df4a2e2133a0f07328b53ae8d4a7319822468"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm95__d10-pathloss.csc",
+      "sha256": "3aef2d3eb8a3d2fe8a8f5cd95cc9865a94c7539d689f78d67a81728da88e6f0d"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm95__d20-pathloss.csc",
+      "sha256": "c8905de94da99de02caab0395742c894df3b7504fad5c5d459db4d856332037a"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm95__d30-pathloss.csc",
+      "sha256": "7f09a1aa7e1e3fe1449760f4e1484d1fcf5f201d308af9151a8f96286d41aa9a"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm95__d40-pathloss.csc",
+      "sha256": "a3098bc3e94262c526e8ed93243326b22846d4501715700862255bafa9cfafc5"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm95__d50-pathloss.csc",
+      "sha256": "b698810fc779a8caedf954bdcedc059e10e7c2e40c671cc8d7dcf657d6bbbb26"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm95__d60-pathloss.csc",
+      "sha256": "d035a1d68fb9a62e7621264c8718cc4dd3d93502256583d76654368b4d1e563f"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm100__d10-pathloss.csc",
+      "sha256": "821836936e4b24e966be3d734932ad9c98de61440872164aa0e1e6826cdbf5f3"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm100__d20-pathloss.csc",
+      "sha256": "21409bcf73484608040a00d464b694535420e65e7e0bf2c2a566b33f23d8f93e"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm100__d30-pathloss.csc",
+      "sha256": "18ba29ee8d477eaf208fb33715a4e9c7ba6343c6fa32091d49e625a0540d7ee3"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm100__d40-pathloss.csc",
+      "sha256": "fae744fd3bf51507dba5c541aaa5316e8cbe9db0bfe796006f51f220d965fa3b"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm100__d50-pathloss.csc",
+      "sha256": "1ab2f540e7af7449b5a5a58239342f5db1e5a1a7fb707c3248cff9ff9d68ab6d"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-coconut-green-grass__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-coconut-green-grass__rxm100__d60-pathloss.csc",
+      "sha256": "6d7db0f89d5a6567db7d9c9cec9b765354e00e64ff94f9d98798167dda96a097"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm95__d10-pathloss.csc",
+      "sha256": "9bd2c10ea33a90701a57b08a86e24c573ac8f0ab4cd36421f5637ee3004bb357"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm95__d20-pathloss.csc",
+      "sha256": "c1f0d864cd0a0ed7610820f5c772585787786a0c73205f5d4b629edd3f7814f7"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm95__d30-pathloss.csc",
+      "sha256": "3d9038dbc5e0d388953a8c8877d3edaf5993d31ae25457ede9e3f6573689ee1f"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm95__d40-pathloss.csc",
+      "sha256": "7a44cf481bc2bc902e4c9927ce4b01abe3b625b3cc1419aec33145ae8b9f73f9"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm95__d50-pathloss.csc",
+      "sha256": "626c3638771cbc4be53af6a86d629b5421233a61edc55cd768f5055b298e95f0"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm95__d60-pathloss.csc",
+      "sha256": "7be1afb2f4d55d1bdf848555e1a0b3ed6562b775c2a23390cdbfdef81e673acd"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm100__d10-pathloss.csc",
+      "sha256": "bdfab83dc55fcf1599d21c6e49f4b42bfc2d1b80a013244c65763eea9e0aaefc"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm100__d20-pathloss.csc",
+      "sha256": "f487534731638f37f026d6a5cd6b06415743d1582f9aa79908562a9f23337cb7"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm100__d30-pathloss.csc",
+      "sha256": "86f94d2e718ef426ae676d7e1ab88ef8c523a832843327ad7c0a86ff7d21d968"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm100__d40-pathloss.csc",
+      "sha256": "85aafb3d56009904f6314f1cec3de9cfe39fbbd6618c5603de2bc91cda277ed7"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm100__d50-pathloss.csc",
+      "sha256": "9080754e544ff58427b0a54d9ec100a5206df03a23ba600b167b0df09ad081aa"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-dry-grass__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-dry-grass__rxm100__d60-pathloss.csc",
+      "sha256": "945626af6ec7676f96ef17bf2b904d1ff757f04c4f50c1cade79ec6f9f1f9ec8"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm95__d10-pathloss.csc",
+      "sha256": "4b2b8fa28a2937fb375f7222077e8bd86c49fbbaac9f6e650a5be0a2648d40a4"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm95__d20-pathloss.csc",
+      "sha256": "cd12381ba4b03107ad295ac66c913a16ac09e0e2c18213174b6243fee3b6bfb7"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm95__d30-pathloss.csc",
+      "sha256": "7afddf9eb034f9c185d51bf9f67e30831bbcfe5658751c3f7ee80f28817fdf22"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm95__d40-pathloss.csc",
+      "sha256": "7ca05c40e7276d37b9c4bcfccbf9ade847ba766536c4769ce8a5bfd3f82b7a2a"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm95__d50-pathloss.csc",
+      "sha256": "043fc6f1474bf8b12d6f21e51afd653d0e630f929678127bcf65ddd04d1b3588"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm95__d60-pathloss.csc",
+      "sha256": "f5eaab7babcd03931c793aab799fb23ca086b9e901583308e8d7e0e09e825aaa"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10-pathloss.csc",
+      "sha256": "c91f98c19188b5dde1a4ee21436262e5fe33ac31c1ae3e9abe9d903ac37eb7ff"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm100__d20-pathloss.csc",
+      "sha256": "4e948005f2c6d59e543020181bc10b8db2c6c0ecfac9a2425914bdcfc150a972"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm100__d30-pathloss.csc",
+      "sha256": "5fb78c0e8152a37b2ec45534c78747203f8327ddc836d6b2bea865bad9e5318f"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm100__d40-pathloss.csc",
+      "sha256": "ed584796759d45925f966f2d727e5e993c1acbcadf1b272898247a1947c2ae0a"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm100__d50-pathloss.csc",
+      "sha256": "21440dfddd7af56ab62660da4f708549fe6e24cef779b64fa265d155fd0e8383"
+    },
+    {
+      "caseId": "calibrated-z1__agriculture-lawn-wet-grass__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__agriculture-lawn-wet-grass__rxm100__d60-pathloss.csc",
+      "sha256": "653bc4ee663a7c857ca6ec493cd6e34cce710f4289656636e7bd563d5f169ae6"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm95__d10-pathloss.csc",
+      "sha256": "a58df47942ba3365f67066c9f271e62a8a2dd02639d0fd8d1019285580b8ede7"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm95__d20-pathloss.csc",
+      "sha256": "c06cbe19b07ab9fbb97f4f1224b5b358d0ddea1f3f06184d872035a5e05b6af8"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm95__d30-pathloss.csc",
+      "sha256": "6e42957fb751f740c8c8e2b709c37497063b987f1c1162cdead63ee2b2f2238b"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm95__d40-pathloss.csc",
+      "sha256": "101ba0000e57977838dd7e12925e77da9ec6fc2df80d46e14a2a3e092707bfc2"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm95__d50-pathloss.csc",
+      "sha256": "7dd2e5d12f3a5759dcde94795eead81c8f01b3a4025e702241f131ac3cdb483a"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm95__d60-pathloss.csc",
+      "sha256": "3fe840fbb5abbc9b036ce4799c02277c68dd626e3135a46632c79b71b6456439"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm100__d10-pathloss.csc",
+      "sha256": "0b2796454399442d3f0b37b30267236f28b313c97a744ce4befcf5f88270f34e"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm100__d20-pathloss.csc",
+      "sha256": "343374b84165423a139370fa1abf806c92cc38e146e0c9e573057fa2a06a4bc0"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm100__d30-pathloss.csc",
+      "sha256": "5eb6b9ef71436375769383ed7e533f8f80645a1dd7706e336775aa00f3aceb48"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm100__d40-pathloss.csc",
+      "sha256": "d225b3f6d177a4ba006653e8172917a6f65c3dd57956d9e4f678ad4f54a1f0f8"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm100__d50-pathloss.csc",
+      "sha256": "dc9d4ed999261e87d6ba3bcb2a4b11a01b01dd777f25cc8fbd248ed1a546e005"
+    },
+    {
+      "caseId": "calibrated-z1__forest-mango-24ghz__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-mango-24ghz__rxm100__d60-pathloss.csc",
+      "sha256": "10b814add880b2157b7723895a08d497f1ed1923d19874156dafea046ecb6048"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm95__d10-pathloss.csc",
+      "sha256": "06240fd648c4516144876aaab6face05350fa0a9329b5d4597b917836d988cfd"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm95__d20-pathloss.csc",
+      "sha256": "2178e28e751f962d494351fca70814a038cd0e55d10304de8f0aab044d02539d"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm95__d30-pathloss.csc",
+      "sha256": "2a1c22b988657bc802a2e27726ee321873da425c1cab496c842da58e9377df2f"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm95__d40-pathloss.csc",
+      "sha256": "43e3d984416e6553ef372cdfa930e73ce0202144f1e12e3faea7adcb9d2b3913"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm95__d50-pathloss.csc",
+      "sha256": "462014ce9700ae40a99d9b286d97fb6cac6c7aabd3abafd97b4b7acb4697a6e2"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm95__d60-pathloss.csc",
+      "sha256": "484b0b40cf6f0bd63cbaaca18bbead39eebf0e7bed90bb3810779aa3bf022964"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm100__d10-pathloss.csc",
+      "sha256": "25926dd77690a1584c379e77ba24c4886629bb88c9b15cf25856136f3953750c"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm100__d20-pathloss.csc",
+      "sha256": "09362d2da459ae7240cbf945b18854ea407a4f7138dc24ba80e2b10bd7e7d596"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm100__d30-pathloss.csc",
+      "sha256": "38e130132d9aebb2f468625f44e8ec16173073529f383ea2216c6bc107a1aa78"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm100__d40-pathloss.csc",
+      "sha256": "5037b32f3fc9441d6256fe1478d316ce05730642e1759391614a76e77b869b18"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm100__d50-pathloss.csc",
+      "sha256": "79bc31607acfaf69438657434eb4ad7b6899acdcf0ccf784774acb9af512fa0f"
+    },
+    {
+      "caseId": "calibrated-z1__forest-guava-24ghz__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-guava-24ghz__rxm100__d60-pathloss.csc",
+      "sha256": "e34bf85e0a5f169d28a57f27490f67313c400ac01ed90cd3af37a6453ed2b0be"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm95__d10-pathloss.csc",
+      "sha256": "989cb1ce67c418c9908b171d7c63e8e2efabb3fd85b7759dbc0c7411b46cb48d"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm95__d20-pathloss.csc",
+      "sha256": "c08dca5b128f69fc9eee229da5f1edfb899e94cf7fe9f05ccb5f5460d301c643"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm95__d30-pathloss.csc",
+      "sha256": "66b641b1e3f33964d972a3fd2bfe1625657ba74b2a5f693e84289113ceb13d14"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm95__d40-pathloss.csc",
+      "sha256": "c0d6fb73f7ed6425c24cfb02261198252d8f7fec5985e4d3671512183cef3682"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm95__d50-pathloss.csc",
+      "sha256": "44279742f58c0e6adafef6ac87a82eb07890816d676c387d48d98f7c21f4dfac"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm95__d60-pathloss.csc",
+      "sha256": "3ac497c7f690481920fab4840ddd997169c187076ad139efcdcd9eefd66d772a"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm100__d10-pathloss.csc",
+      "sha256": "92b86e15791fbe7af69e7408171ad990a4dfcbb6a694547aa8288b19cd7308da"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm100__d20-pathloss.csc",
+      "sha256": "8d77c6f8005ad4f903050554ed5e5f8471443e1ed383ee5703075479077c7ece"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm100__d30-pathloss.csc",
+      "sha256": "606acee189eb60780056877754fd314af2bd3bcc1e013d1a5cb7ab68efdcea8e"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm100__d40-pathloss.csc",
+      "sha256": "729c9e3adc0bf7fa3e73d8f880e0bbfedb15d39101a62dd8bf528f302d476cf6"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm100__d50-pathloss.csc",
+      "sha256": "e3c1022108e0fd2da264f4b51263311ee39cd65f3cdd186a554526485bd1f613"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-1-24ghz__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-1-24ghz__rxm100__d60-pathloss.csc",
+      "sha256": "a6cff4a404718ae18d3e248e1dc33e44e28cc0c580aed5fb6791271c4c36d433"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm95__d10-pathloss.csc",
+      "sha256": "0bc0e3fb352559a7985a3446fc1c955d24ec2701f5cc61c585e3a53bf1320dcf"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm95__d20-pathloss.csc",
+      "sha256": "196d40da7d1477536599b3e554f57f33d55a0a7460306f2de81699d971e3187f"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm95__d30-pathloss.csc",
+      "sha256": "d844befdafde97ee23283fb5ef539cdc942895d0483971bff3b49fb24ec7d5d4"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm95__d40-pathloss.csc",
+      "sha256": "515ec70dccb196992e12bf8fd17ee817a7c715053e2a03439242c91880d14d4e"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm95__d50-pathloss.csc",
+      "sha256": "c66f2c59d6bc197213be578f286a89d0d61f00fe2a86abd949edc5a169623781"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm95__d60-pathloss.csc",
+      "sha256": "42db2e99ebad84b7d1377805be5ae683e46968f70d1b118e68f1a054164c2a86"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm100__d10-pathloss.csc",
+      "sha256": "e1bdeffc5fd669de32f750bfa60f2627968cb7008c65893e739b3b9c606c0f38"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm100__d20-pathloss.csc",
+      "sha256": "f528ae6423709228268402ec7e69e01436f5b8bdd79578e9bfb1ce2b16068c82"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm100__d30-pathloss.csc",
+      "sha256": "c37444d6fa88f7b7bfbe39ca19dbde2de3d75c427c642593437f1556cab95ab4"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm100__d40-pathloss.csc",
+      "sha256": "3b3f9039dcbfca202cdd9d23d168f98aaac0e2a70911d3c511dd9953d2ad45c5"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm100__d50-pathloss.csc",
+      "sha256": "7d3ac9397c35542df552bba8021e7a3d0b166a640e8f38170ee04fed3e6a5d74"
+    },
+    {
+      "caseId": "calibrated-z1__forest-position-2-24ghz__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__forest-position-2-24ghz__rxm100__d60-pathloss.csc",
+      "sha256": "86166cfa81f675fa2ceb8a8ee90e1260bf1a6f532f6e67f23f8e91b359ad2347"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm95__d10-pathloss.csc",
+      "sha256": "ac398cade2f2ba023a977ac6e729d0b7ac450afef532dd25ed3399b8fa195330"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm95__d20-pathloss.csc",
+      "sha256": "bf86397adc6dd885dd31461c4eb1837b8a9688e9a15598429cc35ad0543defa9"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm95__d30-pathloss.csc",
+      "sha256": "afdb2cb6eb93f40d615faeac5400ec418c47eeef10ea07d7886944a9300d212e"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm95__d40-pathloss.csc",
+      "sha256": "fba15ba24e385012f23c7b4aa0a6f87ecbfeb07559968bba86c29bd5bbcb4ca5"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm95__d50-pathloss.csc",
+      "sha256": "f539cde36fdf63b57d158cf91ec0ed5b2abae481478921e482794e3c04b46df3"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm95__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm95__d60-pathloss.csc",
+      "sha256": "c52f85ae5880c997a908bc7c13829e81c42717447af8007b319c9fefcad7909a"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d10",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm100__d10-pathloss.csc",
+      "sha256": "0f15de67ec8ff8519636859d0fb80ef252375e6cda666253f20463a96c473556"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d20",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm100__d20-pathloss.csc",
+      "sha256": "7a86532fdc6b5a00e4400ad49f65dcd99e80d06a1dff534c8668399fc912d0fa"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d30",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm100__d30-pathloss.csc",
+      "sha256": "e781aa9c0590b8296089d53fdbcd1df3e6b888bd47ef36d70ad466652c24b553"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d40",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm100__d40-pathloss.csc",
+      "sha256": "c2706d1cec4de03a19fb7804863ac36ac5086705aea659d122513f6a8925a79c"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d50",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm100__d50-pathloss.csc",
+      "sha256": "68a50132e295e656f1bceb2ce05869ce043d2def8835d9f2cf6294decd7cd9ce"
+    },
+    {
+      "caseId": "calibrated-z1__free-space-reference__rxm100__d60",
+      "cscPath": "generated/calibrated-z1/calibrated-z1__free-space-reference__rxm100__d60-pathloss.csc",
+      "sha256": "9b8dd63c6b42b01a269c29dd958ce606e9b0b08e14d6f26cc33118f250d538ed"
+    }
+  ]
+}

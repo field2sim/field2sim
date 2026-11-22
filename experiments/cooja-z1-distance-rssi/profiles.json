@@ -1,0 +1,146 @@
+[
+  {
+    "family": "urban",
+    "id": "urban-los-site-general",
+    "label": "Urban / suburban LoS",
+    "pathLossExponent": 2.07,
+    "source": "ITU-R P.1411-13",
+    "sourceUrl": "https://www.itu.int/rec/R-REC-P.1411"
+  },
+  {
+    "family": "urban",
+    "id": "urban-high-rise-nlos",
+    "label": "Urban high-rise NLoS",
+    "pathLossExponent": 3.73,
+    "source": "ITU-R P.1411-13",
+    "sourceUrl": "https://www.itu.int/rec/R-REC-P.1411"
+  },
+  {
+    "family": "urban",
+    "id": "urban-low-rise-nlos",
+    "label": "Urban low-rise / suburban NLoS",
+    "pathLossExponent": 4.52,
+    "source": "ITU-R P.1411-13",
+    "sourceUrl": "https://www.itu.int/rec/R-REC-P.1411"
+  },
+  {
+    "family": "urban",
+    "id": "residential-nlos",
+    "label": "Residential NLoS",
+    "pathLossExponent": 3.01,
+    "source": "ITU-R P.1411-13",
+    "sourceUrl": "https://www.itu.int/rec/R-REC-P.1411"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-corn-growth",
+    "label": "Corn — growth",
+    "pathLossExponent": 4.9,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-corn-maturity",
+    "label": "Corn — maturity",
+    "pathLossExponent": 5.77,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-paddy-growth",
+    "label": "Paddy — growth",
+    "pathLossExponent": 4.85,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-paddy-maturity",
+    "label": "Paddy — maturity",
+    "pathLossExponent": 5.47,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-groundnut-growth",
+    "label": "Groundnut — growth",
+    "pathLossExponent": 5.08,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-groundnut-maturity",
+    "label": "Groundnut — maturity",
+    "pathLossExponent": 5.97,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-coconut-green-grass",
+    "label": "Coconut garden — green grass",
+    "pathLossExponent": 4.7,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-lawn-dry-grass",
+    "label": "Open lawn — dry green grass",
+    "pathLossExponent": 4.9,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "agriculture",
+    "id": "agriculture-lawn-wet-grass",
+    "label": "Open lawn — wet green grass",
+    "pathLossExponent": 4.8,
+    "source": "Balachander, Rao, and Mahesh, PIER C 39, 2013",
+    "sourceUrl": "https://doi.org/10.2528/PIERC13030710"
+  },
+  {
+    "family": "forest",
+    "id": "forest-mango-24ghz",
+    "label": "Mango plantation",
+    "pathLossExponent": 4.19,
+    "source": "UHF short-range pathloss measurements, ICCS 2012",
+    "sourceUrl": "https://doi.org/10.1109/ICCS.2012.6406137"
+  },
+  {
+    "family": "forest",
+    "id": "forest-guava-24ghz",
+    "label": "Guava plantation",
+    "pathLossExponent": 4.32,
+    "source": "UHF short-range pathloss measurements, ICCS 2012",
+    "sourceUrl": "https://doi.org/10.1109/ICCS.2012.6406137"
+  },
+  {
+    "family": "forest",
+    "id": "forest-position-1-24ghz",
+    "label": "Tropical scrub forest — position 1",
+    "pathLossExponent": 5.24,
+    "source": "UHF short-range pathloss measurements, ICCS 2012",
+    "sourceUrl": "https://doi.org/10.1109/ICCS.2012.6406137"
+  },
+  {
+    "family": "forest",
+    "id": "forest-position-2-24ghz",
+    "label": "Tropical scrub forest — position 2",
+    "pathLossExponent": 4.15,
+    "source": "UHF short-range pathloss measurements, ICCS 2012",
+    "sourceUrl": "https://doi.org/10.1109/ICCS.2012.6406137"
+  },
+  {
+    "family": "reference",
+    "id": "free-space-reference",
+    "label": "Free-space LoS",
+    "pathLossExponent": 2,
+    "source": "Friis reference",
+    "sourceUrl": "https://doi.org/10.1109/JRPROC.1946.234568"
+  }
+]

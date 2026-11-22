@@ -1,0 +1,89 @@
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-88 dBm; from fe80::c30c:0:0:1
+CASE_DONE case=calibrated-z1__agriculture-lawn-wet-grass__rxm100__d10
