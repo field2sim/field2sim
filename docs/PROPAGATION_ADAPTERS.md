@@ -7,6 +7,8 @@ The environment selector is a cited initialization aid, not an automatic site-su
 1. `propagation-profile-<profile>.json` records the cited source, applicability, user inputs, caveats, and BibTeX.
 2. `propagation-<profile>-<target>.<extension>` records one target-specific configuration and an explicit fidelity label: `native`, `parameterized-approximation`, or `unsupported`.
 
+Both artifacts are produced by the JavaScript library (`propagation-profiles.js`, `propagation-adapters.js`) and are used by the automated tests and pinned propagation executions. The browser does not download them: its propagation panel is Cooja-only and writes the selected LogisticLoss settings into an existing researcher-created `.csc` file, recording the profile and its source as an XML comment. Supported browsers update the selected file in place; others download a `*-pathloss.csc` copy. An unsupported mapping disables writing.
+
 `native` means that the pinned target provides the same mathematical model family. It does not imply identical random processes, radio thresholds, packet outcomes, or agreement with a future physical deployment.
 
 ## Simulator-neutral numerical representation
