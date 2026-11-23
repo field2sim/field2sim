@@ -1,0 +1,87 @@
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-57 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-67 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-55 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-63 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-60 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-56 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-58 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-61 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-58 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-60 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-54 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-57 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-56 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-58 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-60 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-59 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-56 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-66 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-63 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-61 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-68 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-59 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-66 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-58 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-61 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-57 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-69 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-61 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-60 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-56 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-57 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-61 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-56 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-65 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-47 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-59 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-61 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-61 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-61 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-57 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-63 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-60 dBm; from fe80::c30c:0:0:1
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=1 [INFO: App       ] Sending fixed request 'RSSI_TEST' to fe80::c30c:0:0:2
+MEAS case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464 mote=2 [INFO: App       ] Received request 'RSSI_TEST'; RSSI=-62 dBm; from fe80::c30c:0:0:1
+CASE_DONE case=fixed-range-z1__urban-los-site-general__rxm90__d20__s123464

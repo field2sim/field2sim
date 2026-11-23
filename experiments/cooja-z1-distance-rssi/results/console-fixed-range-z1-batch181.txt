@@ -1,0 +1,486 @@
+RUN_PLAN cases=180 from=181 compiler="msp430-gcc (GCC) 4.7.2 20120920 (mspgcc dev 20120911)"
+  MKDIR     build/z1/obj/.deps
+  CC        udp-client.c
+  CC        /home/ismylhakki/contiki-ng/os/contiki-main.c
+  CC        /home/ismylhakki/contiki-ng/os/dev/leds.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/xmem.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/i2cmaster.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/f2xxx/spi-legacy.c
+  CC        /home/ismylhakki/contiki-ng/arch/dev/radio/cc2420/cc2420.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/cc2420-arch.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/./cc2420-arch-sfd.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/./node-id-z1.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/sensors.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/button-sensor.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/f2xxx/uart0.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/dev/uart-putchar.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/./uip-ipchksum.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/./slip_uart0.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/z1-sensors.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/adxl345.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/temperature-sensor.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/z1-phidgets.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/light-sensor.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/battery-sensor.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/sky-sensors.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/dev/tmp102.c
+  CC        /home/ismylhakki/contiki-ng/arch/platform/z1/./platform.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/f2xxx/msp430.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/./flash.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/f1xxx/clock.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/./leds-arch.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/./watchdog.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/./lpm.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/f1xxx/rtimer-arch.c
+  CC        /home/ismylhakki/contiki-ng/arch/cpu/msp430/./int-master.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/crc16.c
+  CC        /home/ismylhakki/contiki-ng/arch/dev/radio/cc2420/cc2420-tsch-15ms.c
+  CC        /home/ismylhakki/contiki-ng/os/dev/button-hal.c
+  CC        /home/ismylhakki/contiki-ng/os/dev/gpio-hal.c
+  CC        /home/ismylhakki/contiki-ng/os/dev/nullradio.c
+  CC        /home/ismylhakki/contiki-ng/os/dev/serial-line.c
+  CC        /home/ismylhakki/contiki-ng/os/dev/slip.c
+  CC        /home/ismylhakki/contiki-ng/os/dev/spi.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/aes-128.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/assert.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/ccm-star.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/circular-list.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/csprng.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/dbl-circ-list.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/dbl-list.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/heapmem.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/hexconv.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/ifft.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/iq-seeder.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/list.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/memb.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/random.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/ringbuf.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/ringbufindex.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/sha-256.c
+  CC        /home/ismylhakki/contiki-ng/os/lib/trickle-timer.c
+  CC        /home/ismylhakki/contiki-ng/os/net/linkaddr.c
+  CC        /home/ismylhakki/contiki-ng/os/net/link-stats.c
+  CC        /home/ismylhakki/contiki-ng/os/net/nbr-table.c
+  CC        /home/ismylhakki/contiki-ng/os/net/net-debug.c
+  CC        /home/ismylhakki/contiki-ng/os/net/netstack.c
+  CC        /home/ismylhakki/contiki-ng/os/net/packetbuf.c
+  CC        /home/ismylhakki/contiki-ng/os/net/queuebuf.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/ip64-addr.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/psock.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/sicslowpan.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/simple-udp.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/tcpip.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/tcp-socket.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/udp-socket.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip6.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uipbuf.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-ds6.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-ds6-nbr.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-ds6-route.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-icmp6.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uiplib.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-nameserver.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-nd6.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-packetqueue.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-sr.c
+  CC        /home/ismylhakki/contiki-ng/os/net/ipv6/uip-udp-packet.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/mac-sequence.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/csma/anti-replay.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/csma/ccm-star-packetbuf.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/csma/csma.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/csma/csma-output.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/csma/csma-security.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/framer/frame802154.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/framer/frame802154e-ie.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/framer/framer-802154.c
+  CC        /home/ismylhakki/contiki-ng/os/net/mac/framer/nullframer.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-dag.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-dag-root.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-ext-header.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-icmp6.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-mrhof.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-nbr-policy.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-neighbor.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-of0.c
+  CC        /home/ismylhakki/contiki-ng/os/net/routing/rpl-lite/rpl-timers.c
+  CC        /home/ismylhakki/contiki-ng/os/storage/cfs/cfs-coffee.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/atomic.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/autostart.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/compower.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/ctimer.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/energest.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/etimer.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/log.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/mutex.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/node-id.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/process.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/rtimer.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/stack-check.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/stimer.c
+  CC        /home/ismylhakki/contiki-ng/os/sys/timer.c
+  CC        udp-server.c
+  LD        build/z1/udp-client.z1
+  LD        build/z1/udp-server.z1
+CASE_START 1/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123456 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123456 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 1/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 2/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123457 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123457 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 2/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 3/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123458 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123458 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 3/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 4/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123459 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123459 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 4/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 5/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123460 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123460 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 5/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 6/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123461 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123461 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 6/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 7/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123462 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123462 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 7/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 8/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123463 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123463 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 8/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 9/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123464 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123464 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 9/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 10/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123465 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-90dBm seed=123465 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 10/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d10__s123465 completed=true sent=43 received=43 prr=1.0000
+CASE_START 11/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123456 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 11/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 12/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123457 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 12/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 13/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123458 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 13/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 14/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123459 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 14/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 15/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123460 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 15/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 16/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123461 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 16/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 17/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123462 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 17/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 18/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123463 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 18/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 19/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123464 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 19/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 20/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123465 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-90dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 20/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d20__s123465 completed=true sent=43 received=43 prr=1.0000
+CASE_START 21/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123456 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 21/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 22/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123457 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 22/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 23/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123458 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 23/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 24/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123459 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 24/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 25/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123460 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 25/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 26/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123461 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 26/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 27/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123462 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 27/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 28/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123463 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 28/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 29/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123464 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 29/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 30/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123465 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-90dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 30/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d30__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 31/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123456 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 31/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 32/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123457 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 32/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 33/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123458 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 33/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 34/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123459 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 34/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 35/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123460 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 35/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 36/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123461 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 36/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 37/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123462 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 37/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 38/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123463 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 38/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 39/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123464 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 39/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 40/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123465 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-90dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 40/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d40__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 41/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123456 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 41/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 42/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123457 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 42/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 43/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123458 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 43/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 44/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123459 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 44/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 45/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123460 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 45/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123460 completed=true sent=44 received=43 prr=0.9773
+CASE_START 46/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123461 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 46/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 47/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123462 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 47/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 48/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123463 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 48/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 49/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123464 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 49/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 50/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123465 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-90dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 50/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d50__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 51/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123456 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 51/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 52/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123457 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 52/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 53/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123458 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 53/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 54/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123459 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 54/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 55/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123460 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 55/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 56/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123461 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 56/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 57/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123462 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 57/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 58/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123463 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 58/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 59/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123464 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 59/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 60/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123465 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-90dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 60/180 id=fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 61/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123456 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123456 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 61/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 62/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123457 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123457 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 62/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 63/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123458 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123458 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 63/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 64/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123459 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123459 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 64/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 65/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123460 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123460 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 65/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 66/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123461 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123461 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 66/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 67/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123462 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123462 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 67/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 68/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123463 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123463 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 68/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 69/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123464 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123464 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 69/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 70/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123465 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-95dBm seed=123465 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 70/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d10__s123465 completed=true sent=43 received=43 prr=1.0000
+CASE_START 71/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123456 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 71/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 72/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123457 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 72/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 73/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123458 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 73/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 74/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123459 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 74/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 75/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123460 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 75/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 76/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123461 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 76/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 77/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123462 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 77/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 78/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123463 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 78/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 79/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123464 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 79/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 80/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123465 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-95dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 80/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d20__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 81/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123456 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 81/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 82/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123457 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 82/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 83/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123458 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 83/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 84/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123459 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 84/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 85/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123460 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 85/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123460 completed=true sent=44 received=43 prr=0.9773
+CASE_START 86/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123461 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 86/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 87/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123462 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 87/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 88/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123463 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 88/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 89/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123464 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 89/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 90/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123465 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-95dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 90/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d30__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 91/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123456 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 91/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 92/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123457 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 92/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 93/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123458 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 93/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 94/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123459 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 94/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 95/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123460 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 95/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 96/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123461 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 96/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 97/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123462 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 97/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 98/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123463 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 98/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 99/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123464 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 99/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 100/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123465 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-95dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 100/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d40__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 101/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123456 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 101/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 102/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123457 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 102/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 103/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123458 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 103/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 104/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123459 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 104/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 105/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123460 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 105/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 106/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123461 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 106/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 107/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123462 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 107/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 108/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123463 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 108/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 109/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123464 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 109/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 110/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123465 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-95dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 110/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d50__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 111/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123456 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 111/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 112/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123457 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 112/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 113/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123458 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 113/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 114/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123459 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 114/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123459 completed=true sent=44 received=42 prr=0.9545
+CASE_START 115/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123460 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 115/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 116/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123461 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 116/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 117/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123462 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 117/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123462 completed=true sent=43 received=42 prr=0.9767
+CASE_START 118/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123463 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 118/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 119/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123464 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 119/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 120/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123465 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-95dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 120/180 id=fixed-range-z1__urban-high-rise-nlos__rxm95__d60__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 121/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123456 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123456 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 121/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 122/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123457 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123457 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 122/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 123/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123458 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123458 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 123/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 124/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123459 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123459 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 124/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 125/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123460 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123460 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 125/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 126/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123461 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123461 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 126/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 127/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123462 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123462 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 127/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 128/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123463 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123463 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 128/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 129/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123464 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123464 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 129/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 130/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123465 profile=urban-high-rise-nlos distance=10m tr=77.100465m rx=-100dBm seed=123465 sigma=7.62dB domain="EXTRAPOLATION; source domain is 20 m to 715 m"
+CASE_RESULT 130/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d10__s123465 completed=true sent=43 received=43 prr=1.0000
+CASE_START 131/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123456 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 131/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 132/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123457 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 132/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 133/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123458 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 133/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 134/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123459 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 134/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 135/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123460 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 135/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 136/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123461 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 136/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 137/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123462 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 137/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 138/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123463 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 138/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 139/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123464 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 139/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 140/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123465 profile=urban-high-rise-nlos distance=20m tr=77.100465m rx=-100dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 140/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d20__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 141/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123456 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 141/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 142/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123457 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 142/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 143/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123458 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 143/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 144/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123459 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 144/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 145/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123460 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 145/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123460 completed=true sent=44 received=44 prr=1.0000
+CASE_START 146/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123461 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 146/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 147/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123462 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 147/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 148/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123463 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 148/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 149/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123464 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 149/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 150/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123465 profile=urban-high-rise-nlos distance=30m tr=77.100465m rx=-100dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 150/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d30__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 151/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123456 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 151/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 152/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123457 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 152/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123457 completed=true sent=44 received=44 prr=1.0000
+CASE_START 153/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123458 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 153/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123458 completed=true sent=43 received=43 prr=1.0000
+CASE_START 154/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123459 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 154/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123459 completed=true sent=44 received=44 prr=1.0000
+CASE_START 155/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123460 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 155/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123460 completed=true sent=44 received=43 prr=0.9773
+CASE_START 156/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123461 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 156/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 157/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123462 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 157/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123462 completed=true sent=43 received=43 prr=1.0000
+CASE_START 158/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123463 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 158/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 159/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123464 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 159/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123464 completed=true sent=43 received=43 prr=1.0000
+CASE_START 160/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123465 profile=urban-high-rise-nlos distance=40m tr=77.100465m rx=-100dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 160/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d40__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 161/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123456 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 161/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123456 completed=true sent=44 received=44 prr=1.0000
+CASE_START 162/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123457 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 162/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123457 completed=true sent=44 received=42 prr=0.9545
+CASE_START 163/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123458 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 163/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123458 completed=true sent=43 received=42 prr=0.9767
+CASE_START 164/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123459 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 164/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123459 completed=true sent=44 received=43 prr=0.9773
+CASE_START 165/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123460 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 165/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123460 completed=true sent=44 received=43 prr=0.9773
+CASE_START 166/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123461 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 166/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123461 completed=true sent=44 received=44 prr=1.0000
+CASE_START 167/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123462 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 167/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123462 completed=true sent=43 received=41 prr=0.9535
+CASE_START 168/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123463 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 168/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 169/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123464 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 169/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123464 completed=true sent=43 received=42 prr=0.9767
+CASE_START 170/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123465 profile=urban-high-rise-nlos distance=50m tr=77.100465m rx=-100dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 170/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d50__s123465 completed=true sent=44 received=43 prr=0.9773
+CASE_START 171/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123456 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123456 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 171/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123456 completed=true sent=44 received=42 prr=0.9545
+CASE_START 172/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123457 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123457 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 172/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123457 completed=true sent=44 received=40 prr=0.9091
+CASE_START 173/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123458 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123458 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 173/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123458 completed=true sent=43 received=41 prr=0.9535
+CASE_START 174/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123459 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123459 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 174/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123459 completed=true sent=44 received=39 prr=0.8864
+CASE_START 175/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123460 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123460 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 175/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123460 completed=true sent=44 received=39 prr=0.8864
+CASE_START 176/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123461 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123461 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 176/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123461 completed=true sent=44 received=43 prr=0.9773
+CASE_START 177/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123462 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123462 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 177/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123462 completed=true sent=43 received=42 prr=0.9767
+CASE_START 178/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123463 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123463 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 178/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123463 completed=true sent=43 received=43 prr=1.0000
+CASE_START 179/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123464 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123464 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 179/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123464 completed=true sent=43 received=40 prr=0.9302
+CASE_START 180/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123465 profile=urban-high-rise-nlos distance=60m tr=77.100465m rx=-100dBm seed=123465 sigma=7.62dB domain="inside source domain (20 m to 715 m)"
+CASE_RESULT 180/180 id=fixed-range-z1__urban-high-rise-nlos__rxm100__d60__s123465 completed=true sent=44 received=38 prr=0.8636
+RUN_COMPLETE cases=180 report=/home/ismylhakki/cooja-positioner/experiments/cooja-z1-distance-rssi/results/run-report-fixed-range-z1-batch181.json

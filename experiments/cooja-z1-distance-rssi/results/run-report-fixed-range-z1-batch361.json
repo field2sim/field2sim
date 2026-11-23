@@ -1,0 +1,1280 @@
+{
+  "schemaVersion": 2,
+  "platform": "Zolertia Z1",
+  "suite": "fixed-range-z1",
+  "requestedFrom": 361,
+  "requestedLimit": 180,
+  "startedAt": "2026-11-22T23:15:02.673Z",
+  "finishedAt": "2026-11-22T23:24:47.112Z",
+  "exitStatus": 0,
+  "signal": null,
+  "toolchain": {
+    "contikiNgRevision": "6ac4608cdd8e007ae328905687db9a326dd09304",
+    "coojaRevision": "0a518f80c4a6c79a0cfda332f3d6bc6d7684bc7a",
+    "compiler": "msp430-gcc (GCC) 4.7.2 20120920 (mspgcc dev 20120911)"
+  },
+  "cases": [
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d10__s123465",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d20__s123465",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d30__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d40__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d50__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm90__d60__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d10__s123465",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d20__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d30__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d40__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 42,
+      "receptionRatio": 0.9545454545454546
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 42,
+      "receptionRatio": 0.9767441860465116
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d50__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 41,
+      "receptionRatio": 0.9534883720930233
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 42,
+      "receptionRatio": 0.9545454545454546
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 40,
+      "receptionRatio": 0.9302325581395349
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 42,
+      "receptionRatio": 0.9767441860465116
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 42,
+      "receptionRatio": 0.9767441860465116
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm95__d60__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 42,
+      "receptionRatio": 0.9545454545454546
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d10__s123465",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d20__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d30__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 42,
+      "receptionRatio": 0.9767441860465116
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d40__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 42,
+      "receptionRatio": 0.9545454545454546
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 41,
+      "receptionRatio": 0.9318181818181818
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 41,
+      "receptionRatio": 0.9534883720930233
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 40,
+      "receptionRatio": 0.9090909090909091
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 42,
+      "receptionRatio": 0.9545454545454546
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 43,
+      "receptionRatio": 0.9772727272727273
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 42,
+      "receptionRatio": 0.9767441860465116
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 40,
+      "receptionRatio": 0.9302325581395349
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d50__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 39,
+      "receptionRatio": 0.8863636363636364
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 34,
+      "receptionRatio": 0.7727272727272727
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 29,
+      "receptionRatio": 0.6590909090909091
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 34,
+      "receptionRatio": 0.7906976744186046
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 38,
+      "receptionRatio": 0.8636363636363636
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123460",
+      "completed": true,
+      "sent": 44,
+      "received": 38,
+      "receptionRatio": 0.8636363636363636
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123461",
+      "completed": true,
+      "sent": 44,
+      "received": 40,
+      "receptionRatio": 0.9090909090909091
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123462",
+      "completed": true,
+      "sent": 43,
+      "received": 38,
+      "receptionRatio": 0.8837209302325582
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123463",
+      "completed": true,
+      "sent": 43,
+      "received": 37,
+      "receptionRatio": 0.8604651162790697
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123464",
+      "completed": true,
+      "sent": 43,
+      "received": 30,
+      "receptionRatio": 0.6976744186046512
+    },
+    {
+      "caseId": "fixed-range-z1__urban-low-rise-nlos__rxm100__d60__s123465",
+      "completed": true,
+      "sent": 44,
+      "received": 34,
+      "receptionRatio": 0.7727272727272727
+    }
+  ],
+  "logPath": "results/cooja-fixed-range-z1-batch361.log",
+  "measurementLogPath": "results/runtime/fixed-range-z1/cases"
+}

@@ -70,6 +70,27 @@ python3 scripts/plot-calibrated.py
 
 Set `CONTIKI` in `firmware/Makefile` and `baseline/Makefile` to your Contiki-NG path if it differs from the default.
 
+## Fixed-range suite (`fixed-range-z1`)
+
+A complementary 540-case suite keeps `transmitting_range` fixed and varies only `rx_sensitivity`, so the RSSI anchor is isolated from the candidate cutoff.
+
+- Profiles: urban/suburban LoS (n = 2.07, R_t = 503.85 m), urban high-rise NLoS (n = 3.73, R_t = 77.10 m), urban low-rise NLoS (n = 4.52, R_t = 61.39 m). R_t is each profile's calibrated range at −95 dBm. Only these profiles have R_t > 60 m; for the agricultural and forest/plantation profiles R_t at −95 dBm is 8–21 m, so the cutoff would mask the effect.
+- `rx_sensitivity` ∈ {−90, −95, −100} dBm; distances 10–60 m; ten seeds per case (123456–123465); otherwise the same protocol as above.
+- All 540 cases completed. Each 5-dB change in `rx_sensitivity` shifts the whole conditional mean-RSSI curve by 5.0 dB on average (4.5–5.4 dB). A more sensitive value lowers PRR once the mean nears the fixed −92 dBm `rssi_inflection_point` (low-rise NLoS at 60 m: 0.99 → 0.81 ± 0.08). The across-seed standard deviation of mean RSSI is 0.5–1.3 dB.
+
+![Fixed-range suite: conditional mean RSSI (top) and PRR (bottom) versus distance](results/plots/fixed-range-z1.png)
+
+| Path | Content |
+|---|---|
+| `generated/fixed-range-z1/*.csc`, `generated/manifest-fixed-range-z1.json` | 540 executed CSC files and manifest |
+| `generated/inspection-fixed-range-z1.json` | Pre-execution checks and SHA-256 digests |
+| `results/raw/fixed-range-z1/`, `results/runtime/fixed-range-z1/` | Raw CSVs and per-case logs |
+| `results/summary-fixed-range-z1.csv`, `results/summary-fixed-range-z1-by-seed.csv` | Across-seed and per-seed summaries |
+| `results/run-report-fixed-range-z1*.json`, `results/cooja-fixed-range-z1-*.log`, `results/console-fixed-range-z1-*.txt` | Combined and per-batch run reports and logs (pilot included) |
+| `scripts/*fixed-range*` | Generation, inspection, execution, and analysis |
+
+Reproduction: `node scripts/generate-fixed-range.js`, `node scripts/inspect-fixed-range-cases.js`, `CONTIKI_NG=/path/to/contiki-ng node scripts/run-fixed-range-sequential.js`, `python3 scripts/analyze-fixed-range.py`.
+
 ## Evidence boundary
 
-This is a simulator-level characterization of Cooja LogisticLoss as consumed by Z1 motes. Recomputing `transmitting_range` for each RX anchor cancels the anchor change in the mean-RSSI expression, so the design is not an independent receiver-sensitivity experiment. The `-95` dBm CC2420 data-sheet value is specified at 1% PER; using it as the LogisticLoss threshold is a sensitivity-analysis assumption, not a PER-equivalent calibration. `awgn_sigma` is sampled per reception and is not spatially correlated shadowing. The suite uses one seed and is not an inferential comparison, a field calibration, or a universal distance–RSSI law.
+This is a simulator-level characterization of Cooja LogisticLoss as consumed by Z1 motes. Recomputing `transmitting_range` for each RX anchor cancels the anchor change in the mean-RSSI expression, so the design is not an independent receiver-sensitivity experiment. The `-95` dBm CC2420 data-sheet value is specified at 1% PER; using it as the LogisticLoss threshold is a sensitivity-analysis assumption, not a PER-equivalent calibration. `awgn_sigma` is sampled per reception and is not spatially correlated shadowing. The 216-case suite uses one seed; the fixed-range suite adds ten seeds per case. Neither is a field calibration, or a universal distance–RSSI law.

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "suite": "fixed-range-z1",
+  "design": {
+    "profileIds": [
+      "urban-los-site-general",
+      "urban-high-rise-nlos",
+      "urban-low-rise-nlos"
+    ],
+    "rangeAnchorDbm": -95,
+    "rxSensitivityDbm": [
+      -90,
+      -95,
+      -100
+    ],
+    "seeds": [
+      123456,
+      123457,
+      123458,
+      123459,
+      123460,
+      123461,
+      123462,
+      123463,
+      123464,
+      123465
+    ]
+  },
+  "caseCount": 540,
+  "batches": [
+    {
+      "report": "results/run-report-fixed-range-z1-batch1.json",
+      "startedAt": "2026-11-22T23:00:18.058Z",
+      "finishedAt": "2026-11-22T23:08:16.792Z",
+      "exitStatus": 0,
+      "cases": 180
+    },
+    {
+      "report": "results/run-report-fixed-range-z1-batch181.json",
+      "startedAt": "2026-11-22T23:08:18.486Z",
+      "finishedAt": "2026-11-22T23:15:01.691Z",
+      "exitStatus": 0,
+      "cases": 180
+    },
+    {
+      "report": "results/run-report-fixed-range-z1-batch361.json",
+      "startedAt": "2026-11-22T23:15:02.673Z",
+      "finishedAt": "2026-11-22T23:24:47.112Z",
+      "exitStatus": 0,
+      "cases": 180
+    }
+  ],
+  "incompleteCases": [],
+  "transmissions": 23520,
+  "receptions": 23318,
+  "summary": "results/summary-fixed-range-z1.csv",
+  "aggregate": "results/summary-fixed-range-z1-by-seed.csv"
+}

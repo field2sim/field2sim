@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "platform": "Zolertia Z1",
+  "suite": "fixed-range-z1",
+  "requestedFrom": 231,
+  "requestedLimit": 4,
+  "startedAt": "2026-11-22T22:58:24.811Z",
+  "finishedAt": "2026-11-22T23:00:05.782Z",
+  "exitStatus": 0,
+  "signal": null,
+  "toolchain": {
+    "contikiNgRevision": "6ac4608cdd8e007ae328905687db9a326dd09304",
+    "coojaRevision": "0a518f80c4a6c79a0cfda332f3d6bc6d7684bc7a",
+    "compiler": "msp430-gcc (GCC) 4.7.2 20120920 (mspgcc dev 20120911)"
+  },
+  "cases": [
+    {
+      "caseId": "fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123456",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123457",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123458",
+      "completed": true,
+      "sent": 43,
+      "received": 43,
+      "receptionRatio": 1
+    },
+    {
+      "caseId": "fixed-range-z1__urban-high-rise-nlos__rxm90__d60__s123459",
+      "completed": true,
+      "sent": 44,
+      "received": 44,
+      "receptionRatio": 1
+    }
+  ],
+  "logPath": "results/cooja-fixed-range-z1-pilot.log",
+  "measurementLogPath": "results/runtime/fixed-range-z1/cases"
+}
