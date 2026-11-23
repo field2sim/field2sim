@@ -2,6 +2,11 @@
 
 > From field context to reproducible network-simulation scenarios.
 
+<p align="center">
+  <a href="media/screenshot-polygon-deployment.jpg"><img src="media/screenshot-polygon-deployment.jpg" alt="Field2Sim interface with a generated triangular sensor lattice and a mobile scan path over satellite imagery" width="100%"></a>
+</p>
+<p align="center"><sub>Saint-Émilion example project: a 30-m triangular lattice (76 static nodes) and a horizontal scan path (37 waypoints) generated with Polygon Mode next to the example's vineyard sensors and collector route. Satellite (Esri) background; click for the 3840×2160 image.</sub></p>
+
 Field2Sim is a client-side, browser-based editor that translates field context into simulator-ready WSN and IoT scenario artifacts. Here, *field context* means deployment-relevant geographic information and user-supplied or citation-backed propagation assumptions; it does not imply automated site surveying or channel-model inference. Field2Sim preserves WGS84 positions, node identifiers, waypoint timing, altitude, and the local-origin policy, then exports simulator-specific position, mobility, and propagation artifacts for Cooja, ns-2, ns-3, and INET/OMNeT++.
 
 **Online application:** https://field2sim.github.io/
@@ -232,7 +237,20 @@ media/                             Images used by validation/documentation
 
 ## Video and screenshots
 
-The currently committed demonstration video and screenshots show an earlier interface revision. They remain available for historical orientation, but do not yet demonstrate polygon deployment, custom-origin selection, or all simulator exports. A new video will replace them.
+The screenshots above and below were taken from the live application in November 2026 and show the current interface.
+
+<table>
+  <tr>
+    <td width="50%"><a href="media/screenshot-drone-route.jpg"><img src="media/screenshot-drone-route.jpg" alt="Inspection-drone route and static monitoring sensors along the Great Wall at Mutianyu on satellite imagery"></a></td>
+    <td width="50%"><a href="media/screenshot-ns3-export.jpg"><img src="media/screenshot-ns3-export.jpg" alt="Central Park example with a mobile collector route and the ns-3 Ns2MobilityHelper export preview"></a></td>
+  </tr>
+  <tr>
+    <td><sub>Great Wall example: a 35-waypoint inspection-drone route and six monitoring sensors (Satellite, Esri).</sub></td>
+    <td><sub>Central Park example converted to an ns-3 <code>Ns2MobilityHelper</code> trace; the preview records the axis convention and node mapping (Street, OpenStreetMap).</sub></td>
+  </tr>
+</table>
+
+The committed demonstration video and the main-interface screenshot below show an earlier interface revision. They remain available for historical orientation, but do not demonstrate polygon deployment, custom-origin selection, or all simulator exports. A new video will replace them.
 
 - [Earlier-version demonstration video](field2sim-legacy-cooja-demonstration.mp4)
 - [Earlier main-interface screenshot](preview.png)
